@@ -7,13 +7,33 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class resultsViewController : UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}
+
+class ViewController: UIViewController, UISearchResultsUpdating  {
+
+    let searchController = UISearchController(searchResultsController: resultsViewController())
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        title = "Explore"
+        navigationItem.searchController = searchController
+        searchController.searchResultsUpdater = self
     }
 
-
+    @IBAction func recommendedButtonPressed(_ sender: UIButton) {
+        print("Button Pressed")
+    }
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let text = searchController.searchBar.text else {
+            return
+        }
+        print(text)
+    }
+    
 }
 
