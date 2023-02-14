@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bXO-3Q-DY0">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
@@ -15,7 +15,7 @@
                 <navigationController id="2u8-Qr-IkI" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Explore" image="house.fill" catalog="system" id="dEy-DJ-t8M"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="qhC-Qd-bOl">
-                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <rect key="frame" x="0.0" y="24" width="1024" height="102"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -31,17 +31,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AugmentedGrowth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGG-ZP-lNh">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UDS-92-LSs">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1200"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1200"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IfJ-7J-vzb">
-                                                <rect key="frame" x="20" y="0.0" width="353" height="1010.6666666666666"/>
+                                                <rect key="frame" x="335.5" y="0.0" width="353" height="1183"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCB-Zd-tx8">
                                                         <rect key="frame" x="0.0" y="0.0" width="353" height="328"/>
@@ -63,16 +63,16 @@
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="recommendedButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XM8-3w-XUd"/>
-                                                            <segue destination="45r-Qx-dZ1" kind="show" id="niV-ZY-ajo"/>
+                                                            <segue destination="45r-Qx-dZ1" kind="show" identifier="openTopic" id="niV-ZY-ajo"/>
                                                         </connections>
                                                     </button>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="145" translatesAutoresizingMaskIntoConstraints="NO" id="TUW-no-mXV">
-                                                        <rect key="frame" x="0.0" y="338" width="353" height="40.666666666666686"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="65" translatesAutoresizingMaskIntoConstraints="NO" id="TUW-no-mXV">
+                                                        <rect key="frame" x="0.0" y="338" width="353" height="41"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K9c-fb-Ruw">
-                                                                <rect key="frame" x="0.0" y="0.0" width="101.66666666666667" height="40.666666666666664"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K9c-fb-Ruw">
+                                                                <rect key="frame" x="0.0" y="0.0" width="176.5" height="41"/>
                                                                 <attributedString key="attributedText">
-                                                                    <fragment content="Space">
+                                                                    <fragment content="Astronomy">
                                                                         <attributes>
                                                                             <color key="NSColor" red="0.029910903424024582" green="0.048811234533786774" blue="0.053486309945583344" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <font key="NSFont" size="34" name="HelveticaNeue-Bold"/>
@@ -83,15 +83,18 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q4Q-AX-hga">
-                                                                <rect key="frame" x="246.66666666666671" y="0.0" width="106.33333333333334" height="40.666666666666664"/>
+                                                                <rect key="frame" x="241.5" y="0.0" width="111.5" height="41"/>
                                                                 <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="View All">
                                                                     <imageReference key="image" image="chevron.right" catalog="system" symbolScale="medium"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="astronomyViewAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="slL-2R-pMF"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
                                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdS-dh-atZ">
-                                                        <rect key="frame" x="0.0" y="388.66666666666669" width="353" height="110"/>
+                                                        <rect key="frame" x="0.0" y="389" width="353" height="110"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pvW-t6-ypb" userLabel="Content View">
                                                                 <rect key="frame" x="0.0" y="0.0" width="440" height="110"/>
@@ -139,8 +142,8 @@
                                                                                     <attributedString key="attributedTitle">
                                                                                         <fragment content="Journey to Outer Space">
                                                                                             <attributes>
-                                                                                                <color key="NSBackgroundColor" red="0.97600501775741577" green="0.99273735284805298" blue="0.99244397878646851" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                                                <color key="NSColor" red="0.033025167882442474" green="0.062788896262645721" blue="0.042763009667396545" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <color key="NSBackgroundColor" red="0.97600501775741577" green="0.99273735284805298" blue="0.99244397878646851" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <color key="NSColor" red="0.91974097490310669" green="0.97402840852737427" blue="0.9197583794593811" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                                 <font key="NSFont" size="15" name="Helvetica"/>
                                                                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                                             </attributes>
@@ -159,7 +162,7 @@
                                                                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <state key="normal" title="Button"/>
                                                                                 <buttonConfiguration key="configuration" style="tinted" cornerStyle="medium">
-                                                                                    <backgroundConfiguration key="background">
+                                                                                    <backgroundConfiguration key="background" image="Saturn's Rings" imageContentMode="scaleAspectFill">
                                                                                         <color key="strokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                     </backgroundConfiguration>
                                                                                     <attributedString key="attributedTitle">
@@ -183,7 +186,7 @@
                                                                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <state key="normal" title="Button"/>
                                                                                 <buttonConfiguration key="configuration" style="tinted" cornerStyle="medium">
-                                                                                    <backgroundConfiguration key="background">
+                                                                                    <backgroundConfiguration key="background" image="The Asteroid Belt" imageContentMode="scaleAspectFill">
                                                                                         <color key="strokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                     </backgroundConfiguration>
                                                                                     <attributedString key="attributedTitle">
@@ -220,11 +223,11 @@
                                                         </constraints>
                                                     </scrollView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="153" id="QVF-UD-U73">
-                                                        <rect key="frame" x="0.0" y="125.33333333333333" width="353" height="40.666666666666671"/>
+                                                        <rect key="frame" x="0.0" y="126" width="353" height="41"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ly9-mb-21K">
-                                                                <rect key="frame" x="0.0" y="0.0" width="82.666666666666671" height="40.666666666666664"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="82.5" height="41"/>
                                                                 <attributedString key="attributedText">
                                                                     <fragment content="Math">
                                                                         <attributes>
@@ -237,16 +240,19 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vsm-uW-33c">
-                                                                <rect key="frame" x="235.66666666666666" y="0.0" width="117.33333333333334" height="40.666666666666664"/>
+                                                                <rect key="frame" x="235.5" y="0.0" width="117.5" height="41"/>
                                                                 <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="View All">
                                                                     <imageReference key="image" image="chevron.right" catalog="system" symbolScale="medium"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="mathViewAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ERS-aX-CWX"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <viewLayoutGuide key="safeArea" id="gaa-ln-u3G"/>
                                                     </stackView>
                                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yeA-ew-jsg">
-                                                        <rect key="frame" x="0.0" y="559.33333333333337" width="353" height="110"/>
+                                                        <rect key="frame" x="0.0" y="560" width="353" height="110"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LB3-93-h3z" userLabel="Content View">
                                                                 <rect key="frame" x="0.0" y="0.0" width="440" height="110"/>
@@ -261,8 +267,8 @@
                                                                                     <constraint firstAttribute="width" constant="100" id="DHG-9d-vUZ"/>
                                                                                 </constraints>
                                                                                 <state key="normal" title="Button"/>
-                                                                                <buttonConfiguration key="configuration" style="filled" title="Play" cornerStyle="medium">
-                                                                                    <backgroundConfiguration key="background">
+                                                                                <buttonConfiguration key="configuration" style="filled" title="Shapes" cornerStyle="medium">
+                                                                                    <backgroundConfiguration key="background" image="Shapes and Spatial Understanding" imageContentMode="scaleAspectFill">
                                                                                         <color key="strokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                     </backgroundConfiguration>
                                                                                     <color key="baseForegroundColor" systemColor="labelColor"/>
@@ -280,15 +286,7 @@
                                                                                     <backgroundConfiguration key="background">
                                                                                         <color key="strokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                     </backgroundConfiguration>
-                                                                                    <attributedString key="attributedTitle">
-                                                                                        <fragment content="Skip To AR">
-                                                                                            <attributes>
-                                                                                                <font key="NSFont" size="16" name="Helvetica"/>
-                                                                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                                            </attributes>
-                                                                                        </fragment>
-                                                                                    </attributedString>
+                                                                                    <attributedString key="attributedTitle"/>
                                                                                     <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                     <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 </buttonConfiguration>
@@ -305,9 +303,7 @@
                                                                                     <backgroundConfiguration key="background">
                                                                                         <color key="strokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                     </backgroundConfiguration>
-                                                                                    <attributedString key="attributedTitle">
-                                                                                        <fragment content="Take Quiz"/>
-                                                                                    </attributedString>
+                                                                                    <attributedString key="attributedTitle"/>
                                                                                     <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                     <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 </buttonConfiguration>
@@ -359,11 +355,11 @@
                                                         </constraints>
                                                     </scrollView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="119" id="lId-9p-tEj">
-                                                        <rect key="frame" x="0.0" y="186" width="353" height="40.666666666666657"/>
+                                                        <rect key="frame" x="0.0" y="187" width="353" height="41"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXu-QR-vOp">
-                                                                <rect key="frame" x="0.0" y="0.0" width="125.33333333333333" height="40.666666666666664"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="125.5" height="41"/>
                                                                 <attributedString key="attributedText">
                                                                     <fragment content="Physics">
                                                                         <attributes>
@@ -376,16 +372,19 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PbZ-OQ-Pgy">
-                                                                <rect key="frame" x="244.33333333333329" y="0.0" width="108.66666666666666" height="40.666666666666664"/>
+                                                                <rect key="frame" x="244.5" y="0.0" width="108.5" height="41"/>
                                                                 <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="View All">
                                                                     <imageReference key="image" image="chevron.right" catalog="system" symbolScale="medium"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="physicsViewAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5rz-2e-9DJ"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <viewLayoutGuide key="safeArea" id="RBo-ra-e21"/>
                                                     </stackView>
                                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKs-8D-z1S">
-                                                        <rect key="frame" x="0.0" y="730" width="353" height="110"/>
+                                                        <rect key="frame" x="0.0" y="731" width="353" height="110"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UNE-xY-JUB" userLabel="Content View">
                                                                 <rect key="frame" x="0.0" y="0.0" width="440" height="110"/>
@@ -400,7 +399,7 @@
                                                                                     <constraint firstAttribute="width" constant="100" id="ghJ-2R-bPK"/>
                                                                                 </constraints>
                                                                                 <state key="normal" title="Button"/>
-                                                                                <buttonConfiguration key="configuration" style="filled" title="Play" cornerStyle="medium">
+                                                                                <buttonConfiguration key="configuration" style="filled" title="" cornerStyle="medium">
                                                                                     <backgroundConfiguration key="background">
                                                                                         <color key="strokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                     </backgroundConfiguration>
@@ -419,15 +418,7 @@
                                                                                     <backgroundConfiguration key="background">
                                                                                         <color key="strokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                     </backgroundConfiguration>
-                                                                                    <attributedString key="attributedTitle">
-                                                                                        <fragment content="Skip To AR">
-                                                                                            <attributes>
-                                                                                                <font key="NSFont" size="16" name="Helvetica"/>
-                                                                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                                            </attributes>
-                                                                                        </fragment>
-                                                                                    </attributedString>
+                                                                                    <attributedString key="attributedTitle"/>
                                                                                     <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                     <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 </buttonConfiguration>
@@ -444,9 +435,7 @@
                                                                                     <backgroundConfiguration key="background">
                                                                                         <color key="strokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                     </backgroundConfiguration>
-                                                                                    <attributedString key="attributedTitle">
-                                                                                        <fragment content="Take Quiz"/>
-                                                                                    </attributedString>
+                                                                                    <attributedString key="attributedTitle"/>
                                                                                     <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                     <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 </buttonConfiguration>
@@ -498,15 +487,15 @@
                                                         </constraints>
                                                     </scrollView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="119" id="d7t-gG-Vvf">
-                                                        <rect key="frame" x="0.0" y="246.66666666666666" width="353" height="40.666666666666657"/>
+                                                        <rect key="frame" x="0.0" y="248" width="353" height="41"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQr-pq-rrG">
-                                                                <rect key="frame" x="0.0" y="0.0" width="121.66666666666667" height="40.666666666666664"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="121.5" height="41"/>
                                                                 <attributedString key="attributedText">
                                                                     <fragment content="Biology">
                                                                         <attributes>
-                                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                            <color key="NSColor" red="0.029149666428565979" green="0.054458357393741608" blue="0.032235510647296906" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <font key="NSFont" size="34" name="HelveticaNeue-Bold"/>
                                                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                         </attributes>
@@ -515,16 +504,19 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kV7-PE-WHB">
-                                                                <rect key="frame" x="240.66666666666671" y="0.0" width="112.33333333333334" height="40.666666666666664"/>
+                                                                <rect key="frame" x="240.5" y="0.0" width="112.5" height="41"/>
                                                                 <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="View All">
                                                                     <imageReference key="image" image="chevron.right" catalog="system" symbolScale="medium"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="bioViewAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9US-ED-Kbf"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <viewLayoutGuide key="safeArea" id="bmU-z4-uEV"/>
                                                     </stackView>
                                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzK-IO-d1J">
-                                                        <rect key="frame" x="0.0" y="900.66666666666663" width="353" height="110"/>
+                                                        <rect key="frame" x="0.0" y="902" width="353" height="110"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YHx-yl-Akx" userLabel="Content View">
                                                                 <rect key="frame" x="0.0" y="0.0" width="440" height="110"/>
@@ -636,6 +628,152 @@
                                                             <constraint firstAttribute="trailing" secondItem="YHx-yl-Akx" secondAttribute="trailing" id="rWJ-kf-DJo"/>
                                                         </constraints>
                                                     </scrollView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="76" id="wmt-c8-M2T">
+                                                        <rect key="frame" x="0.0" y="309" width="353" height="41"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdR-Rg-b1p">
+                                                                <rect key="frame" x="0.0" y="0.0" width="166" height="41"/>
+                                                                <attributedString key="attributedText">
+                                                                    <fragment content="Chemistry">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.029149666428565979" green="0.054458357393741608" blue="0.032235510647296906" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <font key="NSFont" size="34" name="HelveticaNeue-Bold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                </attributedString>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eim-vv-m3p">
+                                                                <rect key="frame" x="242" y="0.0" width="111" height="41"/>
+                                                                <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="View All">
+                                                                    <imageReference key="image" image="chevron.right" catalog="system" symbolScale="medium"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="bioViewAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ha-EO-7PT"/>
+                                                                    <action selector="chemViewAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d81-jb-QWF"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <viewLayoutGuide key="safeArea" id="KIc-z5-MWU"/>
+                                                    </stackView>
+                                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcn-ju-wxe">
+                                                        <rect key="frame" x="0.0" y="1073" width="353" height="110"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YQe-n5-6TQ" userLabel="Content View">
+                                                                <rect key="frame" x="0.0" y="0.0" width="440" height="110"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="5mC-tH-Dp4">
+                                                                        <rect key="frame" x="0.0" y="5" width="436" height="100"/>
+                                                                        <subviews>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pY-yf-Oon">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="100" id="4tG-vT-DX4"/>
+                                                                                    <constraint firstAttribute="width" constant="100" id="hYR-t4-H5J"/>
+                                                                                </constraints>
+                                                                                <state key="normal" title="Button"/>
+                                                                                <buttonConfiguration key="configuration" style="filled" title="Matter" cornerStyle="medium">
+                                                                                    <backgroundConfiguration key="background" image="Screenshot 2023-02-12 at 2.31.58 AM">
+                                                                                        <color key="strokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                                    </backgroundConfiguration>
+                                                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                                                                </buttonConfiguration>
+                                                                            </button>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxi-9t-cZW">
+                                                                                <rect key="frame" x="112" y="0.0" width="100" height="100"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="100" id="riM-4W-Hsq"/>
+                                                                                    <constraint firstAttribute="width" constant="100" id="zEN-Nh-oiX"/>
+                                                                                </constraints>
+                                                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <state key="normal" title="Button"/>
+                                                                                <buttonConfiguration key="configuration" style="tinted" cornerStyle="medium" titleAlignment="center">
+                                                                                    <backgroundConfiguration key="background">
+                                                                                        <color key="strokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                                    </backgroundConfiguration>
+                                                                                    <attributedString key="attributedTitle">
+                                                                                        <fragment content="Physical and Chemical Changes">
+                                                                                            <attributes>
+                                                                                                <font key="NSFont" size="15" name="Helvetica"/>
+                                                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                                            </attributes>
+                                                                                        </fragment>
+                                                                                    </attributedString>
+                                                                                    <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                                    <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                </buttonConfiguration>
+                                                                            </button>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mk6-Xg-skG">
+                                                                                <rect key="frame" x="224" y="0.0" width="100" height="100"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="100" id="1zZ-dG-Gfl"/>
+                                                                                    <constraint firstAttribute="width" constant="100" id="Wye-Bi-UL7"/>
+                                                                                </constraints>
+                                                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <state key="normal" title="Button"/>
+                                                                                <buttonConfiguration key="configuration" style="tinted" cornerStyle="medium">
+                                                                                    <backgroundConfiguration key="background">
+                                                                                        <color key="strokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                                    </backgroundConfiguration>
+                                                                                    <attributedString key="attributedTitle">
+                                                                                        <fragment content="Elements, Compounds and Mixtures">
+                                                                                            <attributes>
+                                                                                                <font key="NSFont" size="14" name="Helvetica"/>
+                                                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                                            </attributes>
+                                                                                        </fragment>
+                                                                                    </attributedString>
+                                                                                    <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                                    <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                </buttonConfiguration>
+                                                                            </button>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idU-50-wO6">
+                                                                                <rect key="frame" x="336" y="0.0" width="100" height="100"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="100" id="cxf-BS-5L7"/>
+                                                                                    <constraint firstAttribute="width" constant="100" id="rzH-s8-K7k"/>
+                                                                                </constraints>
+                                                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <state key="normal" title="Button"/>
+                                                                                <buttonConfiguration key="configuration" style="tinted" cornerStyle="medium">
+                                                                                    <backgroundConfiguration key="background">
+                                                                                        <color key="strokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                                    </backgroundConfiguration>
+                                                                                    <attributedString key="attributedTitle">
+                                                                                        <fragment content="Atomic Structure">
+                                                                                            <attributes>
+                                                                                                <font key="NSFont" size="15" name="Helvetica"/>
+                                                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                                            </attributes>
+                                                                                        </fragment>
+                                                                                    </attributedString>
+                                                                                    <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                                    <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                </buttonConfiguration>
+                                                                            </button>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="440" id="HvT-ej-iST"/>
+                                                                    <constraint firstItem="5mC-tH-Dp4" firstAttribute="centerY" secondItem="YQe-n5-6TQ" secondAttribute="centerY" id="Sfc-lB-2Ko"/>
+                                                                    <constraint firstItem="5mC-tH-Dp4" firstAttribute="leading" secondItem="YQe-n5-6TQ" secondAttribute="leading" id="U07-Au-4Xs"/>
+                                                                    <constraint firstAttribute="height" constant="110" id="cre-dL-6cH"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                        <viewLayoutGuide key="safeArea" id="qfl-5e-4f7"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="YQe-n5-6TQ" secondAttribute="bottom" id="0Tp-s9-s7O"/>
+                                                            <constraint firstItem="YQe-n5-6TQ" firstAttribute="top" secondItem="Zcn-ju-wxe" secondAttribute="top" id="24k-E0-aHo"/>
+                                                            <constraint firstAttribute="trailing" secondItem="YQe-n5-6TQ" secondAttribute="trailing" id="B31-VB-YlZ"/>
+                                                            <constraint firstAttribute="height" constant="110" id="G9O-0q-e5A"/>
+                                                            <constraint firstItem="YQe-n5-6TQ" firstAttribute="leading" secondItem="qfl-5e-4f7" secondAttribute="leading" id="WBd-Ee-28z"/>
+                                                            <constraint firstItem="YQe-n5-6TQ" firstAttribute="leading" secondItem="Zcn-ju-wxe" secondAttribute="leading" id="yFc-se-tqq"/>
+                                                        </constraints>
+                                                    </scrollView>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
@@ -668,42 +806,74 @@
                     </view>
                     <navigationItem key="navigationItem" id="PyS-k1-BVD"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="hAC-Hw-A32" kind="show" identifier="subjectSegue" id="jS9-E7-9xR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="119" id="Ql5-Ji-PYS">
+                    <rect key="frame" x="0.0" y="0.0" width="353" height="40.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGV-EW-zty">
+                            <rect key="frame" x="0.0" y="0.0" width="121.5" height="40.5"/>
+                            <attributedString key="attributedText">
+                                <fragment content="Biology">
+                                    <attributes>
+                                        <color key="NSColor" red="0.029149666428565979" green="0.054458357393741608" blue="0.032235510647296906" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" size="34" name="HelveticaNeue-Bold"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaK-Xo-Hw2">
+                            <rect key="frame" x="240.5" y="0.0" width="112.5" height="40.5"/>
+                            <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="View All">
+                                <imageReference key="image" image="chevron.right" catalog="system" symbolScale="medium"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="bioViewAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UPw-f0-6LD"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="g4c-Pa-NK7"/>
+                </stackView>
             </objects>
-            <point key="canvasLocation" x="3380.9160305343512" y="-365.49295774647891"/>
+            <point key="canvasLocation" x="3393" y="-399"/>
         </scene>
         <!--Topic View Controller-->
         <scene sceneID="Y0n-19-6RE">
             <objects>
                 <viewController title="Topic View Controller" id="45r-Qx-dZ1" customClass="TopicViewController" customModule="AugmentedGrowth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QU6-d8-OEP">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Jupiter_1" translatesAutoresizingMaskIntoConstraints="NO" id="Fxm-8G-srL">
-                                <rect key="frame" x="0.0" y="155" width="393" height="614"/>
+                                <rect key="frame" x="0.0" y="126" width="1024" height="1175"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zj-gP-EW9">
-                                <rect key="frame" x="0.0" y="155" width="393" height="614"/>
+                                <rect key="frame" x="0.0" y="126" width="1024" height="1175"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ws9-Ir-FP2">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1200"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1200"/>
                                         <subviews>
                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.33000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="LEw-H5-e2E">
-                                                <rect key="frame" x="20" y="42.333333333333343" width="353" height="2.6666666666666643"/>
+                                                <rect key="frame" x="20" y="42.5" width="984" height="2.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="progressTintColor" systemColor="systemGreenColor"/>
                                             </progressView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Difficulty Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Upu-0R-Rw3">
-                                                <rect key="frame" x="42" y="27" width="183" height="30"/>
+                                                <rect key="frame" x="42" y="27" width="814" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" red="0.948436439037323" green="0.98507434129714966" blue="0.95706695318222046" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0s-yn-ChL">
-                                                <rect key="frame" x="0.0" y="110" width="393" height="110"/>
+                                                <rect key="frame" x="0.0" y="110" width="1024" height="110"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DEB-er-S5H" userLabel="Content View">
                                                         <rect key="frame" x="0.0" y="0.0" width="480" height="110"/>
@@ -717,6 +887,7 @@
                                                                             <constraint firstAttribute="height" constant="100" id="CFf-6D-C39"/>
                                                                             <constraint firstAttribute="width" constant="100" id="G6q-tX-jxu"/>
                                                                         </constraints>
+                                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="filled" title="Play" cornerStyle="medium">
                                                                             <backgroundConfiguration key="background" image="Jupiter_1" imageContentMode="scaleAspectFill">
@@ -734,12 +905,13 @@
                                                                         <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="tinted" cornerStyle="medium" titleAlignment="center">
-                                                                            <backgroundConfiguration key="background">
+                                                                            <backgroundConfiguration key="background" image="Skip to AR" imageContentMode="scaleAspectFill">
                                                                                 <color key="strokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                             </backgroundConfiguration>
                                                                             <attributedString key="attributedTitle">
                                                                                 <fragment content="Skip To AR">
                                                                                     <attributes>
+                                                                                        <color key="NSColor" red="0.070979274809360504" green="0.061954952776432037" blue="0.020535871386528015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                         <font key="NSFont" size="16" name="Helvetica"/>
                                                                                         <font key="NSOriginalFont" size="12" name="Helvetica"/>
                                                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -759,7 +931,7 @@
                                                                         <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="tinted" cornerStyle="medium">
-                                                                            <backgroundConfiguration key="background">
+                                                                            <backgroundConfiguration key="background" image="Take Quiz" imageContentMode="scaleAspectFill">
                                                                                 <color key="strokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                             </backgroundConfiguration>
                                                                             <attributedString key="attributedTitle">
@@ -778,7 +950,7 @@
                                                                         <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="tinted" cornerStyle="medium">
-                                                                            <backgroundConfiguration key="background">
+                                                                            <backgroundConfiguration key="background" image="Additional Links" imageContentMode="scaleAspectFill">
                                                                                 <color key="strokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                             </backgroundConfiguration>
                                                                             <attributedString key="attributedTitle">
@@ -814,14 +986,14 @@
                                                 </constraints>
                                             </scrollView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="py2-im-oc7">
-                                                <rect key="frame" x="20" y="260" width="353.33333333333331" height="40.666666666666686"/>
+                                                <rect key="frame" x="20" y="260" width="353" height="41"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yik-W8-zFt">
-                                                        <rect key="frame" x="0.0" y="0.0" width="218.66666666666666" height="40.666666666666664"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="218.5" height="41"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="More in Topic">
                                                                 <attributes>
-                                                                    <color key="NSColor" red="0.029910903424024582" green="0.048811234533786774" blue="0.053486309945583344" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <color key="NSColor" red="0.031679533421993256" green="0.062318690121173859" blue="0.022007506340742111" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <font key="NSFont" size="34" name="HelveticaNeue-Bold"/>
                                                                 </attributes>
                                                             </fragment>
@@ -829,7 +1001,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sqa-aA-Lxv">
-                                                        <rect key="frame" x="256.66666666666669" y="0.0" width="96.666666666666686" height="40.666666666666664"/>
+                                                        <rect key="frame" x="256.5" y="0.0" width="96.5" height="41"/>
                                                         <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="View All">
                                                             <imageReference key="image" image="chevron.right" catalog="system" symbolScale="medium"/>
                                                         </buttonConfiguration>
@@ -837,7 +1009,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ckG-QB-QgE">
-                                                <rect key="frame" x="20" y="340.66666666666674" width="353" height="660"/>
+                                                <rect key="frame" x="20" y="321" width="353" height="660"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6l-aS-AYT">
                                                         <rect key="frame" x="0.0" y="0.0" width="353" height="120"/>
@@ -845,35 +1017,58 @@
                                                             <constraint firstAttribute="width" constant="353" id="08i-l9-Wfj"/>
                                                             <constraint firstAttribute="height" constant="120" id="TMS-1Y-gqt"/>
                                                         </constraints>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="tinted" title="Topic 1" cornerStyle="medium"/>
+                                                        <buttonConfiguration key="configuration" style="tinted" title="Journey to Outer Space" cornerStyle="medium">
+                                                            <backgroundConfiguration key="background" image="journey to outer space">
+                                                                <color key="strokeColor" systemColor="labelColor"/>
+                                                            </backgroundConfiguration>
+                                                            <color key="baseForegroundColor" red="0.070979274809360504" green="0.061954952776432037" blue="0.020535871386528015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </buttonConfiguration>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDB-oS-h2N">
-                                                        <rect key="frame" x="0.0" y="134.99999999999994" width="353" height="120"/>
+                                                        <rect key="frame" x="0.0" y="135" width="353" height="120"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="120" id="eQ0-x9-Nhu"/>
                                                             <constraint firstAttribute="width" constant="353" id="pAJ-rd-Y7o"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="tinted" title="Topic 2" cornerStyle="medium"/>
+                                                        <color key="tintColor" red="0.070979274809360504" green="0.061954952776432037" blue="0.020535871386528015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Saturn's Rings" backgroundImage="Saturn's Rings"/>
+                                                        <buttonConfiguration key="configuration" style="tinted" title="Saturn's Rings" cornerStyle="medium">
+                                                            <backgroundConfiguration key="background" image="Saturn's Rings" imageContentMode="scaleAspectFill">
+                                                                <color key="strokeColor" red="0.031344655901193619" green="0.062912024557590485" blue="0.062083341181278229" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </backgroundConfiguration>
+                                                        </buttonConfiguration>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDt-Qr-MGt">
-                                                        <rect key="frame" x="0.0" y="269.99999999999994" width="353" height="120"/>
+                                                        <rect key="frame" x="0.0" y="270" width="353" height="120"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="120" id="WdP-fI-6fj"/>
                                                             <constraint firstAttribute="width" constant="353" id="m62-yL-RKu"/>
                                                         </constraints>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="tinted" title="Topic 1" cornerStyle="medium"/>
+                                                        <buttonConfiguration key="configuration" style="tinted" title="The Asteroid Belt" cornerStyle="medium">
+                                                            <backgroundConfiguration key="background" image="The Asteroid Belt" imageContentMode="scaleAspectFill">
+                                                                <color key="strokeColor" red="0.031344655901193619" green="0.062912024557590485" blue="0.062083341181278229" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </backgroundConfiguration>
+                                                        </buttonConfiguration>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8s-QX-K2g">
-                                                        <rect key="frame" x="0.0" y="404.99999999999994" width="353" height="120.00000000000006"/>
+                                                        <rect key="frame" x="0.0" y="405" width="353" height="120"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="353" id="Rho-ph-7aA"/>
                                                             <constraint firstAttribute="height" constant="120" id="kgq-kr-mef"/>
                                                         </constraints>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="tinted" title="Topic 1" cornerStyle="medium"/>
+                                                        <buttonConfiguration key="configuration" style="tinted" title="Explore Venus" cornerStyle="medium">
+                                                            <backgroundConfiguration key="background" image="Explore Venus" imageContentMode="scaleAspectFill">
+                                                                <color key="strokeColor" red="0.031344655901193619" green="0.062912024557590485" blue="0.062083341181278229" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </backgroundConfiguration>
+                                                        </buttonConfiguration>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZsQ-sz-rmc">
                                                         <rect key="frame" x="0.0" y="540" width="353" height="120"/>
@@ -903,7 +1098,7 @@
                                             <constraint firstItem="Upu-0R-Rw3" firstAttribute="top" secondItem="ws9-Ir-FP2" secondAttribute="top" constant="27" id="d4G-X5-dJt"/>
                                             <constraint firstAttribute="trailing" secondItem="m0s-yn-ChL" secondAttribute="trailing" id="dU8-BG-ih4"/>
                                             <constraint firstAttribute="trailing" secondItem="Upu-0R-Rw3" secondAttribute="trailing" constant="168" id="j9M-R6-3Li"/>
-                                            <constraint firstItem="ckG-QB-QgE" firstAttribute="top" secondItem="py2-im-oc7" secondAttribute="bottom" constant="40" id="nlq-f2-L1D"/>
+                                            <constraint firstItem="ckG-QB-QgE" firstAttribute="top" secondItem="py2-im-oc7" secondAttribute="bottom" constant="20" id="nlq-f2-L1D"/>
                                             <constraint firstAttribute="trailing" secondItem="LEw-H5-e2E" secondAttribute="trailing" constant="20" id="z5p-Ay-Ezc"/>
                                         </constraints>
                                     </view>
@@ -917,7 +1112,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uZ1-Ld-JEH"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="4zj-gP-EW9" firstAttribute="trailing" secondItem="uZ1-Ld-JEH" secondAttribute="trailing" id="6BF-pk-uNl"/>
                             <constraint firstItem="4zj-gP-EW9" firstAttribute="top" secondItem="uZ1-Ld-JEH" secondAttribute="top" id="8tY-l9-34C"/>
@@ -966,7 +1161,7 @@
             <objects>
                 <viewController id="dYh-o8-XUe" customClass="SearchViewController" customModule="AugmentedGrowth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UZ1-ED-uoz" customClass="topic">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="D6A-oQ-0v5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -983,7 +1178,7 @@
                 <navigationController id="8Z3-Yi-r99" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="MYv-j9-4am"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="MbA-5W-srI">
-                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <rect key="frame" x="0.0" y="24" width="1024" height="102"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -1000,7 +1195,7 @@
                 <navigationController id="P7C-xq-xD0" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Topics" image="list.clipboard.fill" catalog="system" id="OZg-E4-CHg"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="4kQ-1C-30q">
-                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <rect key="frame" x="0.0" y="24" width="1024" height="102"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -1015,45 +1210,78 @@
         <scene sceneID="utL-6Q-EBo">
             <objects>
                 <tableViewController title="Topics" id="SF1-Tb-AL4" customClass="TopicListTableViewController" customModule="AugmentedGrowth" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="tgm-Q1-8Oo">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="tgm-Q1-8Oo">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="0F9-1d-K0v">
-                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ClassCell" id="0F9-1d-K0v">
+                                <rect key="frame" x="0.0" y="38" width="1024" height="51.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0F9-1d-K0v" id="veo-r8-vrw">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="51.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="SF1-Tb-AL4" id="j7k-M4-91o"/>
                             <outlet property="delegate" destination="SF1-Tb-AL4" id="b3c-0u-y5Q"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Topics" id="rWS-87-W7c"/>
+                    <connections>
+                        <segue destination="hAC-Hw-A32" kind="show" identifier="subjectTableView" id="96i-IM-b3N"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8QR-py-pDs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1946" y="1127"/>
+            <point key="canvasLocation" x="3048" y="949"/>
+        </scene>
+        <!--Subject-->
+        <scene sceneID="Cfv-oC-pAP">
+            <objects>
+                <tableViewController id="hAC-Hw-A32" customClass="SubjectTableViewController" customModule="AugmentedGrowth" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="BbL-Jp-e38">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="subtopicCell" id="gYU-rG-fGS">
+                                <rect key="frame" x="0.0" y="50" width="1024" height="51.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gYU-rG-fGS" id="tbJ-fz-P91">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="51.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="hAC-Hw-A32" id="nJ2-Qa-6aF"/>
+                            <outlet property="delegate" destination="hAC-Hw-A32" id="oQ1-dj-6Ow"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Subject" id="93M-Qu-tTj"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RK9-L8-NSL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4094" y="604"/>
         </scene>
         <!--More-->
         <scene sceneID="Scu-1l-Uai">
             <objects>
                 <tableViewController id="yZW-4f-G9a" customClass="MoreTableViewController" customModule="AugmentedGrowth" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="9ob-Tb-2zq">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="27j-56-g4h">
-                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="1024" height="51.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="27j-56-g4h" id="1Va-mN-yeU">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="51.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -1069,13 +1297,28 @@
             </objects>
             <point key="canvasLocation" x="555" y="1968"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="kjp-J1-X9D">
+            <objects>
+                <viewController id="oux-ex-ipw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8ja-xb-7yR">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Mco-DU-gtW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K9r-Ze-eCP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="338" y="3530"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="MJw-fe-sUU">
             <objects>
                 <navigationController id="nZq-jy-eAh" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="more" id="a4h-iW-91h"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="pya-fN-8D6">
-                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <rect key="frame" x="0.0" y="24" width="1024" height="102"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -1087,8 +1330,19 @@
             <point key="canvasLocation" x="-294" y="1968"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="jS9-E7-9xR"/>
+    </inferredMetricsTieBreakers>
     <resources>
+        <image name="Additional Links" width="354" height="142"/>
+        <image name="Explore Venus" width="1280" height="800"/>
         <image name="Jupiter_1" width="1200" height="675"/>
+        <image name="Saturn's Rings" width="1024" height="768"/>
+        <image name="Screenshot 2023-02-12 at 2.31.58 AM" width="984" height="878"/>
+        <image name="Shapes and Spatial Understanding" width="300" height="168"/>
+        <image name="Skip to AR" width="959" height="639"/>
+        <image name="Take Quiz" width="4604" height="2722"/>
+        <image name="The Asteroid Belt" width="300" height="168"/>
         <image name="chevron.right" catalog="system" width="97" height="128"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="journey to outer space" width="500" height="281"/>
