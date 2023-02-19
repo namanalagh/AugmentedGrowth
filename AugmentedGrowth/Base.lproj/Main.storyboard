@@ -1327,14 +1327,13 @@
                         <segue destination="4Cj-x8-uX5" kind="relationship" relationship="viewControllers" id="pmA-gz-6zb"/>
                         <segue destination="4P8-4l-FHs" kind="relationship" relationship="viewControllers" id="akT-4o-qrf"/>
                         <segue destination="bDk-3E-Zdo" kind="relationship" relationship="viewControllers" id="nqD-xn-Vrd"/>
-                        <segue destination="ZAE-L9-2ff" kind="relationship" relationship="viewControllers" id="Jfw-20-mN2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IOV-eC-jva" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1984" y="4537"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Home-->
         <scene sceneID="poU-6K-gW0">
             <objects>
                 <tableViewController id="681-bQ-fZJ" sceneMemberID="viewController">
@@ -1357,7 +1356,7 @@
                             <outlet property="delegate" destination="681-bQ-fZJ" id="6Tw-BJ-WHh"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="8Z3-oN-OcC"/>
+                    <navigationItem key="navigationItem" title="Home" id="8Z3-oN-OcC"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Swd-w6-bek" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1392,11 +1391,11 @@
             </objects>
             <point key="canvasLocation" x="2046" y="4150"/>
         </scene>
-        <!--Item-->
+        <!--Search-->
         <scene sceneID="Hp4-Wg-PzX">
             <objects>
                 <navigationController id="4P8-4l-FHs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="oNr-MZ-EcN"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="oNr-MZ-EcN"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yMI-sD-Mx9">
                         <rect key="frame" x="0.0" y="59" width="430" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1409,11 +1408,11 @@
             </objects>
             <point key="canvasLocation" x="1164" y="4150"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="TLd-s1-d7l">
             <objects>
                 <navigationController id="4Cj-x8-uX5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="EdW-n3-yhs"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="EdW-n3-yhs"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="taK-5K-7Ev">
                         <rect key="frame" x="0.0" y="59" width="430" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1426,7 +1425,7 @@
             </objects>
             <point key="canvasLocation" x="1250" y="3348"/>
         </scene>
-        <!--Root View Controller-->
+        <!--More-->
         <scene sceneID="pja-nw-qJi">
             <objects>
                 <tableViewController id="dcO-Iv-OxZ" sceneMemberID="viewController">
@@ -1449,19 +1448,19 @@
                             <outlet property="delegate" destination="dcO-Iv-OxZ" id="t9g-Oi-9Qe"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="UO8-SC-eag"/>
+                    <navigationItem key="navigationItem" title="More" id="UO8-SC-eag"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5xT-Ef-Wme" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2046" y="5017"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="WeF-hH-HQo">
             <objects>
                 <navigationController id="bDk-3E-Zdo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="vfB-8u-MNM"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Boc-vm-H72">
-                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="vfB-8u-MNM"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Boc-vm-H72">
+                        <rect key="frame" x="0.0" y="59" width="430" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
