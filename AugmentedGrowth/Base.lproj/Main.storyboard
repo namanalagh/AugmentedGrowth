@@ -254,24 +254,24 @@
             <objects>
                 <viewController id="SNx-DP-cK6" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gfR-5a-grh">
-                        <rect key="frame" x="0.0" y="0.0" width="4000" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="8000" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKb-sY-fYK">
-                                <rect key="frame" x="0.0" y="0.0" width="4000" height="1366"/>
+                                <rect key="frame" x="0.0" y="0.0" width="8000" height="1366"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3lN-HS-i3g">
-                                        <rect key="frame" x="0.0" y="0.0" width="4000" height="1170"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="8000" height="1170"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Space Background" translatesAutoresizingMaskIntoConstraints="NO" id="hG3-d7-sMf">
-                                                <rect key="frame" x="0.0" y="0.0" width="4000" height="1170"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="8000" height="1170"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnA-PL-sPB">
-                                                <rect key="frame" x="-500" y="85" width="1000" height="1000"/>
+                                                <rect key="frame" x="-500" y="-15" width="1200" height="1200"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="1000" id="tTn-yx-mLl"/>
-                                                    <constraint firstAttribute="height" constant="1000" id="z3I-9G-ZT6"/>
+                                                    <constraint firstAttribute="width" constant="1200" id="tTn-yx-mLl"/>
+                                                    <constraint firstAttribute="height" constant="1200" id="z3I-9G-ZT6"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
@@ -279,7 +279,7 @@
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMO-3w-nK9">
-                                                <rect key="frame" x="750" y="360" width="150" height="150"/>
+                                                <rect key="frame" x="950" y="360" width="150" height="150"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" id="pn1-aL-yX7"/>
                                                     <constraint firstAttribute="width" constant="150" id="z1I-2I-b50"/>
@@ -290,7 +290,7 @@
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAs-nj-YPF">
-                                                <rect key="frame" x="1050" y="449" width="250" height="250"/>
+                                                <rect key="frame" x="1250" y="449" width="250" height="250"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="250" id="bVk-E2-onW"/>
                                                     <constraint firstAttribute="height" constant="250" id="cQL-p9-jve"/>
@@ -301,7 +301,7 @@
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TWX-d3-udP">
-                                                <rect key="frame" x="1550" y="379" width="300" height="300"/>
+                                                <rect key="frame" x="1750" y="379" width="300" height="300"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="300" id="Ugr-oK-Fll"/>
                                                     <constraint firstAttribute="width" constant="300" id="WIR-ic-MAp"/>
@@ -312,7 +312,7 @@
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXt-ig-AhI">
-                                                <rect key="frame" x="2250" y="547" width="200" height="200"/>
+                                                <rect key="frame" x="2450" y="547" width="200" height="200"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="200" id="fOI-Hr-6MD"/>
                                                     <constraint firstAttribute="height" constant="200" id="fza-oT-PX5"/>
@@ -322,28 +322,72 @@
                                                     <backgroundConfiguration key="background" image="planet-mars-illustration-by-Vexels"/>
                                                 </buttonConfiguration>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbf-jy-N0s">
-                                                <rect key="frame" x="3321" y="171" width="650" height="650"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbf-jy-N0s">
+                                                <rect key="frame" x="3450" y="171" width="750" height="750"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="750" id="0Wo-N4-0fM"/>
+                                                    <constraint firstAttribute="height" constant="750" id="PCI-zA-mDt"/>
+                                                </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
                                                     <backgroundConfiguration key="background" image="jupiter-planet-illustration-by-Vexels"/>
                                                 </buttonConfiguration>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6N-bB-s4s">
+                                                <rect key="frame" x="4800" y="360" width="750" height="750"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="750" id="JlP-m1-StA"/>
+                                                    <constraint firstAttribute="width" constant="750" id="MY2-g4-BBP"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="saturn-planet-illustration-by-Vexels"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heL-7H-DUm">
+                                                <rect key="frame" x="6150" y="321" width="550" height="550"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="550" id="8nD-dl-1hJ"/>
+                                                    <constraint firstAttribute="width" constant="550" id="urc-Qf-9Nl"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="planet-uranus-illustration-by-Vexels"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tT-IQ-KtG">
+                                                <rect key="frame" x="7300" y="349" width="450" height="450"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="450" id="S2B-k2-e0I"/>
+                                                    <constraint firstAttribute="width" constant="450" id="rFn-eB-QE6"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="neptune-planet-illustration-by-Vexels"/>
+                                                </buttonConfiguration>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstItem="5tT-IQ-KtG" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="349" id="2Y8-Xu-Wpg"/>
                                             <constraint firstItem="zMO-3w-nK9" firstAttribute="leading" secondItem="nnA-PL-sPB" secondAttribute="trailing" constant="250" id="334-wH-Hve"/>
                                             <constraint firstItem="zMO-3w-nK9" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="360" id="ABx-Te-IRO"/>
-                                            <constraint firstAttribute="width" constant="4000" id="AUL-hh-yUy"/>
+                                            <constraint firstAttribute="width" constant="8000" id="AUL-hh-yUy"/>
                                             <constraint firstItem="nnA-PL-sPB" firstAttribute="centerY" secondItem="3lN-HS-i3g" secondAttribute="centerY" id="LYi-DT-RTX"/>
                                             <constraint firstItem="TWX-d3-udP" firstAttribute="leading" secondItem="yAs-nj-YPF" secondAttribute="trailing" constant="250" id="LsO-1W-VqI"/>
+                                            <constraint firstItem="jbf-jy-N0s" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="171" id="QRW-0t-gFY"/>
+                                            <constraint firstItem="k6N-bB-s4s" firstAttribute="leading" secondItem="jbf-jy-N0s" secondAttribute="trailing" constant="600" id="R5U-x8-Eag"/>
+                                            <constraint firstItem="heL-7H-DUm" firstAttribute="leading" secondItem="k6N-bB-s4s" secondAttribute="trailing" constant="600" id="YuL-d4-Cz4"/>
                                             <constraint firstItem="LXt-ig-AhI" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="547" id="aQX-bY-PGi"/>
                                             <constraint firstItem="nnA-PL-sPB" firstAttribute="leading" secondItem="3lN-HS-i3g" secondAttribute="leading" constant="-500" id="aTf-An-P15"/>
+                                            <constraint firstItem="jbf-jy-N0s" firstAttribute="leading" secondItem="LXt-ig-AhI" secondAttribute="trailing" constant="800" id="aYP-Zx-gIV"/>
+                                            <constraint firstItem="heL-7H-DUm" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="321" id="bxE-Ha-k2V"/>
                                             <constraint firstItem="yAs-nj-YPF" firstAttribute="leading" secondItem="zMO-3w-nK9" secondAttribute="trailing" constant="150" id="cIl-mU-YEt"/>
+                                            <constraint firstItem="5tT-IQ-KtG" firstAttribute="leading" secondItem="heL-7H-DUm" secondAttribute="trailing" constant="600" id="dBh-Zp-a78"/>
                                             <constraint firstItem="LXt-ig-AhI" firstAttribute="leading" secondItem="TWX-d3-udP" secondAttribute="trailing" constant="400" id="fXb-in-88d"/>
                                             <constraint firstItem="TWX-d3-udP" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="379" id="h74-CN-l60"/>
                                             <constraint firstItem="yAs-nj-YPF" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="449" id="kK9-QK-tHy"/>
+                                            <constraint firstItem="k6N-bB-s4s" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="360" id="xrX-cf-3RY"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -366,7 +410,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Astronomy" id="uD2-ts-flY"/>
-                    <size key="freeformSize" width="4000" height="1366"/>
+                    <size key="freeformSize" width="8000" height="1366"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B9I-zl-UZx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -475,8 +519,11 @@
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="mercury-planet-illustration-by-Vexels" width="1920" height="1920"/>
         <image name="moon.stars.fill" catalog="system" width="125" height="128"/>
+        <image name="neptune-planet-illustration-by-Vexels" width="1920" height="1920"/>
         <image name="planet-mars-illustration-by-Vexels" width="1920" height="1920"/>
+        <image name="planet-uranus-illustration-by-Vexels" width="1920" height="1920"/>
         <image name="planet-venus-illustration-by-Vexels" width="1920" height="1920"/>
+        <image name="saturn-planet-illustration-by-Vexels" width="1920" height="1920"/>
         <image name="simple-earth-geometric-color-stroke-element-by-Vexels" width="1920" height="1920"/>
         <image name="sun-star-illustration-by-Vexels" width="1920" height="1920"/>
         <image name="testtube.2" catalog="system" width="128" height="119"/>
