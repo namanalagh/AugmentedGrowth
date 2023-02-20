@@ -27,35 +27,6 @@
             </objects>
             <point key="canvasLocation" x="-1984" y="4537"/>
         </scene>
-        <!--Root View Controller-->
-        <scene sceneID="bNC-Ba-QBh">
-            <objects>
-                <tableViewController id="OmD-OI-MWM" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="IA9-CT-ugA">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Yvi-1R-aUo">
-                                <rect key="frame" x="0.0" y="50" width="1024" height="51.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yvi-1R-aUo" id="MTL-Rj-Eu1">
-                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="51.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="OmD-OI-MWM" id="fX2-Oh-dmb"/>
-                            <outlet property="delegate" destination="OmD-OI-MWM" id="WIY-vN-64G"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="G9O-HL-MCS"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1aG-Mg-1W7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2019" y="4393"/>
-        </scene>
         <!--Search-->
         <scene sceneID="Hp4-Wg-PzX">
             <objects>
@@ -66,12 +37,28 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="OmD-OI-MWM" kind="relationship" relationship="rootViewController" id="2n8-n7-grc"/>
+                        <segue destination="Ouj-xi-VH4" kind="relationship" relationship="rootViewController" id="aht-Oj-cHo"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aou-3P-wVb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1101" y="4393"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="RcN-o7-xZV">
+            <objects>
+                <viewController id="Ouj-xi-VH4" customClass="SearchViewController" customModule="AugmentedGrowth" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JnD-3p-NYN">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="M1a-Sb-wHe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gV5-iP-fM0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nIl-BQ-PWb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1898" y="4345"/>
         </scene>
         <!--Home-->
         <scene sceneID="TLd-s1-d7l">
@@ -276,8 +263,11 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
-                                                    <backgroundConfiguration key="background" image="sun-star-illustration-by-Vexels"/>
+                                                    <backgroundConfiguration key="background" image="Sun"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="sunButtonPressed:" destination="SNx-DP-cK6" eventType="touchUpInside" id="xDy-Xc-BS2"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMO-3w-nK9">
                                                 <rect key="frame" x="950" y="360" width="150" height="150"/>
@@ -287,8 +277,11 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
-                                                    <backgroundConfiguration key="background" image="mercury-planet-illustration-by-Vexels"/>
+                                                    <backgroundConfiguration key="background" image="Mercury"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="mercuryButtonPressed:" destination="SNx-DP-cK6" eventType="touchUpInside" id="tMK-kU-S0M"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAs-nj-YPF">
                                                 <rect key="frame" x="1250" y="449" width="250" height="250"/>
@@ -298,8 +291,11 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
-                                                    <backgroundConfiguration key="background" image="planet-venus-illustration-by-Vexels"/>
+                                                    <backgroundConfiguration key="background" image="Venus"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="venusButtonPressed:" destination="SNx-DP-cK6" eventType="touchUpInside" id="kg4-nT-aoP"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TWX-d3-udP">
                                                 <rect key="frame" x="1750" y="379" width="300" height="300"/>
@@ -309,8 +305,11 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
-                                                    <backgroundConfiguration key="background" image="simple-earth-geometric-color-stroke-element-by-Vexels"/>
+                                                    <backgroundConfiguration key="background" image="Earth"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="earthButtonPressed:" destination="SNx-DP-cK6" eventType="touchUpInside" id="11c-1a-rrJ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXt-ig-AhI">
                                                 <rect key="frame" x="2450" y="547" width="200" height="200"/>
@@ -320,8 +319,11 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
-                                                    <backgroundConfiguration key="background" image="planet-mars-illustration-by-Vexels"/>
+                                                    <backgroundConfiguration key="background" image="Mars"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="marsButtonPressed:" destination="SNx-DP-cK6" eventType="touchUpInside" id="1di-DL-BtD"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbf-jy-N0s">
                                                 <rect key="frame" x="3450" y="171" width="750" height="750"/>
@@ -331,8 +333,11 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
-                                                    <backgroundConfiguration key="background" image="jupiter-planet-illustration-by-Vexels"/>
+                                                    <backgroundConfiguration key="background" image="Jupiter"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="jupiterButtonPressed:" destination="SNx-DP-cK6" eventType="touchUpInside" id="YPy-3a-0Gp"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6N-bB-s4s">
                                                 <rect key="frame" x="4800" y="360" width="750" height="750"/>
@@ -342,8 +347,11 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
-                                                    <backgroundConfiguration key="background" image="saturn-planet-illustration-by-Vexels"/>
+                                                    <backgroundConfiguration key="background" image="Saturn"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="saturnButtonPressed:" destination="SNx-DP-cK6" eventType="touchUpInside" id="xHc-GP-Bd1"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heL-7H-DUm">
                                                 <rect key="frame" x="6150" y="321" width="550" height="550"/>
@@ -353,8 +361,11 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
-                                                    <backgroundConfiguration key="background" image="planet-uranus-illustration-by-Vexels"/>
+                                                    <backgroundConfiguration key="background" image="Uranus"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="uranusButtonPressed:" destination="SNx-DP-cK6" eventType="touchUpInside" id="cnb-dw-SXD"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tT-IQ-KtG">
                                                 <rect key="frame" x="7300" y="349" width="450" height="450"/>
@@ -364,8 +375,11 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
-                                                    <backgroundConfiguration key="background" image="neptune-planet-illustration-by-Vexels"/>
+                                                    <backgroundConfiguration key="background" image="Neptune"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="neptuneButtonPressed:" destination="SNx-DP-cK6" eventType="touchUpInside" id="CbP-5V-BLT"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -421,11 +435,60 @@
                         <outlet property="saturnButton" destination="k6N-bB-s4s" id="dpe-2y-BFm"/>
                         <outlet property="uranusButton" destination="heL-7H-DUm" id="b7e-5E-l7G"/>
                         <outlet property="venusButton" destination="yAs-nj-YPF" id="OTN-yG-wPl"/>
+                        <segue destination="cX7-aN-8r8" kind="show" identifier="selectPlanet" id="jvf-Wp-EWu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B9I-zl-UZx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3562.4999999999995" y="3493.7042459736454"/>
+        </scene>
+        <!--Planet View Controller-->
+        <scene sceneID="M4g-dT-mzI">
+            <objects>
+                <viewController id="cX7-aN-8r8" customClass="PlanetViewController" customModule="AugmentedGrowth" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oZ1-ed-OvF">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Space Background" translatesAutoresizingMaskIntoConstraints="NO" id="bLJ-fV-7aJ">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Earth" translatesAutoresizingMaskIntoConstraints="NO" id="kW8-8n-EgI">
+                                <rect key="frame" x="212" y="134" width="600" height="600"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="600" id="7Lx-EG-nND"/>
+                                    <constraint firstAttribute="width" constant="600" id="Uma-Uo-QoS"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PlanetLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AUN-RC-4L1">
+                                <rect key="frame" x="270.5" y="774" width="483.5" height="109"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="100"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Pee-dt-VEa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AUN-RC-4L1" firstAttribute="top" secondItem="kW8-8n-EgI" secondAttribute="bottom" constant="40" id="3Km-1s-BAg"/>
+                            <constraint firstItem="AUN-RC-4L1" firstAttribute="centerX" secondItem="oZ1-ed-OvF" secondAttribute="centerX" id="66b-4f-y0j"/>
+                            <constraint firstItem="bLJ-fV-7aJ" firstAttribute="top" secondItem="oZ1-ed-OvF" secondAttribute="top" id="KcS-Xe-Pwq"/>
+                            <constraint firstItem="bLJ-fV-7aJ" firstAttribute="leading" secondItem="Pee-dt-VEa" secondAttribute="leading" id="PAy-kZ-ZGy"/>
+                            <constraint firstItem="kW8-8n-EgI" firstAttribute="centerX" secondItem="oZ1-ed-OvF" secondAttribute="centerX" id="dHc-jo-uku"/>
+                            <constraint firstItem="bLJ-fV-7aJ" firstAttribute="trailing" secondItem="Pee-dt-VEa" secondAttribute="trailing" id="e7A-2y-T5i"/>
+                            <constraint firstItem="kW8-8n-EgI" firstAttribute="top" secondItem="Pee-dt-VEa" secondAttribute="top" constant="60" id="jbO-gZ-fag"/>
+                            <constraint firstAttribute="bottom" secondItem="bLJ-fV-7aJ" secondAttribute="bottom" id="nGg-Ee-hY4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hee-8J-EWt"/>
+                    <connections>
+                        <outlet property="planetImage" destination="kW8-8n-EgI" id="G5d-Pj-ulA"/>
+                        <outlet property="planetLabel" destination="AUN-RC-4L1" id="7Ap-L0-DfP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b9p-YX-auD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5185.546875" y="4293.997071742313"/>
         </scene>
         <!--More-->
         <scene sceneID="pja-nw-qJi">
@@ -521,22 +584,22 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Earth" width="1920" height="1920"/>
+        <image name="Jupiter" width="1920" height="1920"/>
+        <image name="Mars" width="1920" height="1920"/>
         <image name="Math Calculator" width="2000" height="2000"/>
+        <image name="Mercury" width="1920" height="1920"/>
+        <image name="Neptune" width="1920" height="1920"/>
         <image name="PaperPlaneBG" width="1500" height="1500"/>
+        <image name="Saturn" width="1920" height="1920"/>
         <image name="Space Background" width="3840" height="2160"/>
+        <image name="Sun" width="1920" height="1920"/>
+        <image name="Uranus" width="1920" height="1920"/>
+        <image name="Venus" width="1920" height="1920"/>
         <image name="book.fill" catalog="system" width="128" height="95"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
-        <image name="jupiter-planet-illustration-by-Vexels" width="1920" height="1920"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
-        <image name="mercury-planet-illustration-by-Vexels" width="1920" height="1920"/>
         <image name="moon.stars.fill" catalog="system" width="125" height="128"/>
-        <image name="neptune-planet-illustration-by-Vexels" width="1920" height="1920"/>
-        <image name="planet-mars-illustration-by-Vexels" width="1920" height="1920"/>
-        <image name="planet-uranus-illustration-by-Vexels" width="1920" height="1920"/>
-        <image name="planet-venus-illustration-by-Vexels" width="1920" height="1920"/>
-        <image name="saturn-planet-illustration-by-Vexels" width="1920" height="1920"/>
-        <image name="simple-earth-geometric-color-stroke-element-by-Vexels" width="1920" height="1920"/>
-        <image name="sun-star-illustration-by-Vexels" width="1920" height="1920"/>
         <image name="testtube.2" catalog="system" width="128" height="119"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
