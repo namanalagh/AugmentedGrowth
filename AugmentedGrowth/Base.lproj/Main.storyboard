@@ -88,7 +88,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fuE-ln-Jd5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1250" y="3348"/>
+            <point key="canvasLocation" x="650" y="3061"/>
         </scene>
         <!--Home-->
         <scene sceneID="TQp-cb-oy0">
@@ -252,7 +252,7 @@
         <!--Astronomy-->
         <scene sceneID="zEx-2K-hhy">
             <objects>
-                <viewController id="SNx-DP-cK6" sceneMemberID="viewController">
+                <viewController id="SNx-DP-cK6" customClass="AstronomyViewController" customModule="AugmentedGrowth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gfR-5a-grh">
                         <rect key="frame" x="0.0" y="0.0" width="8000" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -266,6 +266,7 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Space Background" translatesAutoresizingMaskIntoConstraints="NO" id="hG3-d7-sMf">
                                                 <rect key="frame" x="0.0" y="0.0" width="8000" height="1170"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnA-PL-sPB">
                                                 <rect key="frame" x="-500" y="-15" width="1200" height="1200"/>
@@ -411,6 +412,16 @@
                     </view>
                     <navigationItem key="navigationItem" title="Astronomy" id="uD2-ts-flY"/>
                     <size key="freeformSize" width="8000" height="1366"/>
+                    <connections>
+                        <outlet property="earthButton" destination="TWX-d3-udP" id="kNH-k7-cWB"/>
+                        <outlet property="jupiterButton" destination="jbf-jy-N0s" id="LAU-1m-Fso"/>
+                        <outlet property="marsButton" destination="LXt-ig-AhI" id="nRD-cV-USR"/>
+                        <outlet property="mercuryButton" destination="zMO-3w-nK9" id="r5B-Ue-NUg"/>
+                        <outlet property="neptuneButton" destination="5tT-IQ-KtG" id="DGx-xY-u6O"/>
+                        <outlet property="saturnButton" destination="k6N-bB-s4s" id="dpe-2y-BFm"/>
+                        <outlet property="uranusButton" destination="heL-7H-DUm" id="b7e-5E-l7G"/>
+                        <outlet property="venusButton" destination="yAs-nj-YPF" id="OTN-yG-wPl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B9I-zl-UZx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
