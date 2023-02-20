@@ -83,7 +83,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="PmJ-da-txa" kind="relationship" relationship="rootViewController" id="POV-pA-PAK"/>
+                        <segue destination="SNx-DP-cK6" kind="relationship" relationship="rootViewController" id="W7V-Px-AAD"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fuE-ln-Jd5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -98,14 +98,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PaperPlaneBG" translatesAutoresizingMaskIntoConstraints="NO" id="ijC-Sn-Jgd">
-                                <rect key="frame" x="0.0" y="74" width="1024" height="1227"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PaperPlaneBG" translatesAutoresizingMaskIntoConstraints="NO" id="ijC-Sn-Jgd">
+                                <rect key="frame" x="0.0" y="24" width="1024" height="1322"/>
                                 <color key="backgroundColor" red="0.037320405244827271" green="0.069271229207515717" blue="0.02101956307888031" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.037320405244827271" green="0.069271229207515717" blue="0.02101956307888031" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htq-fF-hzZ">
-                                <rect key="frame" x="0.0" y="74" width="1024" height="1227"/>
+                                <rect key="frame" x="0.0" y="74" width="1024" height="1272"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xWK-Ik-RTm">
                                         <rect key="frame" x="0.0" y="0.0" width="1024" height="2000"/>
@@ -114,16 +113,16 @@
                                                 <rect key="frame" x="0.0" y="20" width="1024" height="845"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="center" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="j8W-DI-hzl">
-                                                        <rect key="frame" x="274" y="0.0" width="476" height="200"/>
+                                                        <rect key="frame" x="281" y="0.0" width="462" height="200"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Math" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NaU-7K-jgw">
-                                                                <rect key="frame" x="0.0" y="37" width="256" height="126.5"/>
-                                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="100"/>
+                                                                <rect key="frame" x="0.0" y="45.5" width="242" height="109"/>
+                                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="100"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rQ-Os-rqp">
-                                                                <rect key="frame" x="276" y="0.0" width="200" height="200"/>
+                                                                <rect key="frame" x="262" y="0.0" width="200" height="200"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="200" id="GEu-dR-zV7"/>
                                                                     <constraint firstAttribute="width" constant="200" id="XFu-hc-gZk"/>
@@ -136,16 +135,16 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="i5h-NC-Dj7">
-                                                        <rect key="frame" x="216.5" y="265" width="591.5" height="150"/>
+                                                        <rect key="frame" x="273" y="265" width="478.5" height="150"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Science" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50Y-pV-BVO">
-                                                                <rect key="frame" x="0.0" y="0.0" width="411.5" height="126.5"/>
-                                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="100"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="298.5" height="109"/>
+                                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="100"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uq2-vX-1xn">
-                                                                <rect key="frame" x="441.5" y="0.0" width="150" height="150"/>
+                                                                <rect key="frame" x="328.5" y="0.0" width="150" height="150"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="150" id="SfO-PK-ZNe"/>
                                                                     <constraint firstAttribute="width" constant="150" id="jRV-46-LnE"/>
@@ -159,16 +158,16 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="qmL-Sm-0Gj">
-                                                        <rect key="frame" x="118.5" y="480" width="787.5" height="150"/>
+                                                        <rect key="frame" x="191.5" y="480" width="641.5" height="150"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Astronomy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="056-N6-xgr">
-                                                                <rect key="frame" x="0.0" y="0.0" width="607.5" height="126.5"/>
-                                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="100"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="461.5" height="109"/>
+                                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="100"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3o-i2-yVv">
-                                                                <rect key="frame" x="637.5" y="0.0" width="150" height="150"/>
+                                                                <rect key="frame" x="491.5" y="0.0" width="150" height="150"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="150" id="OPT-Fc-5wy"/>
                                                                     <constraint firstAttribute="width" constant="150" id="yCQ-4M-Bh9"/>
@@ -182,16 +181,16 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="4hr-5w-sUC">
-                                                        <rect key="frame" x="213.5" y="695" width="597.5" height="150"/>
+                                                        <rect key="frame" x="281" y="695" width="462" height="150"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ch-Ow-5WG">
-                                                                <rect key="frame" x="0.0" y="0.0" width="417.5" height="126.5"/>
-                                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="100"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="282" height="109"/>
+                                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="100"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88K-Yg-Wrd">
-                                                                <rect key="frame" x="447.5" y="0.0" width="150" height="150"/>
+                                                                <rect key="frame" x="312" y="0.0" width="150" height="150"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="150" id="dOA-Ud-RTJ"/>
                                                                     <constraint firstAttribute="height" constant="150" id="raC-zw-Uqi"/>
@@ -233,15 +232,70 @@
                             <constraint firstItem="htq-fF-hzZ" firstAttribute="bottom" secondItem="qgy-LF-rGM" secondAttribute="bottom" id="C7t-8M-WPz"/>
                             <constraint firstItem="htq-fF-hzZ" firstAttribute="top" secondItem="OcK-fB-Lk5" secondAttribute="top" constant="74" id="HvY-Q6-sSe"/>
                             <constraint firstItem="xWK-Ik-RTm" firstAttribute="width" secondItem="OcK-fB-Lk5" secondAttribute="width" id="P0h-dV-KEj"/>
+                            <constraint firstItem="ijC-Sn-Jgd" firstAttribute="leading" secondItem="qgy-LF-rGM" secondAttribute="leading" id="TfY-s6-u9l"/>
                             <constraint firstItem="htq-fF-hzZ" firstAttribute="leading" secondItem="qgy-LF-rGM" secondAttribute="leading" id="Zgd-EC-0WE"/>
                             <constraint firstItem="htq-fF-hzZ" firstAttribute="trailing" secondItem="qgy-LF-rGM" secondAttribute="trailing" id="aCD-Lb-gfl"/>
+                            <constraint firstItem="ijC-Sn-Jgd" firstAttribute="bottom" secondItem="qgy-LF-rGM" secondAttribute="bottom" id="aUM-cI-O99"/>
+                            <constraint firstItem="ijC-Sn-Jgd" firstAttribute="top" secondItem="qgy-LF-rGM" secondAttribute="top" id="cT0-Eg-948"/>
+                            <constraint firstItem="ijC-Sn-Jgd" firstAttribute="trailing" secondItem="qgy-LF-rGM" secondAttribute="trailing" id="qQm-24-hwt"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="A7t-ej-b8G"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dcv-in-NJt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2160.9375" y="3335.139092240117"/>
+            <point key="canvasLocation" x="2128" y="2765"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zEx-2K-hhy">
+            <objects>
+                <viewController id="SNx-DP-cK6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gfR-5a-grh">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKb-sY-fYK">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3lN-HS-i3g">
+                                        <rect key="frame" x="0.0" y="0.0" width="4000" height="1170"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Space Background" translatesAutoresizingMaskIntoConstraints="NO" id="hG3-d7-sMf">
+                                                <rect key="frame" x="0.0" y="0.0" width="4000" height="1170"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zw8-xY-EeI">
+                                                <rect key="frame" x="1550" y="167" width="900" height="884"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="900" id="7f9-mN-IMj"/>
+                                                    <constraint firstAttribute="width" constant="900" id="xA2-9G-Rk4"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="sun-star-illustration-by-Vexels"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="10X-r6-loB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FKb-sY-fYK" firstAttribute="leading" secondItem="10X-r6-loB" secondAttribute="leading" id="2HF-S3-bS3"/>
+                            <constraint firstItem="FKb-sY-fYK" firstAttribute="top" secondItem="gfR-5a-grh" secondAttribute="top" id="Ceg-69-QCV"/>
+                            <constraint firstAttribute="bottom" secondItem="FKb-sY-fYK" secondAttribute="bottom" id="ivN-9I-0J6"/>
+                            <constraint firstItem="FKb-sY-fYK" firstAttribute="trailing" secondItem="10X-r6-loB" secondAttribute="trailing" id="lja-my-rdj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uD2-ts-flY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B9I-zl-UZx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2953.4407027818447" y="3328.7109375"/>
         </scene>
         <!--More-->
         <scene sceneID="pja-nw-qJi">
@@ -339,10 +393,12 @@
     <resources>
         <image name="Math Calculator" width="2000" height="2000"/>
         <image name="PaperPlaneBG" width="1500" height="1500"/>
+        <image name="Space Background" width="3840" height="2160"/>
         <image name="book.fill" catalog="system" width="128" height="95"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="moon.stars.fill" catalog="system" width="125" height="128"/>
+        <image name="sun-star-illustration-by-Vexels" width="1920" height="1920"/>
         <image name="testtube.2" catalog="system" width="128" height="119"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
