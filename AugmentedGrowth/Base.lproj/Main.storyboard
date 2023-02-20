@@ -83,7 +83,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="SNx-DP-cK6" kind="relationship" relationship="rootViewController" id="W7V-Px-AAD"/>
+                        <segue destination="PmJ-da-txa" kind="relationship" relationship="rootViewController" id="wwY-L1-eqN"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fuE-ln-Jd5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -99,12 +99,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PaperPlaneBG" translatesAutoresizingMaskIntoConstraints="NO" id="ijC-Sn-Jgd">
-                                <rect key="frame" x="0.0" y="24" width="1024" height="1322"/>
+                                <rect key="frame" x="0.0" y="74" width="1024" height="1227"/>
                                 <color key="backgroundColor" red="0.037320405244827271" green="0.069271229207515717" blue="0.02101956307888031" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.037320405244827271" green="0.069271229207515717" blue="0.02101956307888031" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htq-fF-hzZ">
-                                <rect key="frame" x="0.0" y="74" width="1024" height="1272"/>
+                                <rect key="frame" x="0.0" y="74" width="1024" height="1227"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xWK-Ik-RTm">
                                         <rect key="frame" x="0.0" y="0.0" width="1024" height="2000"/>
@@ -177,6 +177,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" buttonSize="large">
                                                                     <backgroundConfiguration key="background" image="moon.stars.fill" catalog="system"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <segue destination="SNx-DP-cK6" kind="push" id="mi2-4q-3Fa"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -246,56 +249,128 @@
             </objects>
             <point key="canvasLocation" x="2128" y="2765"/>
         </scene>
-        <!--View Controller-->
+        <!--Astronomy-->
         <scene sceneID="zEx-2K-hhy">
             <objects>
                 <viewController id="SNx-DP-cK6" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gfR-5a-grh">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="4000" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKb-sY-fYK">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKb-sY-fYK">
+                                <rect key="frame" x="0.0" y="0.0" width="4000" height="1366"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3lN-HS-i3g">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3lN-HS-i3g">
                                         <rect key="frame" x="0.0" y="0.0" width="4000" height="1170"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Space Background" translatesAutoresizingMaskIntoConstraints="NO" id="hG3-d7-sMf">
                                                 <rect key="frame" x="0.0" y="0.0" width="4000" height="1170"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zw8-xY-EeI">
-                                                <rect key="frame" x="1550" y="167" width="900" height="884"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnA-PL-sPB">
+                                                <rect key="frame" x="-500" y="85" width="1000" height="1000"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="900" id="7f9-mN-IMj"/>
-                                                    <constraint firstAttribute="width" constant="900" id="xA2-9G-Rk4"/>
+                                                    <constraint firstAttribute="width" constant="1000" id="tTn-yx-mLl"/>
+                                                    <constraint firstAttribute="height" constant="1000" id="z3I-9G-ZT6"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
                                                     <backgroundConfiguration key="background" image="sun-star-illustration-by-Vexels"/>
                                                 </buttonConfiguration>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMO-3w-nK9">
+                                                <rect key="frame" x="750" y="360" width="150" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="pn1-aL-yX7"/>
+                                                    <constraint firstAttribute="width" constant="150" id="z1I-2I-b50"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="mercury-planet-illustration-by-Vexels"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAs-nj-YPF">
+                                                <rect key="frame" x="1050" y="449" width="250" height="250"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="bVk-E2-onW"/>
+                                                    <constraint firstAttribute="height" constant="250" id="cQL-p9-jve"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="planet-venus-illustration-by-Vexels"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TWX-d3-udP">
+                                                <rect key="frame" x="1550" y="379" width="300" height="300"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="300" id="Ugr-oK-Fll"/>
+                                                    <constraint firstAttribute="width" constant="300" id="WIR-ic-MAp"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="simple-earth-geometric-color-stroke-element-by-Vexels"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXt-ig-AhI">
+                                                <rect key="frame" x="2250" y="547" width="200" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="fOI-Hr-6MD"/>
+                                                    <constraint firstAttribute="height" constant="200" id="fza-oT-PX5"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="planet-mars-illustration-by-Vexels"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbf-jy-N0s">
+                                                <rect key="frame" x="3321" y="171" width="650" height="650"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="jupiter-planet-illustration-by-Vexels"/>
+                                                </buttonConfiguration>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="zMO-3w-nK9" firstAttribute="leading" secondItem="nnA-PL-sPB" secondAttribute="trailing" constant="250" id="334-wH-Hve"/>
+                                            <constraint firstItem="zMO-3w-nK9" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="360" id="ABx-Te-IRO"/>
+                                            <constraint firstAttribute="width" constant="4000" id="AUL-hh-yUy"/>
+                                            <constraint firstItem="nnA-PL-sPB" firstAttribute="centerY" secondItem="3lN-HS-i3g" secondAttribute="centerY" id="LYi-DT-RTX"/>
+                                            <constraint firstItem="TWX-d3-udP" firstAttribute="leading" secondItem="yAs-nj-YPF" secondAttribute="trailing" constant="250" id="LsO-1W-VqI"/>
+                                            <constraint firstItem="LXt-ig-AhI" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="547" id="aQX-bY-PGi"/>
+                                            <constraint firstItem="nnA-PL-sPB" firstAttribute="leading" secondItem="3lN-HS-i3g" secondAttribute="leading" constant="-500" id="aTf-An-P15"/>
+                                            <constraint firstItem="yAs-nj-YPF" firstAttribute="leading" secondItem="zMO-3w-nK9" secondAttribute="trailing" constant="150" id="cIl-mU-YEt"/>
+                                            <constraint firstItem="LXt-ig-AhI" firstAttribute="leading" secondItem="TWX-d3-udP" secondAttribute="trailing" constant="400" id="fXb-in-88d"/>
+                                            <constraint firstItem="TWX-d3-udP" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="379" id="h74-CN-l60"/>
+                                            <constraint firstItem="yAs-nj-YPF" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="449" id="kK9-QK-tHy"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="3lN-HS-i3g" secondAttribute="trailing" id="9jO-45-lcq"/>
+                                    <constraint firstItem="3lN-HS-i3g" firstAttribute="leading" secondItem="FKb-sY-fYK" secondAttribute="leading" id="HqO-3r-NnG"/>
+                                    <constraint firstAttribute="bottom" secondItem="3lN-HS-i3g" secondAttribute="bottom" id="nir-8i-BMj"/>
+                                    <constraint firstItem="3lN-HS-i3g" firstAttribute="top" secondItem="FKb-sY-fYK" secondAttribute="top" id="rju-UX-dLE"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="10X-r6-loB"/>
+                        <viewLayoutGuide key="safeArea" id="96k-oB-Qk6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="FKb-sY-fYK" firstAttribute="leading" secondItem="10X-r6-loB" secondAttribute="leading" id="2HF-S3-bS3"/>
+                            <constraint firstItem="FKb-sY-fYK" firstAttribute="leading" secondItem="gfR-5a-grh" secondAttribute="leading" id="2HF-S3-bS3"/>
+                            <constraint firstItem="3lN-HS-i3g" firstAttribute="height" secondItem="gfR-5a-grh" secondAttribute="height" multiplier="0.856515" id="AWV-3F-vZr"/>
                             <constraint firstItem="FKb-sY-fYK" firstAttribute="top" secondItem="gfR-5a-grh" secondAttribute="top" id="Ceg-69-QCV"/>
                             <constraint firstAttribute="bottom" secondItem="FKb-sY-fYK" secondAttribute="bottom" id="ivN-9I-0J6"/>
-                            <constraint firstItem="FKb-sY-fYK" firstAttribute="trailing" secondItem="10X-r6-loB" secondAttribute="trailing" id="lja-my-rdj"/>
+                            <constraint firstItem="FKb-sY-fYK" firstAttribute="trailing" secondItem="gfR-5a-grh" secondAttribute="trailing" id="lja-my-rdj"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="uD2-ts-flY"/>
+                    <navigationItem key="navigationItem" title="Astronomy" id="uD2-ts-flY"/>
+                    <size key="freeformSize" width="4000" height="1366"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B9I-zl-UZx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2953.4407027818447" y="3328.7109375"/>
+            <point key="canvasLocation" x="3562.4999999999995" y="3493.7042459736454"/>
         </scene>
         <!--More-->
         <scene sceneID="pja-nw-qJi">
@@ -396,8 +471,13 @@
         <image name="Space Background" width="3840" height="2160"/>
         <image name="book.fill" catalog="system" width="128" height="95"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="jupiter-planet-illustration-by-Vexels" width="1920" height="1920"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="mercury-planet-illustration-by-Vexels" width="1920" height="1920"/>
         <image name="moon.stars.fill" catalog="system" width="125" height="128"/>
+        <image name="planet-mars-illustration-by-Vexels" width="1920" height="1920"/>
+        <image name="planet-venus-illustration-by-Vexels" width="1920" height="1920"/>
+        <image name="simple-earth-geometric-color-stroke-element-by-Vexels" width="1920" height="1920"/>
         <image name="sun-star-illustration-by-Vexels" width="1920" height="1920"/>
         <image name="testtube.2" catalog="system" width="128" height="119"/>
         <systemColor name="systemBackgroundColor">
