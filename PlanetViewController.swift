@@ -19,7 +19,7 @@ class PlanetViewController: UIViewController {
         title = selectedPlanet.name
         planetImage.image = UIImage(named: selectedPlanet.thumbnail)
         planetLabel.text = selectedPlanet.name
-        
+                
         UIView.animate(withDuration: 4, delay: 0, options: [.repeat, .autoreverse], animations: {
 
             self.planetImage.transform = CGAffineTransform(translationX: 0, y: 50)

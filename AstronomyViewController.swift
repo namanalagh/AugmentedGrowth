@@ -7,6 +7,21 @@
 
 import UIKit
 
+extension CGPoint {
+    static func distanceBetween(point p1: CGPoint,
+                                andPoint p2: CGPoint) -> CGFloat {
+        return sqrt(pow((p2.x - p1.x), 2) + pow((p2.y - p1.y), 2))
+    }
+
+    static func angle(from fromPoint: CGPoint, to toPoint: CGPoint) -> CGFloat {
+        let dx: CGFloat = fromPoint.x - toPoint.x
+        let dy: CGFloat = fromPoint.y - toPoint.y
+        let radians: CGFloat = atan2(dy, dx)
+        return radians
+    }
+
+}
+
 class AstronomyViewController: UIViewController {
 
     
@@ -19,34 +34,91 @@ class AstronomyViewController: UIViewController {
     @IBOutlet weak var uranusButton: UIButton!
     @IBOutlet weak var neptuneButton: UIButton!
     
+    
+    @IBOutlet weak var mercuryImage: UIImageView!
+    @IBOutlet weak var venusImage: UIImageView!
+    @IBOutlet weak var earthImage: UIImageView!
+    @IBOutlet weak var marsImage: UIImageView!
+    @IBOutlet weak var jupiterImage: UIImageView!
+    @IBOutlet weak var saturnImage: UIImageView!
+    @IBOutlet weak var uranusImage: UIImageView!
+    @IBOutlet weak var neptuneImage: UIImageView!
+    
+    @IBOutlet weak var moonImage: UIImageView!
+    
+    
     var selectedPlanet: Planet!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        animatePlanet(planetButton: mercuryButton)
-        animatePlanet(planetButton: venusButton)
-        animatePlanet(planetButton: earthButton)
-        animatePlanet(planetButton: marsButton)
-        animatePlanet(planetButton: jupiterButton)
-        animatePlanet(planetButton: saturnButton)
-        animatePlanet(planetButton: uranusButton)
-        animatePlanet(planetButton: neptuneButton)
         
+    
     }
     
-    func animatePlanet(planetButton: UIButton){
+    override func viewWillAppear(_ animated: Bool) {
+            super.viewDidAppear(true)
+        animatePlanet(planetImage: mercuryImage)
+        animatePlanet(planetImage: venusImage)
+        animatePlanet(planetImage: earthImage, moon: moonImage)
+        revolve(image: moonImage, around: earthImage)
+        animatePlanet(planetImage: marsImage)
+        animatePlanet(planetImage: jupiterImage)
+        animatePlanet(planetImage: saturnImage)
+        animatePlanet(planetImage: uranusImage)
+        animatePlanet(planetImage: neptuneImage)
+            
+        }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+            super.viewDidDisappear(true)
+        animatePlanet(planetImage: mercuryImage)
+        animatePlanet(planetImage: venusImage)
+        animatePlanet(planetImage: earthImage, moon: moonImage)
+        revolve(image: moonImage, around: earthImage)
+        animatePlanet(planetImage: marsImage)
+        animatePlanet(planetImage: jupiterImage)
+        animatePlanet(planetImage: saturnImage)
+        animatePlanet(planetImage: uranusImage)
+        animatePlanet(planetImage: neptuneImage)
+            
+        }
+    
+    func revolve(image: UIImageView, around center: UIImageView ) {
+        let distance = CGPoint.distanceBetween(point: center.center, andPoint: image.center)
+        var angle = CGPoint.angle(from: center.center, to: image.center)
+                angle = .pi + angle
+
+        let circlePath = UIBezierPath(arcCenter: center.center, radius: distance, startAngle: angle + .pi*2, endAngle: angle, clockwise: false)
+                
+        let animation = CAKeyframeAnimation(keyPath: #keyPath(CALayer.position))
+                animation.duration = 20
+                animation.repeatCount = MAXFLOAT
+                animation.path = circlePath.cgPath
+
+                image.layer.add(animation, forKey: nil)
+    }
+    
+    func animatePlanet(planetImage: UIImageView, moon: UIImageView? = nil){
         
-        let animDuration = Int.random(in: 3...5)
+        let animDuration = Int.random(in: 3...6)
         let animDelay = Float.random(in: 0...1)
-        let bobbleDistance = Int.random(in: 30...80)
+        let bobbleDistance = CGFloat.random(in: 20...50) * (Bool.random() ? 1 : -1)
+    
         
         UIView.animate(withDuration: TimeInterval(animDuration), delay: TimeInterval(animDelay), options: [.repeat, .autoreverse], animations: {
 
-            planetButton.frame = CGRect(x: planetButton.frame.origin.x, y: planetButton.frame.origin.y+CGFloat(bobbleDistance), width: 100, height: 100)
+            planetImage.transform = CGAffineTransform(translationX: 0, y: CGFloat(bobbleDistance))
+            if let unwrappedMoon = moon {
+                unwrappedMoon.transform = CGAffineTransform(translationX: 0, y: CGFloat(bobbleDistance))
+            }
 
         }, completion: nil)
        
     }
+    
+    
+    
+    
 
     
     // MARK: - Navigation

@@ -277,7 +277,7 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
-                                                    <backgroundConfiguration key="background" image="Mercury"/>
+                                                    <backgroundConfiguration key="background"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="mercuryButtonPressed:" destination="SNx-DP-cK6" eventType="touchUpInside" id="tMK-kU-S0M"/>
@@ -291,7 +291,7 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
-                                                    <backgroundConfiguration key="background" image="Venus"/>
+                                                    <backgroundConfiguration key="background"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="venusButtonPressed:" destination="SNx-DP-cK6" eventType="touchUpInside" id="kg4-nT-aoP"/>
@@ -305,7 +305,7 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
-                                                    <backgroundConfiguration key="background" image="Earth"/>
+                                                    <backgroundConfiguration key="background"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="earthButtonPressed:" destination="SNx-DP-cK6" eventType="touchUpInside" id="11c-1a-rrJ"/>
@@ -319,7 +319,7 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
-                                                    <backgroundConfiguration key="background" image="Mars"/>
+                                                    <backgroundConfiguration key="background"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="marsButtonPressed:" destination="SNx-DP-cK6" eventType="touchUpInside" id="1di-DL-BtD"/>
@@ -333,7 +333,7 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
-                                                    <backgroundConfiguration key="background" image="Jupiter"/>
+                                                    <backgroundConfiguration key="background"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="jupiterButtonPressed:" destination="SNx-DP-cK6" eventType="touchUpInside" id="YPy-3a-0Gp"/>
@@ -342,12 +342,12 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6N-bB-s4s">
                                                 <rect key="frame" x="4800" y="360" width="750" height="750"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="750" id="JlP-m1-StA"/>
-                                                    <constraint firstAttribute="width" constant="750" id="MY2-g4-BBP"/>
+                                                    <constraint firstAttribute="width" constant="750" id="USr-d6-sK5"/>
+                                                    <constraint firstAttribute="height" constant="750" id="zPg-dr-6j6"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
-                                                    <backgroundConfiguration key="background" image="Saturn"/>
+                                                    <backgroundConfiguration key="background"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="saturnButtonPressed:" destination="SNx-DP-cK6" eventType="touchUpInside" id="xHc-GP-Bd1"/>
@@ -356,12 +356,12 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heL-7H-DUm">
                                                 <rect key="frame" x="6150" y="321" width="550" height="550"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="550" id="8nD-dl-1hJ"/>
-                                                    <constraint firstAttribute="width" constant="550" id="urc-Qf-9Nl"/>
+                                                    <constraint firstAttribute="height" constant="550" id="3YW-z4-rbz"/>
+                                                    <constraint firstAttribute="width" constant="550" id="NRH-oA-7cj"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
-                                                    <backgroundConfiguration key="background" image="Uranus"/>
+                                                    <backgroundConfiguration key="background"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="uranusButtonPressed:" destination="SNx-DP-cK6" eventType="touchUpInside" id="cnb-dw-SXD"/>
@@ -370,39 +370,127 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tT-IQ-KtG">
                                                 <rect key="frame" x="7300" y="349" width="450" height="450"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="450" id="S2B-k2-e0I"/>
-                                                    <constraint firstAttribute="width" constant="450" id="rFn-eB-QE6"/>
+                                                    <constraint firstAttribute="height" constant="450" id="hFT-cc-O58"/>
+                                                    <constraint firstAttribute="width" constant="450" id="j2n-KX-KT2"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
-                                                    <backgroundConfiguration key="background" image="Neptune"/>
+                                                    <backgroundConfiguration key="background"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="neptuneButtonPressed:" destination="SNx-DP-cK6" eventType="touchUpInside" id="CbP-5V-BLT"/>
                                                 </connections>
                                             </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mercury" translatesAutoresizingMaskIntoConstraints="NO" id="NoZ-9h-rex">
+                                                <rect key="frame" x="950" y="360" width="150" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="I4O-2i-dPV"/>
+                                                    <constraint firstAttribute="height" constant="150" id="Pzs-q0-q2k"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Venus" translatesAutoresizingMaskIntoConstraints="NO" id="Nki-Qe-8Tv">
+                                                <rect key="frame" x="1250" y="449" width="250" height="250"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="250" id="J1w-b9-MT5"/>
+                                                    <constraint firstAttribute="width" constant="250" id="bF4-wK-mw1"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Earth" translatesAutoresizingMaskIntoConstraints="NO" id="GsG-O4-tDD">
+                                                <rect key="frame" x="1750" y="379" width="300" height="300"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="Mdp-Bp-Z73"/>
+                                                    <constraint firstAttribute="height" constant="300" id="N1L-lT-4TS"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mars" translatesAutoresizingMaskIntoConstraints="NO" id="B6H-YV-kRU">
+                                                <rect key="frame" x="2450" y="547" width="200" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="EUv-Y7-ISE"/>
+                                                    <constraint firstAttribute="width" constant="200" id="hJ6-At-jW6"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Asteroid" translatesAutoresizingMaskIntoConstraints="NO" id="uMp-Nr-oEy">
+                                                <rect key="frame" x="2785" y="76" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Asteroid" translatesAutoresizingMaskIntoConstraints="NO" id="KNZ-7R-9Lv">
+                                                <rect key="frame" x="2932" y="187" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Asteroid" translatesAutoresizingMaskIntoConstraints="NO" id="NVk-HE-8Hf">
+                                                <rect key="frame" x="2804" y="268" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Jupiter" translatesAutoresizingMaskIntoConstraints="NO" id="U73-Lg-pQw">
+                                                <rect key="frame" x="3450" y="171" width="750" height="750"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="750" id="XJp-K0-RJS"/>
+                                                    <constraint firstAttribute="height" constant="750" id="q9H-OT-v6Y"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Saturn" translatesAutoresizingMaskIntoConstraints="NO" id="Vkm-8i-gHm">
+                                                <rect key="frame" x="4800" y="360" width="750" height="750"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="750" id="lfS-7f-8XC"/>
+                                                    <constraint firstAttribute="height" constant="750" id="peM-yo-zBz"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Uranus" translatesAutoresizingMaskIntoConstraints="NO" id="1C2-t7-cHz">
+                                                <rect key="frame" x="6150" y="321" width="550" height="550"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="550" id="0no-NN-YKJ"/>
+                                                    <constraint firstAttribute="width" constant="550" id="54z-Hg-fra"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Neptune" translatesAutoresizingMaskIntoConstraints="NO" id="xeH-Ci-Z0s">
+                                                <rect key="frame" x="7300" y="349" width="450" height="450"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="450" id="PQ8-5y-Lii"/>
+                                                    <constraint firstAttribute="width" constant="450" id="XgT-a1-lx1"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Moon" id="cca-mW-Lqw">
+                                                <rect key="frame" x="1875" y="697" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="5tT-IQ-KtG" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="349" id="2Y8-Xu-Wpg"/>
                                             <constraint firstItem="zMO-3w-nK9" firstAttribute="leading" secondItem="nnA-PL-sPB" secondAttribute="trailing" constant="250" id="334-wH-Hve"/>
+                                            <constraint firstItem="Nki-Qe-8Tv" firstAttribute="leading" secondItem="zMO-3w-nK9" secondAttribute="trailing" constant="150" id="6XE-dQ-Fvk"/>
+                                            <constraint firstItem="heL-7H-DUm" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="321" id="7kO-sd-gys"/>
                                             <constraint firstItem="zMO-3w-nK9" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="360" id="ABx-Te-IRO"/>
                                             <constraint firstAttribute="width" constant="8000" id="AUL-hh-yUy"/>
+                                            <constraint firstItem="U73-Lg-pQw" firstAttribute="leading" secondItem="LXt-ig-AhI" secondAttribute="trailing" constant="800" id="Bho-GS-ASg"/>
+                                            <constraint firstItem="xeH-Ci-Z0s" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="349" id="Bvo-Mg-Wqo"/>
+                                            <constraint firstItem="xeH-Ci-Z0s" firstAttribute="leading" secondItem="heL-7H-DUm" secondAttribute="trailing" constant="600" id="ClQ-Um-wwa"/>
+                                            <constraint firstItem="5tT-IQ-KtG" firstAttribute="leading" secondItem="heL-7H-DUm" secondAttribute="trailing" constant="600" id="IVW-ks-qWn"/>
+                                            <constraint firstItem="k6N-bB-s4s" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="360" id="Jkt-Gh-e6l"/>
+                                            <constraint firstItem="B6H-YV-kRU" firstAttribute="leading" secondItem="TWX-d3-udP" secondAttribute="trailing" constant="400" id="Jxn-n3-gXI"/>
                                             <constraint firstItem="nnA-PL-sPB" firstAttribute="centerY" secondItem="3lN-HS-i3g" secondAttribute="centerY" id="LYi-DT-RTX"/>
                                             <constraint firstItem="TWX-d3-udP" firstAttribute="leading" secondItem="yAs-nj-YPF" secondAttribute="trailing" constant="250" id="LsO-1W-VqI"/>
+                                            <constraint firstItem="U73-Lg-pQw" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="171" id="OT6-vn-jgp"/>
+                                            <constraint firstItem="Nki-Qe-8Tv" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="449" id="Opl-0x-Fhv"/>
+                                            <constraint firstItem="GsG-O4-tDD" firstAttribute="leading" secondItem="yAs-nj-YPF" secondAttribute="trailing" constant="250" id="PY9-A7-rqW"/>
                                             <constraint firstItem="jbf-jy-N0s" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="171" id="QRW-0t-gFY"/>
-                                            <constraint firstItem="k6N-bB-s4s" firstAttribute="leading" secondItem="jbf-jy-N0s" secondAttribute="trailing" constant="600" id="R5U-x8-Eag"/>
-                                            <constraint firstItem="heL-7H-DUm" firstAttribute="leading" secondItem="k6N-bB-s4s" secondAttribute="trailing" constant="600" id="YuL-d4-Cz4"/>
+                                            <constraint firstItem="Vkm-8i-gHm" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="360" id="QuR-Vu-EZS"/>
+                                            <constraint firstItem="1C2-t7-cHz" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="321" id="Qvu-gQ-WuK"/>
+                                            <constraint firstItem="GsG-O4-tDD" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="379" id="Rcg-W5-vZw"/>
+                                            <constraint firstItem="NoZ-9h-rex" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="360" id="TtR-xM-LMu"/>
                                             <constraint firstItem="LXt-ig-AhI" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="547" id="aQX-bY-PGi"/>
                                             <constraint firstItem="nnA-PL-sPB" firstAttribute="leading" secondItem="3lN-HS-i3g" secondAttribute="leading" constant="-500" id="aTf-An-P15"/>
                                             <constraint firstItem="jbf-jy-N0s" firstAttribute="leading" secondItem="LXt-ig-AhI" secondAttribute="trailing" constant="800" id="aYP-Zx-gIV"/>
-                                            <constraint firstItem="heL-7H-DUm" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="321" id="bxE-Ha-k2V"/>
+                                            <constraint firstItem="B6H-YV-kRU" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="547" id="axP-rX-MBR"/>
                                             <constraint firstItem="yAs-nj-YPF" firstAttribute="leading" secondItem="zMO-3w-nK9" secondAttribute="trailing" constant="150" id="cIl-mU-YEt"/>
-                                            <constraint firstItem="5tT-IQ-KtG" firstAttribute="leading" secondItem="heL-7H-DUm" secondAttribute="trailing" constant="600" id="dBh-Zp-a78"/>
+                                            <constraint firstItem="Vkm-8i-gHm" firstAttribute="leading" secondItem="jbf-jy-N0s" secondAttribute="trailing" constant="600" id="caD-s6-acw"/>
+                                            <constraint firstItem="NoZ-9h-rex" firstAttribute="leading" secondItem="nnA-PL-sPB" secondAttribute="trailing" constant="250" id="dKA-qK-o50"/>
                                             <constraint firstItem="LXt-ig-AhI" firstAttribute="leading" secondItem="TWX-d3-udP" secondAttribute="trailing" constant="400" id="fXb-in-88d"/>
+                                            <constraint firstItem="k6N-bB-s4s" firstAttribute="leading" secondItem="jbf-jy-N0s" secondAttribute="trailing" constant="600" id="gQ5-XQ-OpI"/>
                                             <constraint firstItem="TWX-d3-udP" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="379" id="h74-CN-l60"/>
                                             <constraint firstItem="yAs-nj-YPF" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="449" id="kK9-QK-tHy"/>
-                                            <constraint firstItem="k6N-bB-s4s" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="360" id="xrX-cf-3RY"/>
+                                            <constraint firstItem="1C2-t7-cHz" firstAttribute="leading" secondItem="k6N-bB-s4s" secondAttribute="trailing" constant="600" id="kuQ-GP-F3R"/>
+                                            <constraint firstItem="5tT-IQ-KtG" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="349" id="vEL-K3-yJV"/>
+                                            <constraint firstItem="heL-7H-DUm" firstAttribute="leading" secondItem="k6N-bB-s4s" secondAttribute="trailing" constant="600" id="wMh-LY-bke"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -428,13 +516,22 @@
                     <size key="freeformSize" width="8000" height="1366"/>
                     <connections>
                         <outlet property="earthButton" destination="TWX-d3-udP" id="kNH-k7-cWB"/>
+                        <outlet property="earthImage" destination="GsG-O4-tDD" id="mjl-WP-Zje"/>
                         <outlet property="jupiterButton" destination="jbf-jy-N0s" id="LAU-1m-Fso"/>
+                        <outlet property="jupiterImage" destination="U73-Lg-pQw" id="hsb-7U-6mI"/>
                         <outlet property="marsButton" destination="LXt-ig-AhI" id="nRD-cV-USR"/>
+                        <outlet property="marsImage" destination="B6H-YV-kRU" id="dL6-oE-bd6"/>
                         <outlet property="mercuryButton" destination="zMO-3w-nK9" id="r5B-Ue-NUg"/>
+                        <outlet property="mercuryImage" destination="NoZ-9h-rex" id="Rvd-Eq-L34"/>
+                        <outlet property="moonImage" destination="cca-mW-Lqw" id="agQ-l5-pA7"/>
                         <outlet property="neptuneButton" destination="5tT-IQ-KtG" id="DGx-xY-u6O"/>
+                        <outlet property="neptuneImage" destination="xeH-Ci-Z0s" id="9Cv-9X-4TS"/>
                         <outlet property="saturnButton" destination="k6N-bB-s4s" id="dpe-2y-BFm"/>
+                        <outlet property="saturnImage" destination="Vkm-8i-gHm" id="VDV-qb-qct"/>
                         <outlet property="uranusButton" destination="heL-7H-DUm" id="b7e-5E-l7G"/>
+                        <outlet property="uranusImage" destination="1C2-t7-cHz" id="5Xw-or-dgO"/>
                         <outlet property="venusButton" destination="yAs-nj-YPF" id="OTN-yG-wPl"/>
+                        <outlet property="venusImage" destination="Nki-Qe-8Tv" id="dyL-qM-taJ"/>
                         <segue destination="cX7-aN-8r8" kind="show" identifier="selectPlanet" id="jvf-Wp-EWu"/>
                     </connections>
                 </viewController>
@@ -466,6 +563,15 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Wg-ja-t58">
+                                <rect key="frame" x="412" y="941" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="play.circle" catalog="system"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Pee-dt-VEa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -584,11 +690,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Asteroid" width="1920" height="1920"/>
         <image name="Earth" width="1920" height="1920"/>
         <image name="Jupiter" width="1920" height="1920"/>
         <image name="Mars" width="1920" height="1920"/>
         <image name="Math Calculator" width="2000" height="2000"/>
         <image name="Mercury" width="1920" height="1920"/>
+        <image name="Moon" width="1461" height="1461"/>
         <image name="Neptune" width="1920" height="1920"/>
         <image name="PaperPlaneBG" width="1500" height="1500"/>
         <image name="Saturn" width="1920" height="1920"/>
@@ -600,6 +708,7 @@
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="moon.stars.fill" catalog="system" width="125" height="128"/>
+        <image name="play.circle" catalog="system" width="128" height="123"/>
         <image name="testtube.2" catalog="system" width="128" height="119"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
