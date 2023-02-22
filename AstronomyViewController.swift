@@ -71,16 +71,16 @@ class AstronomyViewController: UIViewController {
     
     override func viewDidDisappear(_ animated: Bool) {
             super.viewDidDisappear(true)
-        animatePlanet(planetImage: mercuryImage)
-        animatePlanet(planetImage: venusImage)
-        animatePlanet(planetImage: earthImage, moon: moonImage)
-        revolve(image: moonImage, around: earthImage)
-        animatePlanet(planetImage: marsImage)
-        animatePlanet(planetImage: jupiterImage)
-        animatePlanet(planetImage: saturnImage)
-        animatePlanet(planetImage: uranusImage)
-        animatePlanet(planetImage: neptuneImage)
-            
+//        animatePlanet(planetImage: mercuryImage)
+//        animatePlanet(planetImage: venusImage)
+//        animatePlanet(planetImage: earthImage, moon: moonImage)
+//        revolve(image: moonImage, around: earthImage)
+//        animatePlanet(planetImage: marsImage)
+//        animatePlanet(planetImage: jupiterImage)
+//        animatePlanet(planetImage: saturnImage)
+//        animatePlanet(planetImage: uranusImage)
+//        animatePlanet(planetImage: neptuneImage)
+        view.layer.removeAllAnimations()
         }
     
     func revolve(image: UIImageView, around center: UIImageView ) {
@@ -100,9 +100,9 @@ class AstronomyViewController: UIViewController {
     
     func animatePlanet(planetImage: UIImageView, moon: UIImageView? = nil){
         
-        let animDuration = Int.random(in: 3...6)
+        let animDuration = Int.random(in: 3...5)
         let animDelay = Float.random(in: 0...1)
-        let bobbleDistance = CGFloat.random(in: 20...50) * (Bool.random() ? 1 : -1)
+        let bobbleDistance = CGFloat.random(in: 20...60) * (Bool.random() ? 1 : -1)
     
         
         UIView.animate(withDuration: TimeInterval(animDuration), delay: TimeInterval(animDelay), options: [.repeat, .autoreverse], animations: {

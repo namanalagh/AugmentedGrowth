@@ -7,11 +7,6 @@
 
 import UIKit
 
-class resultsViewController : UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-}
 
 class ViewController: UIViewController, UISearchResultsUpdating  {
 

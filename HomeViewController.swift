@@ -7,11 +7,30 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class resultsViewController : UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}
+
+class HomeViewController: UIViewController, UISearchResultsUpdating  {
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let text = searchController.searchBar.text else {
+            return
+        }
+        print(text)
+    }
+    
+
+    var selectedTopic: String?
+    
+    let searchController = UISearchController(searchResultsController: resultsViewController())
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        title = "Explore"
+        navigationItem.searchController = searchController
+        searchController.searchResultsUpdater = self
     }
     
 

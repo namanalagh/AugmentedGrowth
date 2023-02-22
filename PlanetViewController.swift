@@ -22,7 +22,7 @@ class PlanetViewController: UIViewController {
                 
         UIView.animate(withDuration: 4, delay: 0, options: [.repeat, .autoreverse], animations: {
 
-            self.planetImage.transform = CGAffineTransform(translationX: 0, y: 50)
+            self.planetImage.transform = CGAffineTransform(translationX: 0, y: 30)
 
         }, completion: nil)
     }
