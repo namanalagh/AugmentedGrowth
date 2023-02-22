@@ -28,7 +28,7 @@ class HomeViewController: UIViewController, UISearchResultsUpdating  {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Explore"
+        title = "Home"
         navigationItem.searchController = searchController
         searchController.searchResultsUpdater = self
     }
