@@ -383,7 +383,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vQg-ZD-WVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3317" y="2334"/>
+            <point key="canvasLocation" x="2369" y="1958"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="BoW-fq-gpF">
@@ -529,6 +529,12 @@
                                     <backgroundConfiguration key="background" image="computer-monitor-flat-icon-by-Vexels"/>
                                 </buttonConfiguration>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIW-pu-G2n">
+                                <rect key="frame" x="709" y="448" width="289" height="109"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="100"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUt-ls-dEk">
                                 <rect key="frame" x="883" y="355" width="600" height="600"/>
                                 <constraints>
@@ -565,20 +571,23 @@
                                     <backgroundConfiguration key="background" image="pile-of-books-illustration-by-Vexels"/>
                                 </buttonConfiguration>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Astronomy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSV-43-DpU">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Astronomy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSV-43-DpU">
                                 <rect key="frame" x="1045" y="309" width="277" height="66"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="60"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="G.K." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VwJ-AX-bv6">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="G.K." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VwJ-AX-bv6">
                                 <rect key="frame" x="312" y="285" width="86.5" height="66"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="60"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Math" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYF-92-dG9">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Math" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYF-92-dG9">
                                 <rect key="frame" x="70" y="448" width="146" height="66"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="60"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -594,8 +603,9 @@
                                     <backgroundConfiguration key="background" image="Cactus"/>
                                 </buttonConfiguration>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E.V.S." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ga-ww-lgr">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E.V.S." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ga-ww-lgr">
                                 <rect key="frame" x="486" y="431" width="116" height="66"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="60"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -610,9 +620,11 @@
                             <constraint firstItem="VwJ-AX-bv6" firstAttribute="leading" secondItem="NgA-7A-C9Q" secondAttribute="leading" constant="312" id="6KH-6S-gx2"/>
                             <constraint firstItem="I6H-KK-2o9" firstAttribute="top" secondItem="9Ga-ww-lgr" secondAttribute="bottom" constant="8" symbolic="YES" id="AZH-WQ-Tgq"/>
                             <constraint firstAttribute="trailing" secondItem="WUt-ls-dEk" secondAttribute="trailing" constant="-117" id="BWX-WV-7f7"/>
+                            <constraint firstItem="cIW-pu-G2n" firstAttribute="centerX" secondItem="tY5-s2-TO5" secondAttribute="centerX" constant="170.5" id="DrW-lg-hzD"/>
                             <constraint firstItem="se5-8u-fiJ" firstAttribute="top" secondItem="VwJ-AX-bv6" secondAttribute="bottom" constant="8" symbolic="YES" id="MXd-5f-u0M"/>
                             <constraint firstItem="Kxg-uv-6Li" firstAttribute="top" secondItem="wSV-43-DpU" secondAttribute="bottom" constant="338" id="Svg-SS-7vn"/>
                             <constraint firstItem="NgA-7A-C9Q" firstAttribute="bottom" secondItem="3P1-8i-eGz" secondAttribute="bottom" constant="4" id="Tx2-U9-yXt"/>
+                            <constraint firstItem="Kxg-uv-6Li" firstAttribute="top" secondItem="cIW-pu-G2n" secondAttribute="bottom" constant="156" id="YQD-sg-wyC"/>
                             <constraint firstItem="6Pv-fm-TpC" firstAttribute="leading" secondItem="tY5-s2-TO5" secondAttribute="leading" constant="-112" id="Ylr-fE-Cz3"/>
                             <constraint firstItem="NgA-7A-C9Q" firstAttribute="bottom" secondItem="se5-8u-fiJ" secondAttribute="bottom" constant="150" id="aF9-0a-CIh"/>
                             <constraint firstItem="CcB-m0-enc" firstAttribute="centerX" secondItem="tY5-s2-TO5" secondAttribute="centerX" constant="-50" id="bki-sl-tiu"/>
@@ -643,6 +655,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dDc-UU-i1H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2262" y="2749"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YCI-KJ-6In">
+            <objects>
+                <viewController id="K3v-my-MFd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rcP-UR-vCb">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Math BG" translatesAutoresizingMaskIntoConstraints="NO" id="MSf-aS-Rvo">
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOv-so-EwQ">
+                                <rect key="frame" x="289" y="190" width="160" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="1. Counting"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fVK-sp-fBK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0gv-nG-1Ac" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4024.7437774524155" y="2514.84375"/>
         </scene>
         <!--Astronomy-->
         <scene sceneID="zEx-2K-hhy">
@@ -1273,6 +1312,7 @@
         <image name="Jupiter" width="1920" height="1920"/>
         <image name="Mars" width="1920" height="1920"/>
         <image name="Math" width="1920" height="1344"/>
+        <image name="Math BG" width="1286" height="970"/>
         <image name="Math Calculator" width="2000" height="2000"/>
         <image name="Mercury" width="1920" height="1920"/>
         <image name="Moon" width="1461" height="1461"/>
