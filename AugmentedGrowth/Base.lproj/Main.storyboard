@@ -565,23 +565,37 @@
                                     <backgroundConfiguration key="background" image="pile-of-books-illustration-by-Vexels"/>
                                 </buttonConfiguration>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Astronomy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSV-43-DpU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Astronomy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSV-43-DpU">
                                 <rect key="frame" x="1045" y="309" width="277" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="60"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="G.K." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VwJ-AX-bv6">
-                                <rect key="frame" x="312" y="285" width="87" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="G.K." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VwJ-AX-bv6">
+                                <rect key="frame" x="312" y="285" width="86.5" height="66"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="60"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Math" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYF-92-dG9">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Math" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYF-92-dG9">
                                 <rect key="frame" x="70" y="448" width="146" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="60"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6H-KK-2o9">
+                                <rect key="frame" x="312" y="505" width="450" height="450"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="450" id="AsH-RY-CIf"/>
+                                    <constraint firstAttribute="width" constant="450" id="Dj5-0z-XRF"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="Cactus"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E.V.S." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ga-ww-lgr">
+                                <rect key="frame" x="486" y="431" width="116" height="66"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="60"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -590,18 +604,28 @@
                         <viewLayoutGuide key="safeArea" id="NgA-7A-C9Q"/>
                         <color key="backgroundColor" red="0.9098039269" green="0.96862745289999996" blue="0.91764706370000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="NgA-7A-C9Q" firstAttribute="bottom" secondItem="I6H-KK-2o9" secondAttribute="bottom" constant="4" id="4U2-pn-ywM"/>
                             <constraint firstAttribute="bottom" secondItem="6Pv-fm-TpC" secondAttribute="bottom" constant="20" symbolic="YES" id="5A4-Eo-ZAU"/>
                             <constraint firstItem="se5-8u-fiJ" firstAttribute="leading" secondItem="NgA-7A-C9Q" secondAttribute="leading" constant="130" id="5y2-8d-qQG"/>
+                            <constraint firstItem="VwJ-AX-bv6" firstAttribute="leading" secondItem="NgA-7A-C9Q" secondAttribute="leading" constant="312" id="6KH-6S-gx2"/>
+                            <constraint firstItem="I6H-KK-2o9" firstAttribute="top" secondItem="9Ga-ww-lgr" secondAttribute="bottom" constant="8" symbolic="YES" id="AZH-WQ-Tgq"/>
                             <constraint firstAttribute="trailing" secondItem="WUt-ls-dEk" secondAttribute="trailing" constant="-117" id="BWX-WV-7f7"/>
+                            <constraint firstItem="se5-8u-fiJ" firstAttribute="top" secondItem="VwJ-AX-bv6" secondAttribute="bottom" constant="8" symbolic="YES" id="MXd-5f-u0M"/>
+                            <constraint firstItem="Kxg-uv-6Li" firstAttribute="top" secondItem="wSV-43-DpU" secondAttribute="bottom" constant="338" id="Svg-SS-7vn"/>
                             <constraint firstItem="NgA-7A-C9Q" firstAttribute="bottom" secondItem="3P1-8i-eGz" secondAttribute="bottom" constant="4" id="Tx2-U9-yXt"/>
                             <constraint firstItem="6Pv-fm-TpC" firstAttribute="leading" secondItem="tY5-s2-TO5" secondAttribute="leading" constant="-112" id="Ylr-fE-Cz3"/>
                             <constraint firstItem="NgA-7A-C9Q" firstAttribute="bottom" secondItem="se5-8u-fiJ" secondAttribute="bottom" constant="150" id="aF9-0a-CIh"/>
                             <constraint firstItem="CcB-m0-enc" firstAttribute="centerX" secondItem="tY5-s2-TO5" secondAttribute="centerX" constant="-50" id="bki-sl-tiu"/>
+                            <constraint firstItem="9Ga-ww-lgr" firstAttribute="leading" secondItem="OYF-92-dG9" secondAttribute="trailing" constant="270" id="du4-sr-hik"/>
+                            <constraint firstItem="6Pv-fm-TpC" firstAttribute="top" secondItem="OYF-92-dG9" secondAttribute="bottom" constant="40" id="dvQ-y7-3WE"/>
                             <constraint firstItem="3P1-8i-eGz" firstAttribute="centerX" secondItem="tY5-s2-TO5" secondAttribute="centerX" constant="150" id="f96-dc-g8d"/>
+                            <constraint firstItem="I6H-KK-2o9" firstAttribute="leading" secondItem="VwJ-AX-bv6" secondAttribute="leading" id="hP2-X7-p7d"/>
                             <constraint firstItem="Kxg-uv-6Li" firstAttribute="trailing" secondItem="NgA-7A-C9Q" secondAttribute="trailing" id="hgv-og-mHm"/>
                             <constraint firstItem="Kxg-uv-6Li" firstAttribute="leading" secondItem="NgA-7A-C9Q" secondAttribute="leading" id="hqU-oj-lyN"/>
+                            <constraint firstItem="NgA-7A-C9Q" firstAttribute="trailing" secondItem="wSV-43-DpU" secondAttribute="trailing" constant="44" id="ijH-gl-DgH"/>
                             <constraint firstItem="NgA-7A-C9Q" firstAttribute="bottom" secondItem="CcB-m0-enc" secondAttribute="bottom" constant="30" id="qCr-EN-wkS"/>
                             <constraint firstAttribute="bottom" secondItem="Kxg-uv-6Li" secondAttribute="bottom" id="tKq-ps-gLH"/>
+                            <constraint firstItem="I6H-KK-2o9" firstAttribute="leading" secondItem="OYF-92-dG9" secondAttribute="trailing" constant="96" id="v4x-S6-ts8"/>
                             <constraint firstItem="NgA-7A-C9Q" firstAttribute="bottom" secondItem="WUt-ls-dEk" secondAttribute="bottom" constant="4" id="wIS-4B-FkS"/>
                         </constraints>
                     </view>
@@ -610,6 +634,7 @@
                     <connections>
                         <outlet property="astronomyButton" destination="WUt-ls-dEk" id="Om6-lE-CiR"/>
                         <outlet property="astronomyLabel" destination="wSV-43-DpU" id="mzA-Ie-f21"/>
+                        <outlet property="evsLabel" destination="9Ga-ww-lgr" id="PnF-ub-7GF"/>
                         <outlet property="gkLabel" destination="VwJ-AX-bv6" id="ccx-es-Wp5"/>
                         <outlet property="mathButton" destination="6Pv-fm-TpC" id="gvE-7h-EMs"/>
                         <outlet property="mathLabel" destination="OYF-92-dG9" id="ftD-lH-Oe1"/>
@@ -1241,6 +1266,7 @@
         <image name="Asteroid" width="1920" height="1920"/>
         <image name="Astronomy" width="1750" height="980"/>
         <image name="Big Asteroid" width="1920" height="1920"/>
+        <image name="Cactus" width="4000" height="4000"/>
         <image name="EVS" width="1920" height="1229"/>
         <image name="Earth" width="1920" height="1920"/>
         <image name="Grey Window" width="3000" height="1765"/>

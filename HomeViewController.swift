@@ -22,11 +22,15 @@ class HomeViewController: UIViewController{
     
     @IBOutlet weak var astronomyLabel: UILabel!
     
+    @IBOutlet weak var evsLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         animateLabel(topicLabel: mathLabel)
         animateLabel(topicLabel: gkLabel)
         animateLabel(topicLabel: astronomyLabel)
+        animateLabel(topicLabel: evsLabel)
     }
     
 
