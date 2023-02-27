@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qz7-Lz-Nkb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="V05-p4-VyV">
     <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -12,8 +12,9 @@
         <scene sceneID="rNV-lX-EhA">
             <objects>
                 <tabBarController id="nYL-5N-6XU" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="WGn-1a-PPL"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9NF-H1-mDl">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -70,12 +71,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="xns-lN-ONy" kind="relationship" relationship="rootViewController" id="fN6-UV-1aY"/>
+                        <segue destination="pE6-dY-hc9" kind="relationship" relationship="rootViewController" id="Vnq-3k-beD"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fuE-ln-Jd5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="650" y="3061"/>
+            <point key="canvasLocation" x="1343.6310395314786" y="3060.9375"/>
         </scene>
         <!--Home-->
         <scene sceneID="TQp-cb-oy0">
@@ -231,7 +232,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dcv-in-NJt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1738" y="2493"/>
+            <point key="canvasLocation" x="1698" y="1958"/>
         </scene>
         <!--Home-->
         <scene sceneID="p4m-hF-FCI">
@@ -302,9 +303,6 @@
                                                             <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="60"/>
                                                             <directionalEdgeInsets key="contentInsets" top="0.0" leading="-650" bottom="0.0" trailing="0.0"/>
                                                         </buttonConfiguration>
-                                                        <connections>
-                                                            <segue destination="SNx-DP-cK6" kind="push" id="EAH-fC-F7p"/>
-                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05J-nI-ifT">
                                                         <rect key="frame" x="0.0" y="612" width="984" height="273"/>
@@ -385,7 +383,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vQg-ZD-WVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3218.5546875" y="2681.9912152269399"/>
+            <point key="canvasLocation" x="3317" y="2334"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="BoW-fq-gpF">
@@ -456,6 +454,9 @@
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                     <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="nYL-5N-6XU" kind="push" id="CdK-v1-EdG"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AugmentedGrowth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aK7-pp-9bp">
                                 <rect key="frame" x="284.5" y="42" width="797" height="120"/>
@@ -489,25 +490,134 @@
                             <constraint firstItem="aBc-FX-y1S" firstAttribute="bottom" secondItem="RHa-SM-qO7" secondAttribute="bottom" constant="180" id="zgq-my-roh"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="wum-rC-4Gf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0tg-AL-MPQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4178.9165446559291" y="2390.0390625"/>
+            <point key="canvasLocation" x="-1261.0541727672035" y="3492.7734375"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="Rl9-GP-AAW">
             <objects>
-                <viewController id="pE6-dY-hc9" sceneMemberID="viewController">
+                <viewController id="pE6-dY-hc9" customClass="HomeViewController" customModule="AugmentedGrowth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tY5-s2-TO5">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Grey Window" translatesAutoresizingMaskIntoConstraints="NO" id="CcB-m0-enc">
+                                <rect key="frame" x="-1746.5" y="-1027" width="4759" height="1956"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="4759" id="B0L-Oj-gat"/>
+                                    <constraint firstAttribute="height" constant="1956" id="jqJ-1I-Fky"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kxg-uv-6Li">
+                                <rect key="frame" x="0.0" y="713" width="1366" height="311"/>
+                                <color key="backgroundColor" red="0.3058823645" green="0.30196079609999998" blue="0.31764706970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="311" id="hWI-Ic-TEB"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3P1-8i-eGz">
+                                <rect key="frame" x="433" y="155" width="800" height="800"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="800" id="N1i-MR-VaJ"/>
+                                    <constraint firstAttribute="height" constant="800" id="qFG-UD-O7z"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="computer-monitor-flat-icon-by-Vexels"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUt-ls-dEk">
+                                <rect key="frame" x="883" y="355" width="600" height="600"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="600" id="07E-Jz-kOA"/>
+                                    <constraint firstAttribute="width" constant="600" id="NS5-e6-SlZ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="telescope-device-illustration-by-Vexels" strokeWidth="0.0"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="SNx-DP-cK6" kind="push" id="cqu-u6-WNq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="se5-8u-fiJ">
+                                <rect key="frame" x="130" y="359" width="450" height="450"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="450" id="qu9-wS-8BF"/>
+                                    <constraint firstAttribute="height" constant="450" id="sGl-DK-cy1"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="earth-globe-colorful-icon-stroke-by-Vexels"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Pv-fm-TpC">
+                                <rect key="frame" x="-112" y="554" width="450" height="450"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="450" id="5bu-ez-8NM"/>
+                                    <constraint firstAttribute="width" constant="450" id="kxP-9n-a2U"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="pile-of-books-illustration-by-Vexels"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Astronomy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSV-43-DpU">
+                                <rect key="frame" x="1045" y="309" width="277" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="60"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="G.K." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VwJ-AX-bv6">
+                                <rect key="frame" x="312" y="285" width="87" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="60"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Math" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYF-92-dG9">
+                                <rect key="frame" x="70" y="448" width="146" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="60"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="NgA-7A-C9Q"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.9098039269" green="0.96862745289999996" blue="0.91764706370000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="6Pv-fm-TpC" secondAttribute="bottom" constant="20" symbolic="YES" id="5A4-Eo-ZAU"/>
+                            <constraint firstItem="se5-8u-fiJ" firstAttribute="leading" secondItem="NgA-7A-C9Q" secondAttribute="leading" constant="130" id="5y2-8d-qQG"/>
+                            <constraint firstAttribute="trailing" secondItem="WUt-ls-dEk" secondAttribute="trailing" constant="-117" id="BWX-WV-7f7"/>
+                            <constraint firstItem="NgA-7A-C9Q" firstAttribute="bottom" secondItem="3P1-8i-eGz" secondAttribute="bottom" constant="4" id="Tx2-U9-yXt"/>
+                            <constraint firstItem="6Pv-fm-TpC" firstAttribute="leading" secondItem="tY5-s2-TO5" secondAttribute="leading" constant="-112" id="Ylr-fE-Cz3"/>
+                            <constraint firstItem="NgA-7A-C9Q" firstAttribute="bottom" secondItem="se5-8u-fiJ" secondAttribute="bottom" constant="150" id="aF9-0a-CIh"/>
+                            <constraint firstItem="CcB-m0-enc" firstAttribute="centerX" secondItem="tY5-s2-TO5" secondAttribute="centerX" constant="-50" id="bki-sl-tiu"/>
+                            <constraint firstItem="3P1-8i-eGz" firstAttribute="centerX" secondItem="tY5-s2-TO5" secondAttribute="centerX" constant="150" id="f96-dc-g8d"/>
+                            <constraint firstItem="Kxg-uv-6Li" firstAttribute="trailing" secondItem="NgA-7A-C9Q" secondAttribute="trailing" id="hgv-og-mHm"/>
+                            <constraint firstItem="Kxg-uv-6Li" firstAttribute="leading" secondItem="NgA-7A-C9Q" secondAttribute="leading" id="hqU-oj-lyN"/>
+                            <constraint firstItem="NgA-7A-C9Q" firstAttribute="bottom" secondItem="CcB-m0-enc" secondAttribute="bottom" constant="30" id="qCr-EN-wkS"/>
+                            <constraint firstAttribute="bottom" secondItem="Kxg-uv-6Li" secondAttribute="bottom" id="tKq-ps-gLH"/>
+                            <constraint firstItem="NgA-7A-C9Q" firstAttribute="bottom" secondItem="WUt-ls-dEk" secondAttribute="bottom" constant="4" id="wIS-4B-FkS"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="OHQ-8g-yRA"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
+                    <connections>
+                        <outlet property="astronomyButton" destination="WUt-ls-dEk" id="Om6-lE-CiR"/>
+                        <outlet property="astronomyLabel" destination="wSV-43-DpU" id="mzA-Ie-f21"/>
+                        <outlet property="gkLabel" destination="VwJ-AX-bv6" id="ccx-es-Wp5"/>
+                        <outlet property="mathButton" destination="6Pv-fm-TpC" id="gvE-7h-EMs"/>
+                        <outlet property="mathLabel" destination="OYF-92-dG9" id="ftD-lH-Oe1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dDc-UU-i1H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5141" y="2394"/>
+            <point key="canvasLocation" x="2262" y="2749"/>
         </scene>
         <!--Astronomy-->
         <scene sceneID="zEx-2K-hhy">
@@ -726,17 +836,70 @@
                                                 <rect key="frame" x="1875" y="697" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mercury" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8u-5n-wvy">
+                                                <rect key="frame" x="952" y="260" width="146" height="44"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Venus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0G-fe-hNJ">
+                                                <rect key="frame" x="1330" y="349" width="91" height="44"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Earth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ad-UP-CM4">
+                                                <rect key="frame" x="1855" y="235" width="93.5" height="44"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68w-Ws-aop">
+                                                <rect key="frame" x="2504" y="447" width="91" height="44"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jupiter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEY-xu-Pc1">
+                                                <rect key="frame" x="3780" y="71" width="116" height="44"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saturn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDf-xx-OmY">
+                                                <rect key="frame" x="5130" y="160" width="117" height="44"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uranus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRY-4W-1d3">
+                                                <rect key="frame" x="6380" y="221" width="114" height="44"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neptune" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kZ-Mr-oH1">
+                                                <rect key="frame" x="7480" y="249" width="136" height="44"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstItem="TWX-d3-udP" firstAttribute="top" secondItem="8ad-UP-CM4" secondAttribute="bottom" constant="100" id="1hg-vS-mBV"/>
                                             <constraint firstItem="zMO-3w-nK9" firstAttribute="leading" secondItem="nnA-PL-sPB" secondAttribute="trailing" constant="250" id="334-wH-Hve"/>
+                                            <constraint firstItem="zMO-3w-nK9" firstAttribute="top" secondItem="F8u-5n-wvy" secondAttribute="bottom" constant="56" id="47q-Jo-nrJ"/>
                                             <constraint firstItem="Nki-Qe-8Tv" firstAttribute="leading" secondItem="zMO-3w-nK9" secondAttribute="trailing" constant="150" id="6XE-dQ-Fvk"/>
+                                            <constraint firstItem="k6N-bB-s4s" firstAttribute="top" secondItem="vDf-xx-OmY" secondAttribute="bottom" constant="56" id="7GB-rO-7lp"/>
                                             <constraint firstItem="heL-7H-DUm" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="321" id="7kO-sd-gys"/>
                                             <constraint firstItem="zMO-3w-nK9" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="360" id="ABx-Te-IRO"/>
                                             <constraint firstAttribute="width" constant="8000" id="AUL-hh-yUy"/>
+                                            <constraint firstItem="jbf-jy-N0s" firstAttribute="top" secondItem="QEY-xu-Pc1" secondAttribute="bottom" constant="56" id="Beo-qS-sQ2"/>
                                             <constraint firstItem="U73-Lg-pQw" firstAttribute="leading" secondItem="LXt-ig-AhI" secondAttribute="trailing" constant="800" id="Bho-GS-ASg"/>
                                             <constraint firstItem="xeH-Ci-Z0s" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="349" id="Bvo-Mg-Wqo"/>
                                             <constraint firstItem="xeH-Ci-Z0s" firstAttribute="leading" secondItem="heL-7H-DUm" secondAttribute="trailing" constant="600" id="ClQ-Um-wwa"/>
+                                            <constraint firstItem="heL-7H-DUm" firstAttribute="top" secondItem="WRY-4W-1d3" secondAttribute="bottom" constant="56" id="FrU-Tf-fRD"/>
                                             <constraint firstItem="5tT-IQ-KtG" firstAttribute="leading" secondItem="heL-7H-DUm" secondAttribute="trailing" constant="600" id="IVW-ks-qWn"/>
                                             <constraint firstItem="k6N-bB-s4s" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="260" id="Jkt-Gh-e6l"/>
                                             <constraint firstItem="B6H-YV-kRU" firstAttribute="leading" secondItem="TWX-d3-udP" secondAttribute="trailing" constant="400" id="Jxn-n3-gXI"/>
@@ -744,26 +907,37 @@
                                             <constraint firstItem="TWX-d3-udP" firstAttribute="leading" secondItem="yAs-nj-YPF" secondAttribute="trailing" constant="250" id="LsO-1W-VqI"/>
                                             <constraint firstItem="U73-Lg-pQw" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="171" id="OT6-vn-jgp"/>
                                             <constraint firstItem="Nki-Qe-8Tv" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="449" id="Opl-0x-Fhv"/>
+                                            <constraint firstItem="4kZ-Mr-oH1" firstAttribute="leading" secondItem="WRY-4W-1d3" secondAttribute="trailing" constant="986" id="PX3-nM-VnD"/>
                                             <constraint firstItem="GsG-O4-tDD" firstAttribute="leading" secondItem="yAs-nj-YPF" secondAttribute="trailing" constant="250" id="PY9-A7-rqW"/>
                                             <constraint firstItem="jbf-jy-N0s" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="171" id="QRW-0t-gFY"/>
                                             <constraint firstItem="Vkm-8i-gHm" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="260" id="QuR-Vu-EZS"/>
                                             <constraint firstItem="1C2-t7-cHz" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="321" id="Qvu-gQ-WuK"/>
                                             <constraint firstItem="GsG-O4-tDD" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="379" id="Rcg-W5-vZw"/>
                                             <constraint firstItem="NoZ-9h-rex" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="360" id="TtR-xM-LMu"/>
+                                            <constraint firstItem="8ad-UP-CM4" firstAttribute="leading" secondItem="F8u-5n-wvy" secondAttribute="trailing" constant="757" id="WIS-xH-4Fi"/>
                                             <constraint firstItem="LXt-ig-AhI" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="547" id="aQX-bY-PGi"/>
                                             <constraint firstItem="nnA-PL-sPB" firstAttribute="leading" secondItem="3lN-HS-i3g" secondAttribute="leading" constant="-500" id="aTf-An-P15"/>
                                             <constraint firstItem="jbf-jy-N0s" firstAttribute="leading" secondItem="LXt-ig-AhI" secondAttribute="trailing" constant="800" id="aYP-Zx-gIV"/>
+                                            <constraint firstItem="WRY-4W-1d3" firstAttribute="leading" secondItem="vDf-xx-OmY" secondAttribute="trailing" constant="1133" id="adZ-91-7CW"/>
                                             <constraint firstItem="B6H-YV-kRU" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="547" id="axP-rX-MBR"/>
                                             <constraint firstItem="yAs-nj-YPF" firstAttribute="leading" secondItem="zMO-3w-nK9" secondAttribute="trailing" constant="150" id="cIl-mU-YEt"/>
                                             <constraint firstItem="Vkm-8i-gHm" firstAttribute="leading" secondItem="jbf-jy-N0s" secondAttribute="trailing" constant="600" id="caD-s6-acw"/>
                                             <constraint firstItem="NoZ-9h-rex" firstAttribute="leading" secondItem="nnA-PL-sPB" secondAttribute="trailing" constant="250" id="dKA-qK-o50"/>
+                                            <constraint firstItem="F8u-5n-wvy" firstAttribute="leading" secondItem="nnA-PL-sPB" secondAttribute="trailing" constant="252" id="dgI-1f-BI9"/>
                                             <constraint firstItem="LXt-ig-AhI" firstAttribute="leading" secondItem="TWX-d3-udP" secondAttribute="trailing" constant="400" id="fXb-in-88d"/>
+                                            <constraint firstItem="t0G-fe-hNJ" firstAttribute="leading" secondItem="zMO-3w-nK9" secondAttribute="trailing" constant="230" id="fdv-4S-02l"/>
                                             <constraint firstItem="k6N-bB-s4s" firstAttribute="leading" secondItem="jbf-jy-N0s" secondAttribute="trailing" constant="600" id="gQ5-XQ-OpI"/>
                                             <constraint firstItem="TWX-d3-udP" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="379" id="h74-CN-l60"/>
+                                            <constraint firstItem="LXt-ig-AhI" firstAttribute="top" secondItem="68w-Ws-aop" secondAttribute="bottom" constant="56" id="i9a-LB-ugi"/>
                                             <constraint firstItem="yAs-nj-YPF" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="449" id="kK9-QK-tHy"/>
                                             <constraint firstItem="1C2-t7-cHz" firstAttribute="leading" secondItem="k6N-bB-s4s" secondAttribute="trailing" constant="600" id="kuQ-GP-F3R"/>
+                                            <constraint firstItem="5tT-IQ-KtG" firstAttribute="top" secondItem="4kZ-Mr-oH1" secondAttribute="bottom" constant="56" id="m30-1C-LoT"/>
+                                            <constraint firstItem="yAs-nj-YPF" firstAttribute="top" secondItem="t0G-fe-hNJ" secondAttribute="bottom" constant="56" id="t3G-JN-bZz"/>
+                                            <constraint firstItem="68w-Ws-aop" firstAttribute="leading" secondItem="TWX-d3-udP" secondAttribute="trailing" constant="454" id="t9t-AI-oOx"/>
                                             <constraint firstItem="5tT-IQ-KtG" firstAttribute="top" secondItem="3lN-HS-i3g" secondAttribute="top" constant="349" id="vEL-K3-yJV"/>
                                             <constraint firstItem="heL-7H-DUm" firstAttribute="leading" secondItem="k6N-bB-s4s" secondAttribute="trailing" constant="600" id="wMh-LY-bke"/>
+                                            <constraint firstItem="vDf-xx-OmY" firstAttribute="leading" secondItem="jbf-jy-N0s" secondAttribute="trailing" constant="930" id="wm0-Gn-loS"/>
+                                            <constraint firstItem="QEY-xu-Pc1" firstAttribute="leading" secondItem="nnA-PL-sPB" secondAttribute="trailing" constant="3080" id="zmS-5R-0xb"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="subviews">
@@ -817,7 +991,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B9I-zl-UZx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3562.4999999999995" y="3493.7042459736454"/>
+            <point key="canvasLocation" x="4256.2225475841869" y="3493.359375"/>
         </scene>
         <!--Planet View Controller-->
         <scene sceneID="M4g-dT-mzI">
@@ -1045,6 +1219,23 @@
             </objects>
             <point key="canvasLocation" x="1249" y="5925"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Atz-1a-Gjh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="V05-p4-VyV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="P60-C1-ACc">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Qz7-Lz-Nkb" kind="relationship" relationship="rootViewController" id="K4s-SQ-aC8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AKF-eN-v7i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3047" y="3197"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Asteroid" width="1920" height="1920"/>
@@ -1069,10 +1260,12 @@
         <image name="Venus" width="1920" height="1920"/>
         <image name="book.fill" catalog="system" width="128" height="95"/>
         <image name="computer-monitor-flat-icon-by-Vexels" width="4500" height="4500"/>
+        <image name="earth-globe-colorful-icon-stroke-by-Vexels" width="4500" height="4500"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="moon.stars.fill" catalog="system" width="125" height="128"/>
         <image name="office-desk-vector-by-Vexels" width="4500" height="4500"/>
+        <image name="pile-of-books-illustration-by-Vexels" width="4500" height="4500"/>
         <image name="play.circle" catalog="system" width="128" height="123"/>
         <image name="telescope-device-illustration-by-Vexels" width="4500" height="4500"/>
         <image name="testtube.2" catalog="system" width="128" height="119"/>

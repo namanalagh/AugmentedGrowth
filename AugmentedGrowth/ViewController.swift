@@ -12,13 +12,12 @@ class ViewController: UIViewController, UISearchResultsUpdating  {
 
     var selectedTopic: String?
     
-    let searchController = UISearchController(searchResultsController: resultsViewController())
+    //let searchController = UISearchController(searchResultsController: resultsViewController())
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Explore"
-        navigationItem.searchController = searchController
-        searchController.searchResultsUpdater = self
+
     }
 
     @IBAction func recommendedButtonPressed(_ sender: UIButton) {

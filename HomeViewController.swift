@@ -7,41 +7,42 @@
 
 import UIKit
 
-class resultsViewController : UIViewController {
+
+class HomeViewController: UIViewController{
+    
+
+    @IBOutlet weak var astronomyButton: UIButton!
+    
+    
+    @IBOutlet weak var mathButton: UIButton!
+    
+    
+    @IBOutlet weak var mathLabel: UILabel!
+    @IBOutlet weak var gkLabel: UILabel!
+    
+    @IBOutlet weak var astronomyLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-}
-
-class HomeViewController: UIViewController, UISearchResultsUpdating  {
-    func updateSearchResults(for searchController: UISearchController) {
-        guard let text = searchController.searchBar.text else {
-            return
-        }
-        print(text)
+        animateLabel(topicLabel: mathLabel)
+        animateLabel(topicLabel: gkLabel)
+        animateLabel(topicLabel: astronomyLabel)
     }
     
 
-    var selectedTopic: String?
+    func animateLabel(topicLabel: UILabel){
+        
+        let animDuration = Int.random(in: 3...5)
+        let animDelay = Float.random(in: 0...1)
+        let bobbleDistance = CGFloat.random(in: 10...20) * (Bool.random() ? 1 : -1)
     
-    let searchController = UISearchController(searchResultsController: resultsViewController())
+        
+        UIView.animate(withDuration: TimeInterval(animDuration), delay: TimeInterval(animDelay), options: [.repeat, .autoreverse], animations: {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        title = "Home"
-        navigationItem.searchController = searchController
-        searchController.searchResultsUpdater = self
+            topicLabel.transform = CGAffineTransform(translationX: 0, y: CGFloat(bobbleDistance))
+
+        }, completion: nil)
+       
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
