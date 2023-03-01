@@ -51,10 +51,10 @@ class AstronomyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default) //UIImage.init(named: "transparent.png")
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationController?.view.backgroundColor = .clear
+        //self.navigationController?.navigationBar.isTranslucent = true
+        self.tabBarController?.tabBar.tintColor = .white
+        self.tabBarController?.tabBar.barTintColor = .black
+        self.navigationController?.navigationBar.barStyle = .black
     
     }
     
@@ -69,23 +69,14 @@ class AstronomyViewController: UIViewController {
         animatePlanet(planetImage: saturnImage)
         animatePlanet(planetImage: uranusImage)
         animatePlanet(planetImage: neptuneImage)
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-            navigationController?.navigationBar.shadowImage = UIImage()
-            navigationController?.navigationBar.isTranslucent = true
             
         }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-
-        // Restore the navigation bar to default
-        navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
-        navigationController?.navigationBar.shadowImage = nil
-    }
     
     override func viewDidDisappear(_ animated: Bool) {
             super.viewDidDisappear(true)
-
+        self.tabBarController?.tabBar.tintColor = .label
+        self.tabBarController?.tabBar.barTintColor = .label
         view.layer.removeAllAnimations()
         }
     
