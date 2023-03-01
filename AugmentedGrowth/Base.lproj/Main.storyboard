@@ -443,22 +443,7 @@
                                     <constraint firstAttribute="height" constant="393" id="Chl-k7-sFQ"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pI-Lh-XEv">
-                                <rect key="frame" x="483" y="462" width="400" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="400" id="4PA-FH-ag4"/>
-                                    <constraint firstAttribute="height" constant="100" id="yDh-ge-8VV"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Get Started" cornerStyle="capsule">
-                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
-                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="nYL-5N-6XU" kind="push" id="CdK-v1-EdG"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AugmentedGrowth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aK7-pp-9bp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Better name?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aK7-pp-9bp">
                                 <rect key="frame" x="284.5" y="42" width="797" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="797" id="tqg-9E-zr0"/>
@@ -468,6 +453,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pI-Lh-XEv">
+                                <rect key="frame" x="483" y="312" width="400" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="72W-gi-RYU"/>
+                                    <constraint firstAttribute="height" constant="400" id="bs6-eL-alK"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Get Started" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background" image="circle.fill" catalog="system"/>
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="nYL-5N-6XU" kind="push" id="CdK-v1-EdG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aBc-FX-y1S"/>
                         <color key="backgroundColor" red="0.9098039269" green="0.96470588450000005" blue="0.91764706370000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -477,14 +479,14 @@
                             <constraint firstItem="RHa-SM-qO7" firstAttribute="centerX" secondItem="fds-Lx-pBO" secondAttribute="centerX" constant="50" id="E02-ry-LZS"/>
                             <constraint firstItem="Eq6-eQ-x9b" firstAttribute="centerX" secondItem="fds-Lx-pBO" secondAttribute="centerX" id="FL3-8I-f2D"/>
                             <constraint firstAttribute="bottom" secondItem="Eq6-eQ-x9b" secondAttribute="bottom" constant="-146" id="Iny-6m-UGz"/>
+                            <constraint firstItem="3pI-Lh-XEv" firstAttribute="centerY" secondItem="fds-Lx-pBO" secondAttribute="centerY" id="MWr-6T-Ora"/>
                             <constraint firstItem="aBc-FX-y1S" firstAttribute="bottom" secondItem="WXc-rG-dL6" secondAttribute="bottom" constant="240" id="Nx4-UU-Dgg"/>
                             <constraint firstItem="oIx-dH-CPB" firstAttribute="top" secondItem="aK7-pp-9bp" secondAttribute="bottom" constant="106" id="QqP-uM-xeg"/>
-                            <constraint firstItem="3pI-Lh-XEv" firstAttribute="centerX" secondItem="fds-Lx-pBO" secondAttribute="centerX" id="SXZ-xg-VYt"/>
                             <constraint firstAttribute="bottom" secondItem="p54-9A-mVw" secondAttribute="bottom" constant="-39" id="Y1z-T4-Tnu"/>
                             <constraint firstAttribute="bottom" secondItem="oIx-dH-CPB" secondAttribute="bottom" constant="-39" id="ZFM-Qr-CHn"/>
+                            <constraint firstItem="3pI-Lh-XEv" firstAttribute="centerX" secondItem="fds-Lx-pBO" secondAttribute="centerX" id="c3A-ad-k7P"/>
                             <constraint firstItem="qsJ-nR-c4c" firstAttribute="centerX" secondItem="fds-Lx-pBO" secondAttribute="centerX" id="dwj-uv-Ng4"/>
                             <constraint firstAttribute="bottom" secondItem="qsJ-nR-c4c" secondAttribute="bottom" constant="-280" id="g2R-KM-f8W"/>
-                            <constraint firstItem="3pI-Lh-XEv" firstAttribute="centerY" secondItem="fds-Lx-pBO" secondAttribute="centerY" id="m2u-9B-9Iv"/>
                             <constraint firstItem="aK7-pp-9bp" firstAttribute="centerX" secondItem="fds-Lx-pBO" secondAttribute="centerX" id="uCd-OT-6VS"/>
                             <constraint firstItem="oIx-dH-CPB" firstAttribute="centerX" secondItem="fds-Lx-pBO" secondAttribute="centerX" constant="550" id="zEf-oU-txB"/>
                             <constraint firstItem="aBc-FX-y1S" firstAttribute="bottom" secondItem="RHa-SM-qO7" secondAttribute="bottom" constant="180" id="zgq-my-roh"/>
@@ -633,6 +635,7 @@
                             <constraint firstItem="3P1-8i-eGz" firstAttribute="centerX" secondItem="tY5-s2-TO5" secondAttribute="centerX" constant="150" id="f96-dc-g8d"/>
                             <constraint firstItem="I6H-KK-2o9" firstAttribute="leading" secondItem="VwJ-AX-bv6" secondAttribute="leading" id="hP2-X7-p7d"/>
                             <constraint firstItem="Kxg-uv-6Li" firstAttribute="trailing" secondItem="NgA-7A-C9Q" secondAttribute="trailing" id="hgv-og-mHm"/>
+                            <constraint firstItem="9Ga-ww-lgr" firstAttribute="leading" secondItem="NgA-7A-C9Q" secondAttribute="leading" constant="486" id="hl1-8Q-qmh"/>
                             <constraint firstItem="Kxg-uv-6Li" firstAttribute="leading" secondItem="NgA-7A-C9Q" secondAttribute="leading" id="hqU-oj-lyN"/>
                             <constraint firstItem="NgA-7A-C9Q" firstAttribute="trailing" secondItem="wSV-43-DpU" secondAttribute="trailing" constant="44" id="ijH-gl-DgH"/>
                             <constraint firstItem="NgA-7A-C9Q" firstAttribute="bottom" secondItem="CcB-m0-enc" secondAttribute="bottom" constant="30" id="qCr-EN-wkS"/>
@@ -640,6 +643,12 @@
                             <constraint firstItem="I6H-KK-2o9" firstAttribute="leading" secondItem="OYF-92-dG9" secondAttribute="trailing" constant="96" id="v4x-S6-ts8"/>
                             <constraint firstItem="NgA-7A-C9Q" firstAttribute="bottom" secondItem="WUt-ls-dEk" secondAttribute="bottom" constant="4" id="wIS-4B-FkS"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="6Pv-fm-TpC"/>
+                                <exclude reference="OYF-92-dG9"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="OHQ-8g-yRA"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
@@ -913,7 +922,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Earth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ad-UP-CM4">
-                                                <rect key="frame" x="1855" y="235" width="93.5" height="44"/>
+                                                <rect key="frame" x="1855" y="185" width="93.5" height="44"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -951,7 +960,7 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="TWX-d3-udP" firstAttribute="top" secondItem="8ad-UP-CM4" secondAttribute="bottom" constant="100" id="1hg-vS-mBV"/>
+                                            <constraint firstItem="TWX-d3-udP" firstAttribute="top" secondItem="8ad-UP-CM4" secondAttribute="bottom" constant="150" id="1hg-vS-mBV"/>
                                             <constraint firstItem="zMO-3w-nK9" firstAttribute="leading" secondItem="nnA-PL-sPB" secondAttribute="trailing" constant="250" id="334-wH-Hve"/>
                                             <constraint firstItem="zMO-3w-nK9" firstAttribute="top" secondItem="F8u-5n-wvy" secondAttribute="bottom" constant="56" id="47q-Jo-nrJ"/>
                                             <constraint firstItem="Nki-Qe-8Tv" firstAttribute="leading" secondItem="zMO-3w-nK9" secondAttribute="trailing" constant="150" id="6XE-dQ-Fvk"/>
@@ -1325,6 +1334,7 @@
         <image name="Uranus" width="1920" height="1920"/>
         <image name="Venus" width="1920" height="1920"/>
         <image name="book.fill" catalog="system" width="128" height="95"/>
+        <image name="circle.fill" catalog="system" width="128" height="123"/>
         <image name="computer-monitor-flat-icon-by-Vexels" width="4500" height="4500"/>
         <image name="earth-globe-colorful-icon-stroke-by-Vexels" width="4500" height="4500"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>

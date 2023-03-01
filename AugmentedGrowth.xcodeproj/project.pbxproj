@@ -11,6 +11,7 @@
 		C90DB97929950A8700CC3FF9 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90DB97829950A8700CC3FF9 /* Topic.swift */; };
 		C90DB97B299790A700CC3FF9 /* SubjectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90DB97A299790A700CC3FF9 /* SubjectTableViewController.swift */; };
 		C9269DE1298850AA00534AEE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9269DE0298850AA00534AEE /* SearchViewController.swift */; };
+		C92D34D229AEFF600019194B /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C92D34D129AEFF600019194B /* Settings.bundle */; };
 		C92D8AAE298E3F32009BECAC /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92D8AAD298E3F32009BECAC /* TopicViewController.swift */; };
 		C92EAB3529A28DBE00E4E31A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92EAB3429A28DBE00E4E31A /* HomeViewController.swift */; };
 		C936845929A3DF41000E53C3 /* AstronomyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936845829A3DF41000E53C3 /* AstronomyViewController.swift */; };
@@ -50,6 +51,7 @@
 		C90DB97829950A8700CC3FF9 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		C90DB97A299790A700CC3FF9 /* SubjectTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectTableViewController.swift; sourceTree = "<group>"; };
 		C9269DE0298850AA00534AEE /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		C92D34D129AEFF600019194B /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		C92D8AAD298E3F32009BECAC /* TopicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
 		C92EAB3429A28DBE00E4E31A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C936845829A3DF41000E53C3 /* AstronomyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		C9BE09372982DC3A00DC1118 = {
 			isa = PBXGroup;
 			children = (
+				C92D34D129AEFF600019194B /* Settings.bundle */,
 				C936845A29A4033B000E53C3 /* PlanetViewController.swift */,
 				C936845C29A403BA000E53C3 /* Planets.swift */,
 				C936845829A3DF41000E53C3 /* AstronomyViewController.swift */,
@@ -261,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C92D34D229AEFF600019194B /* Settings.bundle in Resources */,
 				C9D5D554299B4DE90043B08D /* Images.xcassets in Resources */,
 				C9BE09502982DC3B00DC1118 /* LaunchScreen.storyboard in Resources */,
 				C9BE094B2982DC3A00DC1118 /* Main.storyboard in Resources */,
