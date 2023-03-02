@@ -11,7 +11,8 @@ class ArcadeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.tabBarController?.tabBar.barTintColor = .label
         // Do any additional setup after loading the view.
     }
     
