@@ -62,6 +62,7 @@ class AstronomyViewController: UIViewController {
             super.viewDidAppear(true)
         animatePlanet(planetImage: mercuryImage)
         animatePlanet(planetImage: venusImage)
+//        animatePlanet(planetImage: earthImage)
         animatePlanet(planetImage: earthImage, moon: moonImage)
         revolve(image: moonImage, around: earthImage)
         animatePlanet(planetImage: marsImage)
@@ -69,12 +70,14 @@ class AstronomyViewController: UIViewController {
         animatePlanet(planetImage: saturnImage)
         animatePlanet(planetImage: uranusImage)
         animatePlanet(planetImage: neptuneImage)
-            
+        self.tabBarController?.tabBar.tintColor = .white
+        self.tabBarController?.tabBar.barTintColor = .black
         }
     
     
     override func viewDidDisappear(_ animated: Bool) {
             super.viewDidDisappear(true)
+        
         self.tabBarController?.tabBar.tintColor = .label
         self.tabBarController?.tabBar.barTintColor = .label
         view.layer.removeAllAnimations()

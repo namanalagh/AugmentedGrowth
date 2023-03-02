@@ -17,6 +17,7 @@
 		C936845929A3DF41000E53C3 /* AstronomyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936845829A3DF41000E53C3 /* AstronomyViewController.swift */; };
 		C936845B29A4033B000E53C3 /* PlanetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936845A29A4033B000E53C3 /* PlanetViewController.swift */; };
 		C936845D29A403BA000E53C3 /* Planets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936845C29A403BA000E53C3 /* Planets.swift */; };
+		C93A596E29B0A0D0005995C7 /* ArcadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A596D29B0A0D0005995C7 /* ArcadeViewController.swift */; };
 		C9BDEF6B298930680073C9D7 /* MoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BDEF6A298930680073C9D7 /* MoreTableViewController.swift */; };
 		C9BE09442982DC3A00DC1118 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BE09432982DC3A00DC1118 /* AppDelegate.swift */; };
 		C9BE09462982DC3A00DC1118 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BE09452982DC3A00DC1118 /* SceneDelegate.swift */; };
@@ -57,6 +58,7 @@
 		C936845829A3DF41000E53C3 /* AstronomyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyViewController.swift; sourceTree = "<group>"; };
 		C936845A29A4033B000E53C3 /* PlanetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetViewController.swift; sourceTree = "<group>"; };
 		C936845C29A403BA000E53C3 /* Planets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planets.swift; sourceTree = "<group>"; };
+		C93A596D29B0A0D0005995C7 /* ArcadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcadeViewController.swift; sourceTree = "<group>"; };
 		C9BDEF6A298930680073C9D7 /* MoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTableViewController.swift; sourceTree = "<group>"; };
 		C9BE09402982DC3A00DC1118 /* AugmentedGrowth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AugmentedGrowth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9BE09432982DC3A00DC1118 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		C9BE09372982DC3A00DC1118 = {
 			isa = PBXGroup;
 			children = (
+				C93A596D29B0A0D0005995C7 /* ArcadeViewController.swift */,
 				C92D34D129AEFF600019194B /* Settings.bundle */,
 				C936845A29A4033B000E53C3 /* PlanetViewController.swift */,
 				C936845C29A403BA000E53C3 /* Planets.swift */,
@@ -298,6 +301,7 @@
 				C9BE09482982DC3A00DC1118 /* ViewController.swift in Sources */,
 				C9BE09442982DC3A00DC1118 /* AppDelegate.swift in Sources */,
 				C92D8AAE298E3F32009BECAC /* TopicViewController.swift in Sources */,
+				C93A596E29B0A0D0005995C7 /* ArcadeViewController.swift in Sources */,
 				C9269DE1298850AA00534AEE /* SearchViewController.swift in Sources */,
 				C92EAB3529A28DBE00E4E31A /* HomeViewController.swift in Sources */,
 				C9BE09462982DC3A00DC1118 /* SceneDelegate.swift in Sources */,
