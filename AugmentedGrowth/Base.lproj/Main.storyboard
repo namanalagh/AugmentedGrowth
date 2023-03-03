@@ -35,6 +35,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="taK-5K-7Ev">
                         <rect key="frame" x="0.0" y="24" width="1366" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <connections>
                         <segue destination="pKj-v7-ZIW" kind="relationship" relationship="rootViewController" id="uR4-UX-3DG"/>
@@ -369,6 +370,14 @@
                                                 <exclude reference="uMp-Nr-oEy"/>
                                                 <exclude reference="KNZ-7R-9Lv"/>
                                                 <exclude reference="NVk-HE-8Hf"/>
+                                                <exclude reference="F8u-5n-wvy"/>
+                                                <exclude reference="t0G-fe-hNJ"/>
+                                                <exclude reference="8ad-UP-CM4"/>
+                                                <exclude reference="68w-Ws-aop"/>
+                                                <exclude reference="QEY-xu-Pc1"/>
+                                                <exclude reference="vDf-xx-OmY"/>
+                                                <exclude reference="WRY-4W-1d3"/>
+                                                <exclude reference="4kZ-Mr-oH1"/>
                                             </mask>
                                         </variation>
                                     </view>
@@ -380,6 +389,60 @@
                                     <constraint firstItem="3lN-HS-i3g" firstAttribute="top" secondItem="FKb-sY-fYK" secondAttribute="top" id="rju-UX-dLE"/>
                                 </constraints>
                             </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bb2-vn-3sv">
+                                <rect key="frame" x="3600" y="104" width="800" height="250"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="daj-g9-hSS">
+                                        <rect key="frame" x="0.0" y="1" width="800" height="247.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PlanetName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKD-tJ-Wvw">
+                                        <rect key="frame" x="326" y="35" width="148" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HmP-aE-SfR">
+                                        <rect key="frame" x="375" y="171" width="58" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="Go!" imageContentMode="scaleAspectFill"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="goButtonPressed:" destination="SNx-DP-cK6" eventType="touchUpInside" id="hXi-G4-Uie"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Short Description about the Planet" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXq-7m-Hdu">
+                                        <rect key="frame" x="94" y="61" width="615" height="59"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a26-dw-xh2">
+                                        <rect key="frame" x="375" y="130" width="58" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled">
+                                            <backgroundConfiguration key="background" image="AR" imageContentMode="scaleAspectFill"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="daj-g9-hSS" firstAttribute="leading" secondItem="Bb2-vn-3sv" secondAttribute="leading" id="2lL-Om-w2T"/>
+                                    <constraint firstAttribute="bottom" secondItem="daj-g9-hSS" secondAttribute="bottom" id="Faq-Px-XnA"/>
+                                    <constraint firstAttribute="trailing" secondItem="daj-g9-hSS" secondAttribute="trailing" id="Uqy-7K-iZG"/>
+                                    <constraint firstAttribute="width" constant="800" id="jiv-Ct-ycj"/>
+                                    <constraint firstAttribute="height" constant="250" id="sFG-sn-ex6"/>
+                                    <constraint firstItem="daj-g9-hSS" firstAttribute="top" secondItem="Bb2-vn-3sv" secondAttribute="top" id="ybp-DI-ndP"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vCc-VP-Q9q"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -387,6 +450,8 @@
                             <constraint firstItem="FKb-sY-fYK" firstAttribute="leading" secondItem="gfR-5a-grh" secondAttribute="leading" id="2HF-S3-bS3"/>
                             <constraint firstItem="3lN-HS-i3g" firstAttribute="height" secondItem="gfR-5a-grh" secondAttribute="height" multiplier="0.856515" id="AWV-3F-vZr"/>
                             <constraint firstItem="FKb-sY-fYK" firstAttribute="top" secondItem="gfR-5a-grh" secondAttribute="top" id="Ceg-69-QCV"/>
+                            <constraint firstItem="Bb2-vn-3sv" firstAttribute="centerX" secondItem="gfR-5a-grh" secondAttribute="centerX" id="Pzd-GX-6hZ"/>
+                            <constraint firstItem="Bb2-vn-3sv" firstAttribute="top" secondItem="vCc-VP-Q9q" secondAttribute="top" constant="30" id="c34-EB-Em6"/>
                             <constraint firstAttribute="bottom" secondItem="FKb-sY-fYK" secondAttribute="bottom" id="ivN-9I-0J6"/>
                             <constraint firstItem="FKb-sY-fYK" firstAttribute="trailing" secondItem="gfR-5a-grh" secondAttribute="trailing" id="lja-my-rdj"/>
                         </constraints>
@@ -396,6 +461,7 @@
                     <connections>
                         <outlet property="earthButton" destination="TWX-d3-udP" id="kNH-k7-cWB"/>
                         <outlet property="earthImage" destination="GsG-O4-tDD" id="mjl-WP-Zje"/>
+                        <outlet property="goButton" destination="HmP-aE-SfR" id="KCB-41-bxM"/>
                         <outlet property="jupiterButton" destination="jbf-jy-N0s" id="LAU-1m-Fso"/>
                         <outlet property="jupiterImage" destination="U73-Lg-pQw" id="hsb-7U-6mI"/>
                         <outlet property="marsButton" destination="LXt-ig-AhI" id="nRD-cV-USR"/>
@@ -405,6 +471,9 @@
                         <outlet property="moonImage" destination="cca-mW-Lqw" id="agQ-l5-pA7"/>
                         <outlet property="neptuneButton" destination="5tT-IQ-KtG" id="DGx-xY-u6O"/>
                         <outlet property="neptuneImage" destination="xeH-Ci-Z0s" id="9Cv-9X-4TS"/>
+                        <outlet property="planetDescriptionLabel" destination="GXq-7m-Hdu" id="PsW-vZ-b2U"/>
+                        <outlet property="popupNameLabel" destination="XKD-tJ-Wvw" id="GZd-vZ-Wwr"/>
+                        <outlet property="popupView" destination="Bb2-vn-3sv" id="cPD-1r-rHb"/>
                         <outlet property="saturnButton" destination="k6N-bB-s4s" id="dpe-2y-BFm"/>
                         <outlet property="saturnImage" destination="Vkm-8i-gHm" id="VDV-qb-qct"/>
                         <outlet property="uranusButton" destination="heL-7H-DUm" id="b7e-5E-l7G"/>
@@ -550,7 +619,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b9p-YX-auD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5184.9609375" y="4293.5578330893113"/>
+            <point key="canvasLocation" x="3936" y="4798"/>
         </scene>
         <!--More-->
         <scene sceneID="pja-nw-qJi">
@@ -617,6 +686,7 @@
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.56078433989999998" green="0.76862752440000004" blue="0.83529412749999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" systemColor="tintColor"/>
                                         <constraints>
                                             <constraint firstItem="kuD-7d-IRJ" firstAttribute="top" secondItem="Z62-zW-uW4" secondAttribute="top" id="Kd3-3Y-ynI"/>
                                             <constraint firstAttribute="trailing" secondItem="kuD-7d-IRJ" secondAttribute="trailing" id="MIr-bI-De5"/>
@@ -653,6 +723,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DkO-Ez-9Iq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1881.6983894582722" y="1268.5546875"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2MI-mN-mor">
+            <objects>
+                <viewController id="1aP-yF-rT3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cC6-1E-o3y">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="wYX-7g-jHk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Slr-E5-G4a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3161" y="2000"/>
         </scene>
         <!--Home-->
         <scene sceneID="fMx-gx-BuM">
@@ -797,6 +882,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="AR" width="2048" height="2048"/>
         <image name="Arcade Machine Animal" width="3755" height="5858"/>
         <image name="Arcade Machine Geography" width="3755" height="5858"/>
         <image name="Arcade Machine Plants" width="3755" height="5858"/>
@@ -804,6 +890,7 @@
         <image name="Asteroid" width="1920" height="1920"/>
         <image name="Big Asteroid" width="1920" height="1920"/>
         <image name="Earth" width="1920" height="1920"/>
+        <image name="Go!" width="2048" height="2048"/>
         <image name="Jupiter" width="1920" height="1920"/>
         <image name="Mars" width="1920" height="1920"/>
         <image name="Mercury" width="1920" height="1920"/>
@@ -818,8 +905,12 @@
         <image name="World Map" width="3800" height="2400"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="play.circle" catalog="system" width="128" height="123"/>
+        <image name="rectangle.fill" catalog="system" width="128" height="93"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

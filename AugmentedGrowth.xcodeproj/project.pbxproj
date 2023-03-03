@@ -19,6 +19,8 @@
 		C936845D29A403BA000E53C3 /* Planets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936845C29A403BA000E53C3 /* Planets.swift */; };
 		C93A596E29B0A0D0005995C7 /* ArcadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A596D29B0A0D0005995C7 /* ArcadeViewController.swift */; };
 		C93A597029B1AC9D005995C7 /* GeographyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A596F29B1AC9D005995C7 /* GeographyViewController.swift */; };
+		C93A597329B1C0F6005995C7 /* AstronomyPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A597129B1C0F6005995C7 /* AstronomyPopupViewController.swift */; };
+		C93A597429B1C0F6005995C7 /* AstronomyPopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C93A597229B1C0F6005995C7 /* AstronomyPopupViewController.xib */; };
 		C9BDEF6B298930680073C9D7 /* MoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BDEF6A298930680073C9D7 /* MoreTableViewController.swift */; };
 		C9BE09442982DC3A00DC1118 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BE09432982DC3A00DC1118 /* AppDelegate.swift */; };
 		C9BE09462982DC3A00DC1118 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BE09452982DC3A00DC1118 /* SceneDelegate.swift */; };
@@ -61,6 +63,8 @@
 		C936845C29A403BA000E53C3 /* Planets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planets.swift; sourceTree = "<group>"; };
 		C93A596D29B0A0D0005995C7 /* ArcadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcadeViewController.swift; sourceTree = "<group>"; };
 		C93A596F29B1AC9D005995C7 /* GeographyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeographyViewController.swift; sourceTree = "<group>"; };
+		C93A597129B1C0F6005995C7 /* AstronomyPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyPopupViewController.swift; sourceTree = "<group>"; };
+		C93A597229B1C0F6005995C7 /* AstronomyPopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AstronomyPopupViewController.xib; sourceTree = "<group>"; };
 		C9BDEF6A298930680073C9D7 /* MoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTableViewController.swift; sourceTree = "<group>"; };
 		C9BE09402982DC3A00DC1118 /* AugmentedGrowth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AugmentedGrowth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9BE09432982DC3A00DC1118 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +111,8 @@
 			children = (
 				C93A596F29B1AC9D005995C7 /* GeographyViewController.swift */,
 				C93A596D29B0A0D0005995C7 /* ArcadeViewController.swift */,
+				C93A597129B1C0F6005995C7 /* AstronomyPopupViewController.swift */,
+				C93A597229B1C0F6005995C7 /* AstronomyPopupViewController.xib */,
 				C92D34D129AEFF600019194B /* Settings.bundle */,
 				C936845A29A4033B000E53C3 /* PlanetViewController.swift */,
 				C936845C29A403BA000E53C3 /* Planets.swift */,
@@ -274,6 +280,7 @@
 				C9D5D554299B4DE90043B08D /* Images.xcassets in Resources */,
 				C9BE09502982DC3B00DC1118 /* LaunchScreen.storyboard in Resources */,
 				C9BE094B2982DC3A00DC1118 /* Main.storyboard in Resources */,
+				C93A597429B1C0F6005995C7 /* AstronomyPopupViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +317,7 @@
 				C92EAB3529A28DBE00E4E31A /* HomeViewController.swift in Sources */,
 				C9BE09462982DC3A00DC1118 /* SceneDelegate.swift in Sources */,
 				C936845B29A4033B000E53C3 /* PlanetViewController.swift in Sources */,
+				C93A597329B1C0F6005995C7 /* AstronomyPopupViewController.swift in Sources */,
 				C90DB97929950A8700CC3FF9 /* Topic.swift in Sources */,
 				C9BDEF6B298930680073C9D7 /* MoreTableViewController.swift in Sources */,
 				C90DB9772995052900CC3FF9 /* TopicListTableViewController.swift in Sources */,

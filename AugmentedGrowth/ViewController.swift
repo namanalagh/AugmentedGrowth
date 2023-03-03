@@ -19,10 +19,6 @@ class ViewController: UIViewController, UISearchResultsUpdating  {
         title = "Explore"
 
     }
-
-    @IBAction func recommendedButtonPressed(_ sender: UIButton) {
-        print("Button Pressed")
-    }
     
     func updateSearchResults(for searchController: UISearchController) {
         guard let text = searchController.searchBar.text else {
