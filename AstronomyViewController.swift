@@ -62,7 +62,6 @@ class AstronomyViewController: UIViewController {
             super.viewDidAppear(true)
         animatePlanet(planetImage: mercuryImage)
         animatePlanet(planetImage: venusImage)
-//        animatePlanet(planetImage: earthImage)
         animatePlanet(planetImage: earthImage, moon: moonImage)
         revolve(image: moonImage, around: earthImage)
         animatePlanet(planetImage: marsImage)
