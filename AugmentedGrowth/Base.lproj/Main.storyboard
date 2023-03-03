@@ -598,10 +598,10 @@
             </objects>
             <point key="canvasLocation" x="1164" y="5017"/>
         </scene>
-        <!--View Controller-->
+        <!--Geography View Controller-->
         <scene sceneID="Daj-Ax-raQ">
             <objects>
-                <viewController id="boy-XU-dmp" sceneMemberID="viewController">
+                <viewController id="boy-XU-dmp" customClass="GeographyViewController" customModule="AugmentedGrowth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B1s-vP-RvR">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -610,20 +610,20 @@
                                 <rect key="frame" x="0.0" y="74" width="1366" height="885"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z62-zW-uW4">
-                                        <rect key="frame" x="0.0" y="0.0" width="3800" height="2400"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1366" height="885"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="World Map" translatesAutoresizingMaskIntoConstraints="NO" id="kuD-7d-IRJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="3800" height="2400"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="1366" height="885"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.56078433989999998" green="0.76862752440000004" blue="0.83529412749999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstItem="kuD-7d-IRJ" firstAttribute="top" secondItem="Z62-zW-uW4" secondAttribute="top" id="Kd3-3Y-ynI"/>
                                             <constraint firstAttribute="trailing" secondItem="kuD-7d-IRJ" secondAttribute="trailing" id="MIr-bI-De5"/>
-                                            <constraint firstAttribute="width" constant="3800" id="Moh-Pz-3JP"/>
+                                            <constraint firstAttribute="width" constant="1366" id="Moh-Pz-3JP"/>
                                             <constraint firstItem="kuD-7d-IRJ" firstAttribute="leading" secondItem="Z62-zW-uW4" secondAttribute="leading" id="O4f-e8-Qr7"/>
                                             <constraint firstAttribute="bottom" secondItem="kuD-7d-IRJ" secondAttribute="bottom" id="RFP-Wg-BMo"/>
-                                            <constraint firstAttribute="height" constant="2400" id="jmD-wr-hxQ"/>
+                                            <constraint firstAttribute="height" constant="885" id="jmD-wr-hxQ"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -645,6 +645,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WDQ-fL-GFy"/>
+                    <connections>
+                        <outlet property="scrollViewOutlet" destination="h04-Rl-fIC" id="2O5-5G-9Ke"/>
+                        <outlet property="subviewOutlet" destination="Z62-zW-uW4" id="TIz-Rt-NxP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DkO-Ez-9Iq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
