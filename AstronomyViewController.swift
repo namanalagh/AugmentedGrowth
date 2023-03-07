@@ -61,7 +61,6 @@ class AstronomyViewController: UIViewController {
         self.tabBarController?.tabBar.tintColor = .white
         self.tabBarController?.tabBar.barTintColor = .black
         self.navigationController?.navigationBar.tintColor = .white
-    
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -143,44 +142,45 @@ class AstronomyViewController: UIViewController {
         popupNameLabel.text = selectedPlanet.name
         planetDescriptionLabel.text = selectedPlanet.description
 //        popupView.frame =  CGRectMake(planet.frame.origin.x+planet.frame.size.width + 1, planet.frame.origin.y + planet.frame.size.height/4 ,popupView.frame.size.width,popupView.frame.size.height)
-        UIView.animate(withDuration: 2, delay: 0, options: [.autoreverse], animations: {
+        
+        UIView.animate(withDuration: 0.5, delay: 0, animations: {
 
+            self.popupView.transform = CGAffineTransform(translationX: 0, y: 50)
             
-            
-            
-
         }, completion: nil)
         
     }
     
     @IBAction func sunButtonPressed(_ sender: Any) {
         selectedPlanet = planets[0]
-        //performSegue(withIdentifier: "selectPlanet", sender: self)
+        performSegue(withIdentifier: "selectPlanet", sender: self)
     }
     
     @IBAction func mercuryButtonPressed(_ sender: Any) {
         selectedPlanet = planets[1]
-//        performSegue(withIdentifier: "selectPlanet", sender: self)
+        performSegue(withIdentifier: "selectPlanet", sender: self)
         placePopup(planet: mercuryImage)
+//        let sidePopup = AstronomyPopupViewController()
+//        sidePopup.appear(sender: self)
 
     }
     
     @IBAction func venusButtonPressed(_ sender: Any) {
         selectedPlanet = planets[2]
-//        performSegue(withIdentifier: "selectPlanet", sender: self)
+        performSegue(withIdentifier: "selectPlanet", sender: self)
         placePopup(planet: venusImage)
     }
     
     @IBAction func earthButtonPressed(_ sender: Any) {
         selectedPlanet = planets[3]
-//        performSegue(withIdentifier: "selectPlanet", sender: self)
+        performSegue(withIdentifier: "selectPlanet", sender: self)
         placePopup(planet: earthImage)
     }
     
     
     @IBAction func marsButtonPressed(_ sender: Any) {
         selectedPlanet = planets[4]
-//        performSegue(withIdentifier: "selectPlanet", sender: self)
+        performSegue(withIdentifier: "selectPlanet", sender: self)
         placePopup(planet: marsImage)
 
     }
@@ -188,28 +188,28 @@ class AstronomyViewController: UIViewController {
     
     @IBAction func jupiterButtonPressed(_ sender: Any) {
         selectedPlanet = planets[6]
-//        performSegue(withIdentifier: "selectPlanet", sender: self)
+        performSegue(withIdentifier: "selectPlanet", sender: self)
         placePopup(planet: jupiterImage)
 
     }
     
     @IBAction func saturnButtonPressed(_ sender: Any) {
         selectedPlanet = planets[7]
-//        performSegue(withIdentifier: "selectPlanet", sender: self)
+        performSegue(withIdentifier: "selectPlanet", sender: self)
         placePopup(planet: saturnImage)
 
     }
     
     @IBAction func uranusButtonPressed(_ sender: Any) {
         selectedPlanet = planets[8]
-//        performSegue(withIdentifier: "selectPlanet", sender: self)
+        performSegue(withIdentifier: "selectPlanet", sender: self)
         placePopup(planet: uranusImage)
 
     }
     
     @IBAction func neptuneButtonPressed(_ sender: Any) {
         selectedPlanet = planets[9]
-//        performSegue(withIdentifier: "selectPlanet", sender: self)
+        performSegue(withIdentifier: "selectPlanet", sender: self)
         placePopup(planet: neptuneImage)
 
     }

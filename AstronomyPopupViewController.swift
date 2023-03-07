@@ -20,17 +20,23 @@ class AstronomyPopupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configView()
         }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func configView(){
+        
     }
-    */
+    
+    func appear(sender: UIViewController){
+        sender.present(self, animated: false) {
+            //self.showPopup()
+        }
+        
+    }
+
+    private func showPopup(){
+//        UIView.animate(withDuration: 2, delay: 0, animations: <#T##() -> Void#>)
+    }
+   
 
 }
