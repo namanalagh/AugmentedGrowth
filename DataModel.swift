@@ -13,12 +13,16 @@ struct Planet {
     var name: String
     var thumbnail: String
     var description: String
+    var mass: Int?
+    var radius: Int?
+    var distanceFromSun: Int?
+    var noOfMoons: Int?
     var modelFileName: String?
     var model: String?
 }
 
 let planets: [Planet] = [Planet(id: UUID(), name: "The Sun", thumbnail: "Sun", description: ""),
-                         Planet(id: UUID(), name: "Mercury", thumbnail: "Mercury",description: "The smallest planet in our solar system"),
+                         Planet(id: UUID(), name: "Mercury", thumbnail: "Mercury",description: "The smallest planet in our solar system",mass: 0, radius: 0, distanceFromSun: 0, noOfMoons: 0),
                          Planet(id: UUID(), name: "Venus", thumbnail: "Venus",description: "A day here is longer than a year!"),
                          Planet(id: UUID(), name: "Earth", thumbnail: "Earth",description: "Hey, that's us!", modelFileName: "Earth", model: "Earth"),
                          Planet(id: UUID(), name: "Mars", thumbnail: "Mars",description: "We're still looking for signs of life here"),

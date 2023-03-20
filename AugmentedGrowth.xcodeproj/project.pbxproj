@@ -34,6 +34,7 @@
 		C9E17EA229C859DB00742ABB /* PlanetARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E17EA129C859DB00742ABB /* PlanetARViewController.swift */; };
 		C9E17EA429C8658C00742ABB /* Earth.dae in Resources */ = {isa = PBXBuildFile; fileRef = C9E17EA329C8658C00742ABB /* Earth.dae */; };
 		C9E17EA629C865FB00742ABB /* 2k_earth_daymap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9E17EA529C865FB00742ABB /* 2k_earth_daymap.jpg */; };
+		C9E17EA829C88DC600742ABB /* 2k_earth_normal_map.tif in Resources */ = {isa = PBXBuildFile; fileRef = C9E17EA729C88DC600742ABB /* 2k_earth_normal_map.tif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		C9E17EA129C859DB00742ABB /* PlanetARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetARViewController.swift; sourceTree = "<group>"; };
 		C9E17EA329C8658C00742ABB /* Earth.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Earth.dae; sourceTree = "<group>"; };
 		C9E17EA529C865FB00742ABB /* 2k_earth_daymap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2k_earth_daymap.jpg; sourceTree = "<group>"; };
+		C9E17EA729C88DC600742ABB /* 2k_earth_normal_map.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = 2k_earth_normal_map.tif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				C9BE09492982DC3A00DC1118 /* Main.storyboard */,
 				C9E17EA129C859DB00742ABB /* PlanetARViewController.swift */,
 				C9E17EA329C8658C00742ABB /* Earth.dae */,
+				C9E17EA729C88DC600742ABB /* 2k_earth_normal_map.tif */,
 				C9E17EA529C865FB00742ABB /* 2k_earth_daymap.jpg */,
 				C9D5D553299B4DE90043B08D /* Images.xcassets */,
 				C90DB9762995052900CC3FF9 /* TopicListTableViewController.swift */,
@@ -290,6 +293,7 @@
 				C9BE09502982DC3B00DC1118 /* LaunchScreen.storyboard in Resources */,
 				C9E17EA429C8658C00742ABB /* Earth.dae in Resources */,
 				C9BE094B2982DC3A00DC1118 /* Main.storyboard in Resources */,
+				C9E17EA829C88DC600742ABB /* 2k_earth_normal_map.tif in Resources */,
 				C9E17EA629C865FB00742ABB /* 2k_earth_daymap.jpg in Resources */,
 				C93A597429B1C0F6005995C7 /* AstronomyPopupViewController.xib in Resources */,
 			);
