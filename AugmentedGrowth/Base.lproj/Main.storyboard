@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nYL-5N-6XU">
     <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -539,7 +540,7 @@
                                                             <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="50"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <segue destination="9aJ-1B-Atg" kind="push" id="8Ek-Wt-Jgw"/>
+                                                            <segue destination="9aJ-1B-Atg" kind="push" identifier="goToAR" id="8Ek-Wt-Jgw"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nd-EY-4Ok">
@@ -632,10 +633,10 @@
             </objects>
             <point key="canvasLocation" x="3936" y="4798"/>
         </scene>
-        <!--View Controller-->
+        <!--PlanetAR View Controller-->
         <scene sceneID="N2c-8P-M8M">
             <objects>
-                <viewController id="9aJ-1B-Atg" sceneMemberID="viewController">
+                <viewController id="9aJ-1B-Atg" customClass="PlanetARViewController" customModule="AugmentedGrowth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qWs-v4-ITC">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -654,6 +655,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="N4T-Ju-jcV"/>
+                    <connections>
+                        <outlet property="arView" destination="g4X-Lg-JUR" id="82q-Hg-FN5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AUV-nQ-8nf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

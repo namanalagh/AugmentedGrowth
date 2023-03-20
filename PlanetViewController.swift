@@ -28,6 +28,15 @@ class PlanetViewController: UIViewController {
     }
     
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToAR" {
+            let sharedPlanet = selectedPlanet
+            let destinationVC = segue.destination as! PlanetARViewController
+            destinationVC.selectedPlanet = sharedPlanet!
+        }
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
     /*
     // MARK: - Navigation
 
