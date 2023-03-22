@@ -15,7 +15,8 @@ class PlanetARViewController: UIViewController {
     
     let configuration = ARWorldTrackingConfiguration()
     var selectedPlanet: Planet!
-    var model: SCNNode!
+    var modelNode: SCNNode!
+    var currentAngleY: Float = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +28,7 @@ class PlanetARViewController: UIViewController {
         guard let currentModel = currentScene?.rootNode.childNode(withName: selectedPlanet.model!, recursively: true) else {
             fatalError("No model found.")
         }
-        model = currentModel
-        print("test")
+        modelNode = currentModel
         currentModel.position = SCNVector3(x: 0, y: 0, z: 0)
         self.arView.scene.rootNode.addChildNode(currentModel)
         }
@@ -36,9 +36,10 @@ class PlanetARViewController: UIViewController {
     private func registerGestureRecognizers(){
         let pinchGestureRecognizer = UIPinchGestureRecognizer(target: self, action: #selector(pinched))
         self.arView.addGestureRecognizer(pinchGestureRecognizer)
-        print("pinch gesture added")
         
-
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(panned))
+        self.arView.addGestureRecognizer(panGesture)
+        
     }
 
     @objc func pinched(recognizer: UIPinchGestureRecognizer){
@@ -48,7 +49,6 @@ class PlanetARViewController: UIViewController {
             }
             let touch = recognizer.location(in: arView)
             let hitTestResults = self.arView.hitTest(touch, options: nil)
-            print("pinched")
             
             if let hitTest = hitTestResults.first {
                 
@@ -64,4 +64,16 @@ class PlanetARViewController: UIViewController {
         }
     }
     
+    @objc func panned(_ gesture: UIPanGestureRecognizer){
+        guard let nodeToRotate = modelNode else { return }
+
+                let translation = gesture.translation(in: gesture.view!)
+                var newAngleY = (Float)(translation.x)*(Float)(Double.pi)/180.0
+                newAngleY += currentAngleY
+
+                nodeToRotate.eulerAngles.y = newAngleY
+
+                if(gesture.state == .ended) { currentAngleY = newAngleY }
+                    print(nodeToRotate.eulerAngles)
+    }
 }
