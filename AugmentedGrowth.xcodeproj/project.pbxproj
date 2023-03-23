@@ -21,6 +21,10 @@
 		C93A597029B1AC9D005995C7 /* GeographyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A596F29B1AC9D005995C7 /* GeographyViewController.swift */; };
 		C93A597329B1C0F6005995C7 /* AstronomyPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A597129B1C0F6005995C7 /* AstronomyPopupViewController.swift */; };
 		C93A597429B1C0F6005995C7 /* AstronomyPopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C93A597229B1C0F6005995C7 /* AstronomyPopupViewController.xib */; };
+		C9A7F00629CC278A00983759 /* earth_color_10K.tif in Resources */ = {isa = PBXBuildFile; fileRef = C9A7F00529CC278A00983759 /* earth_color_10K.tif */; };
+		C9A7F00C29CC2E3900983759 /* Earth.dae in Resources */ = {isa = PBXBuildFile; fileRef = C9A7F00B29CC2E3900983759 /* Earth.dae */; };
+		C9A7F00E29CC2E7500983759 /* lroc_color_poles_2k.tif in Resources */ = {isa = PBXBuildFile; fileRef = C9A7F00D29CC2E7500983759 /* lroc_color_poles_2k.tif */; };
+		C9A7F01029CC2E7F00983759 /* ldem_4_uint.tif in Resources */ = {isa = PBXBuildFile; fileRef = C9A7F00F29CC2E7F00983759 /* ldem_4_uint.tif */; };
 		C9BDEF6B298930680073C9D7 /* MoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BDEF6A298930680073C9D7 /* MoreTableViewController.swift */; };
 		C9BE09442982DC3A00DC1118 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BE09432982DC3A00DC1118 /* AppDelegate.swift */; };
 		C9BE09462982DC3A00DC1118 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BE09452982DC3A00DC1118 /* SceneDelegate.swift */; };
@@ -32,7 +36,6 @@
 		C9BE09672982DC3B00DC1118 /* AugmentedGrowthUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BE09662982DC3B00DC1118 /* AugmentedGrowthUITestsLaunchTests.swift */; };
 		C9D5D554299B4DE90043B08D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9D5D553299B4DE90043B08D /* Images.xcassets */; };
 		C9E17EA229C859DB00742ABB /* PlanetARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E17EA129C859DB00742ABB /* PlanetARViewController.swift */; };
-		C9E17EA429C8658C00742ABB /* Earth.dae in Resources */ = {isa = PBXBuildFile; fileRef = C9E17EA329C8658C00742ABB /* Earth.dae */; };
 		C9E17EA629C865FB00742ABB /* 2k_earth_daymap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9E17EA529C865FB00742ABB /* 2k_earth_daymap.jpg */; };
 		C9E17EA829C88DC600742ABB /* 2k_earth_normal_map.tif in Resources */ = {isa = PBXBuildFile; fileRef = C9E17EA729C88DC600742ABB /* 2k_earth_normal_map.tif */; };
 /* End PBXBuildFile section */
@@ -69,6 +72,10 @@
 		C93A596F29B1AC9D005995C7 /* GeographyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeographyViewController.swift; sourceTree = "<group>"; };
 		C93A597129B1C0F6005995C7 /* AstronomyPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyPopupViewController.swift; sourceTree = "<group>"; };
 		C93A597229B1C0F6005995C7 /* AstronomyPopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AstronomyPopupViewController.xib; sourceTree = "<group>"; };
+		C9A7F00529CC278A00983759 /* earth_color_10K.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = earth_color_10K.tif; sourceTree = "<group>"; };
+		C9A7F00B29CC2E3900983759 /* Earth.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Earth.dae; sourceTree = "<group>"; };
+		C9A7F00D29CC2E7500983759 /* lroc_color_poles_2k.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = lroc_color_poles_2k.tif; sourceTree = "<group>"; };
+		C9A7F00F29CC2E7F00983759 /* ldem_4_uint.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ldem_4_uint.tif; sourceTree = "<group>"; };
 		C9BDEF6A298930680073C9D7 /* MoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTableViewController.swift; sourceTree = "<group>"; };
 		C9BE09402982DC3A00DC1118 /* AugmentedGrowth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AugmentedGrowth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9BE09432982DC3A00DC1118 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,7 +91,6 @@
 		C9BE09662982DC3B00DC1118 /* AugmentedGrowthUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AugmentedGrowthUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C9D5D553299B4DE90043B08D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C9E17EA129C859DB00742ABB /* PlanetARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetARViewController.swift; sourceTree = "<group>"; };
-		C9E17EA329C8658C00742ABB /* Earth.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Earth.dae; sourceTree = "<group>"; };
 		C9E17EA529C865FB00742ABB /* 2k_earth_daymap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2k_earth_daymap.jpg; sourceTree = "<group>"; };
 		C9E17EA729C88DC600742ABB /* 2k_earth_normal_map.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = 2k_earth_normal_map.tif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,7 +161,10 @@
 				C9BE09472982DC3A00DC1118 /* ViewController.swift */,
 				C9BE09492982DC3A00DC1118 /* Main.storyboard */,
 				C9E17EA129C859DB00742ABB /* PlanetARViewController.swift */,
-				C9E17EA329C8658C00742ABB /* Earth.dae */,
+				C9A7F00B29CC2E3900983759 /* Earth.dae */,
+				C9A7F00F29CC2E7F00983759 /* ldem_4_uint.tif */,
+				C9A7F00D29CC2E7500983759 /* lroc_color_poles_2k.tif */,
+				C9A7F00529CC278A00983759 /* earth_color_10K.tif */,
 				C9E17EA729C88DC600742ABB /* 2k_earth_normal_map.tif */,
 				C9E17EA529C865FB00742ABB /* 2k_earth_daymap.jpg */,
 				C9D5D553299B4DE90043B08D /* Images.xcassets */,
@@ -289,10 +298,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C92D34D229AEFF600019194B /* Settings.bundle in Resources */,
+				C9A7F00629CC278A00983759 /* earth_color_10K.tif in Resources */,
+				C9A7F00E29CC2E7500983759 /* lroc_color_poles_2k.tif in Resources */,
 				C9D5D554299B4DE90043B08D /* Images.xcassets in Resources */,
+				C9A7F00C29CC2E3900983759 /* Earth.dae in Resources */,
 				C9BE09502982DC3B00DC1118 /* LaunchScreen.storyboard in Resources */,
-				C9E17EA429C8658C00742ABB /* Earth.dae in Resources */,
 				C9BE094B2982DC3A00DC1118 /* Main.storyboard in Resources */,
+				C9A7F01029CC2E7F00983759 /* ldem_4_uint.tif in Resources */,
 				C9E17EA829C88DC600742ABB /* 2k_earth_normal_map.tif in Resources */,
 				C9E17EA629C865FB00742ABB /* 2k_earth_daymap.jpg in Resources */,
 				C93A597429B1C0F6005995C7 /* AstronomyPopupViewController.xib in Resources */,
