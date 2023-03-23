@@ -29,6 +29,7 @@ class PlanetARViewController: UIViewController {
             fatalError("No model found.")
         }
         modelNode = currentModel
+        
         currentModel.position = SCNVector3(x: 0, y: 0, z: 0.3)
         self.arView.scene.rootNode.addChildNode(currentModel)
         //self.arView.scene = currentScene!

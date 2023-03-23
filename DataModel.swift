@@ -13,21 +13,22 @@ struct Planet {
     var name: String
     var thumbnail: String
     var description: String
-    var mass: Int?
-    var radius: Int?
-    var distanceFromSun: Int?
+    var radius: Double? // in km
+    var distanceFromSun: Double? // in million km
     var noOfMoons: Int?
+    var year: Double? //in earth days
+    var day: Double? // in earth days
     var modelFileName: String?
     var model: String?
 }
 
 let planets: [Planet] = [Planet(id: UUID(), name: "The Sun", thumbnail: "Sun", description: ""),
-                         Planet(id: UUID(), name: "Mercury", thumbnail: "Mercury",description: "The smallest planet in our solar system",mass: 0, radius: 0, distanceFromSun: 0, noOfMoons: 0),
-                         Planet(id: UUID(), name: "Venus", thumbnail: "Venus",description: "A day here is longer than a year!"),
-                         Planet(id: UUID(), name: "Earth", thumbnail: "Earth",description: "Hey, that's us!", modelFileName: "Earth", model: "Earth"),
-                         Planet(id: UUID(), name: "Mars", thumbnail: "Mars",description: "We're still looking for signs of life here"),
+                         Planet(id: UUID(), name: "Mercury", thumbnail: "Mercury",description: "The smallest planet in our solar system", radius: 2439.7, distanceFromSun: 58, noOfMoons: 0, year: 88, day: 59),
+                         Planet(id: UUID(), name: "Venus", thumbnail: "Venus",description: "A day here is longer than a year!", radius: 6051.8, distanceFromSun: 107.65, noOfMoons: 0, year: 225, day: 243),
+                         Planet(id: UUID(), name: "Earth", thumbnail: "Earth",description: "Hey, that's us!", radius: 6371, distanceFromSun: 149.08, noOfMoons: 1, year: 365, day: 1, modelFileName: "Earth", model: "Earth"),
+                         Planet(id: UUID(), name: "Mars", thumbnail: "Mars",description: "We're still looking for signs of life here", radius: 3390, distanceFromSun: 152.73, noOfMoons: 0, year: 687, day: 1.03),
                          Planet(id: UUID(), name: "The Asteroid Belt", thumbnail: "Big Asteroid", description: ""),
-                         Planet(id: UUID(), name: "Jupiter", thumbnail: "Jupiter", description: "The largest planet in our solar system"),
+                         Planet(id: UUID(), name: "Jupiter", thumbnail: "Jupiter", description: "The largest planet in our solar system", radius: 69911, distanceFromSun: 460.32, noOfMoons: 80, year: 4328.9, day: 0.41),
                          Planet(id: UUID(), name: "Saturn", thumbnail: "Saturn",description: "Did you know Saturn's rings are made of ice?!"),
                          Planet(id: UUID(), name: "Uranus", thumbnail: "Uranus",description: "A cold, desolate, ice giant"),
                          Planet(id: UUID(), name: "Neptune", thumbnail: "Neptune",description: "It rains diamonds on Neptune!"),
