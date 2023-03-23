@@ -26,7 +26,7 @@ class PlanetViewController: UIViewController {
         title = selectedPlanet.name
         planetImage.image = UIImage(named: selectedPlanet.thumbnail)
         planetLabel.text = selectedPlanet.name
-        
+        populateLabelData()
         UIView.animate(withDuration: 4, delay: 0, options: [.repeat, .autoreverse], animations: {
             
             self.planetImage.transform = CGAffineTransform(translationX: 0, y: 30)
@@ -44,33 +44,36 @@ class PlanetViewController: UIViewController {
     }
     
     func populateLabelData(){
-        guard let unwrappedRadius = selectedPlanet.radius else
-        {
+        if let unwrappedRadius = selectedPlanet.radius{
+            radiusLabel.text = "Radius: \(unwrappedRadius) km"
+        } else{
             radiusLabel.text = ""
-            return
         }
-        radiusLabel.text = "Radius: \(unwrappedRadius)"
         
-        guard let unwrappedMoons = selectedPlanet.noOfMoons else
-        {
+        if let unwrappedNoOfMoons = selectedPlanet.noOfMoons{
+            noOfMoonsLabel.text = "Moons: \(unwrappedNoOfMoons)"
+        } else{
             noOfMoonsLabel.text = ""
-            return
         }
-        noOfMoonsLabel.text = "Moons: \(unwrappedMoons)"
         
-        guard let unwrappedDay = selectedPlanet.day else
-        {
+        if let unwrappedDay = selectedPlanet.day{
+            dayLabel.text = "1 Day: \(unwrappedDay) Earth Day(s)"
+        } else{
             dayLabel.text = ""
-            return
         }
-        dayLabel.text = "1 Day: \(unwrappedDay)"
         
-        guard let unwrappedYear = selectedPlanet.year else
-        {
+        if let unwrappedYear = selectedPlanet.year{
+            yearLabel.text = "1 Year: \(unwrappedYear) Earth Day(s)"
+        } else{
             yearLabel.text = ""
-            return
         }
-        yearLabel.text = "1 Year: \(unwrappedYear)"
+        
+        if let unwrappedDistFromSun = selectedPlanet.distanceFromSun{
+            distFromSunLabel.text = "\(unwrappedDistFromSun) million km away from the Sun"
+        } else{
+            distFromSunLabel.text = ""
+        }
+        
     }
     
 }
