@@ -38,4 +38,30 @@ struct Continent {
     var id: UUID
     var name: String
     var thumbnail: String
+    var size: Float // million km sq
+    var countries: Int
+    var brief_desc: String
 }
+
+
+let continents: [Continent] =   [Continent(id: UUID(), name: "Asia", thumbnail: "Asia", size:                                   44.8, countries: 48, brief_desc: "Asia is the largest                                       continent in our planet."),
+                                Continent(id: UUID(), name: "Africa", thumbnail: "Africa", size: 30.37, countries: 54, brief_desc: "It is the 2nd largest Continent, mostly known for the savannah."),
+                                Continent(id: UUID(), name: "North America", thumbnail: "North America", size: 24.71, countries: 23, brief_desc: "The 3rd largest continent, mostly known for the United States America."),
+                                Continent(id: UUID(), name: "South America", thumbnail: "South America", size: 17.84, countries: 12, brief_desc: "The 4th largest continent on Earth, mostly known for the Amazon forest."),
+                                Continent(id: UUID(), name: "Antarctica", thumbnail: "Antarctica", size: 13.66, countries: 0, brief_desc: "The 5th largest or 3rd smallest continent, known for the cold & harsh environment with penguins and polar bears."),
+                                Continent(id: UUID(), name: "Europe", thumbnail: "Europe", size: 10.53, countries: 44, brief_desc: "The 6th largest Continent, mostly known for Paris and Germany."),
+                                Continent(id: UUID(), name: "Australia", thumbnail: "Australia", size: 7.69, countries: 3, brief_desc: "The smallest Continent, mostly known for its Kangaroos and unique wildlife")]
+
+
+struct Plant {
+    var id: UUID
+    var thumbnail: String
+    var name: String
+    var function: String
+    
+}
+
+let plant: [Plant] = [Plant(id: UUID(),thumbnail: "", name: "Leaf", function: "The leaf is responsible for the absorption of sunlight as well as Carbon Dioxide from the environment."),
+                      Plant(id: UUID(), thumbnail: "", name: "Root", function: "The Roots are responsible for absorbing the nutrients from the soil around them."),
+                      Plant(id: UUID(), thumbnail: "", name: "Flower", function: "The flower acts as a reproductive system for the plants, the flower then turns into a fruit."),
+                      Plant(id: UUID(), thumbnail: "", name: "Fruit", function: "The fruit contains seeds with objective of multiplication.")]
