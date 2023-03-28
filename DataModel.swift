@@ -61,7 +61,20 @@ struct Plant {
     
 }
 
-let plant: [Plant] = [Plant(id: UUID(),thumbnail: "", name: "Leaf", function: "The leaf is responsible for the absorption of sunlight as well as Carbon Dioxide from the environment."),
+let plant: [Plant] = [Plant(id: UUID(),thumbnail: "", name: "Leaf", function:
+                        "The leaf is responsible for the absorption of sunlight as well as Carbon Dioxide from the environment."),
                       Plant(id: UUID(), thumbnail: "", name: "Root", function: "The Roots are responsible for absorbing the nutrients from the soil around them."),
                       Plant(id: UUID(), thumbnail: "", name: "Flower", function: "The flower acts as a reproductive system for the plants, the flower then turns into a fruit."),
                       Plant(id: UUID(), thumbnail: "", name: "Fruit", function: "The fruit contains seeds with objective of multiplication.")]
+
+struct Animals{
+    var id: UUID
+    var name: String
+    var thumbnail: String
+    var details: String
+}
+
+let animals: [Animals] = [Animals(id: UUID(),name: "Tiger",thumbnail: "",details:
+                            "Tiger, the national animal of india."),
+                          Animals(id: UUID(), name: "Lion", thumbnail: "", details: "Lion, known as the king of the jungle, are mostly found in the savannahs."),
+                          Animals(id: UUID(), name: "Giraffe", thumbnail: "", details: "The horse with a long neck, mostly found in the African savannah, the giraffes are vegetarian animals.")]
