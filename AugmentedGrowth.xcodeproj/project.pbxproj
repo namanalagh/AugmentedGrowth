@@ -21,6 +21,13 @@
 		C93A597029B1AC9D005995C7 /* GeographyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A596F29B1AC9D005995C7 /* GeographyViewController.swift */; };
 		C93A597329B1C0F6005995C7 /* AstronomyPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A597129B1C0F6005995C7 /* AstronomyPopupViewController.swift */; };
 		C93A597429B1C0F6005995C7 /* AstronomyPopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C93A597229B1C0F6005995C7 /* AstronomyPopupViewController.xib */; };
+		C978076929D472A600230567 /* SolarSystem.dae in Resources */ = {isa = PBXBuildFile; fileRef = C978076829D472A600230567 /* SolarSystem.dae */; };
+		C978077829D4739B00230567 /* 2k_mercury.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C978077629D4739A00230567 /* 2k_mercury.jpg */; };
+		C978077929D4739B00230567 /* mercury_normal_map_8k_by_fargetanik_dbcvz7d.png in Resources */ = {isa = PBXBuildFile; fileRef = C978077729D4739B00230567 /* mercury_normal_map_8k_by_fargetanik_dbcvz7d.png */; };
+		C978077B29D473AA00230567 /* mars normal map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C978077A29D473AA00230567 /* mars normal map.jpg */; };
+		C978077E29D473CB00230567 /* 2k_jupiter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C978077C29D473CB00230567 /* 2k_jupiter.jpg */; };
+		C978077F29D473CB00230567 /* Jupiter_Normal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C978077D29D473CB00230567 /* Jupiter_Normal.jpg */; };
+		C978078129D473E000230567 /* venus_normal_map_8k_by_fargetanik_dbccwgj.png in Resources */ = {isa = PBXBuildFile; fileRef = C978078029D473E000230567 /* venus_normal_map_8k_by_fargetanik_dbccwgj.png */; };
 		C9A7F00629CC278A00983759 /* earth_color_10K.tif in Resources */ = {isa = PBXBuildFile; fileRef = C9A7F00529CC278A00983759 /* earth_color_10K.tif */; };
 		C9A7F00C29CC2E3900983759 /* Earth.dae in Resources */ = {isa = PBXBuildFile; fileRef = C9A7F00B29CC2E3900983759 /* Earth.dae */; };
 		C9A7F00E29CC2E7500983759 /* lroc_color_poles_2k.tif in Resources */ = {isa = PBXBuildFile; fileRef = C9A7F00D29CC2E7500983759 /* lroc_color_poles_2k.tif */; };
@@ -72,6 +79,13 @@
 		C93A596F29B1AC9D005995C7 /* GeographyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeographyViewController.swift; sourceTree = "<group>"; };
 		C93A597129B1C0F6005995C7 /* AstronomyPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyPopupViewController.swift; sourceTree = "<group>"; };
 		C93A597229B1C0F6005995C7 /* AstronomyPopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AstronomyPopupViewController.xib; sourceTree = "<group>"; };
+		C978076829D472A600230567 /* SolarSystem.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = SolarSystem.dae; sourceTree = "<group>"; };
+		C978077629D4739A00230567 /* 2k_mercury.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2k_mercury.jpg; sourceTree = "<group>"; };
+		C978077729D4739B00230567 /* mercury_normal_map_8k_by_fargetanik_dbcvz7d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mercury_normal_map_8k_by_fargetanik_dbcvz7d.png; sourceTree = "<group>"; };
+		C978077A29D473AA00230567 /* mars normal map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mars normal map.jpg"; sourceTree = "<group>"; };
+		C978077C29D473CB00230567 /* 2k_jupiter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2k_jupiter.jpg; sourceTree = "<group>"; };
+		C978077D29D473CB00230567 /* Jupiter_Normal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Jupiter_Normal.jpg; sourceTree = "<group>"; };
+		C978078029D473E000230567 /* venus_normal_map_8k_by_fargetanik_dbccwgj.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = venus_normal_map_8k_by_fargetanik_dbccwgj.png; sourceTree = "<group>"; };
 		C9A7F00529CC278A00983759 /* earth_color_10K.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = earth_color_10K.tif; sourceTree = "<group>"; };
 		C9A7F00B29CC2E3900983759 /* Earth.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Earth.dae; sourceTree = "<group>"; };
 		C9A7F00D29CC2E7500983759 /* lroc_color_poles_2k.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = lroc_color_poles_2k.tif; sourceTree = "<group>"; };
@@ -120,6 +134,104 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C978076A29D472B500230567 /* Planet Textures */ = {
+			isa = PBXGroup;
+			children = (
+				C978077529D4733F00230567 /* Sun */,
+				C978077429D4733700230567 /* Neptune */,
+				C978077329D4733100230567 /* Uranus */,
+				C978077229D4732A00230567 /* Saturn */,
+				C978077129D4731F00230567 /* Jupiter */,
+				C978077029D4731900230567 /* Mars */,
+				C978076F29D4731200230567 /* Venus */,
+				C978076E29D4730600230567 /* Mercury */,
+				C978076B29D472C400230567 /* Earth */,
+			);
+			path = "Planet Textures";
+			sourceTree = "<group>";
+		};
+		C978076B29D472C400230567 /* Earth */ = {
+			isa = PBXGroup;
+			children = (
+				C978076C29D472EE00230567 /* Moon */,
+				C9E17EA729C88DC600742ABB /* 2k_earth_normal_map.tif */,
+				C9E17EA529C865FB00742ABB /* 2k_earth_daymap.jpg */,
+				C9A7F00529CC278A00983759 /* earth_color_10K.tif */,
+			);
+			path = Earth;
+			sourceTree = "<group>";
+		};
+		C978076C29D472EE00230567 /* Moon */ = {
+			isa = PBXGroup;
+			children = (
+				C9A7F00D29CC2E7500983759 /* lroc_color_poles_2k.tif */,
+				C9A7F00F29CC2E7F00983759 /* ldem_4_uint.tif */,
+			);
+			path = Moon;
+			sourceTree = "<group>";
+		};
+		C978076E29D4730600230567 /* Mercury */ = {
+			isa = PBXGroup;
+			children = (
+				C978077629D4739A00230567 /* 2k_mercury.jpg */,
+				C978077729D4739B00230567 /* mercury_normal_map_8k_by_fargetanik_dbcvz7d.png */,
+			);
+			path = Mercury;
+			sourceTree = "<group>";
+		};
+		C978076F29D4731200230567 /* Venus */ = {
+			isa = PBXGroup;
+			children = (
+				C978078029D473E000230567 /* venus_normal_map_8k_by_fargetanik_dbccwgj.png */,
+			);
+			path = Venus;
+			sourceTree = "<group>";
+		};
+		C978077029D4731900230567 /* Mars */ = {
+			isa = PBXGroup;
+			children = (
+				C978077A29D473AA00230567 /* mars normal map.jpg */,
+			);
+			path = Mars;
+			sourceTree = "<group>";
+		};
+		C978077129D4731F00230567 /* Jupiter */ = {
+			isa = PBXGroup;
+			children = (
+				C978077C29D473CB00230567 /* 2k_jupiter.jpg */,
+				C978077D29D473CB00230567 /* Jupiter_Normal.jpg */,
+			);
+			path = Jupiter;
+			sourceTree = "<group>";
+		};
+		C978077229D4732A00230567 /* Saturn */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Saturn;
+			sourceTree = "<group>";
+		};
+		C978077329D4733100230567 /* Uranus */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Uranus;
+			sourceTree = "<group>";
+		};
+		C978077429D4733700230567 /* Neptune */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Neptune;
+			sourceTree = "<group>";
+		};
+		C978077529D4733F00230567 /* Sun */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sun;
+			sourceTree = "<group>";
+		};
 		C9BE09372982DC3A00DC1118 = {
 			isa = PBXGroup;
 			children = (
@@ -161,12 +273,9 @@
 				C9BE09472982DC3A00DC1118 /* ViewController.swift */,
 				C9BE09492982DC3A00DC1118 /* Main.storyboard */,
 				C9E17EA129C859DB00742ABB /* PlanetARViewController.swift */,
+				C978076829D472A600230567 /* SolarSystem.dae */,
 				C9A7F00B29CC2E3900983759 /* Earth.dae */,
-				C9A7F00F29CC2E7F00983759 /* ldem_4_uint.tif */,
-				C9A7F00D29CC2E7500983759 /* lroc_color_poles_2k.tif */,
-				C9A7F00529CC278A00983759 /* earth_color_10K.tif */,
-				C9E17EA729C88DC600742ABB /* 2k_earth_normal_map.tif */,
-				C9E17EA529C865FB00742ABB /* 2k_earth_daymap.jpg */,
+				C978076A29D472B500230567 /* Planet Textures */,
 				C9D5D553299B4DE90043B08D /* Images.xcassets */,
 				C90DB9762995052900CC3FF9 /* TopicListTableViewController.swift */,
 				C92D8AAD298E3F32009BECAC /* TopicViewController.swift */,
@@ -302,12 +411,19 @@
 				C9A7F00E29CC2E7500983759 /* lroc_color_poles_2k.tif in Resources */,
 				C9D5D554299B4DE90043B08D /* Images.xcassets in Resources */,
 				C9A7F00C29CC2E3900983759 /* Earth.dae in Resources */,
+				C978076929D472A600230567 /* SolarSystem.dae in Resources */,
+				C978078129D473E000230567 /* venus_normal_map_8k_by_fargetanik_dbccwgj.png in Resources */,
 				C9BE09502982DC3B00DC1118 /* LaunchScreen.storyboard in Resources */,
 				C9BE094B2982DC3A00DC1118 /* Main.storyboard in Resources */,
+				C978077929D4739B00230567 /* mercury_normal_map_8k_by_fargetanik_dbcvz7d.png in Resources */,
+				C978077F29D473CB00230567 /* Jupiter_Normal.jpg in Resources */,
 				C9A7F01029CC2E7F00983759 /* ldem_4_uint.tif in Resources */,
+				C978077829D4739B00230567 /* 2k_mercury.jpg in Resources */,
 				C9E17EA829C88DC600742ABB /* 2k_earth_normal_map.tif in Resources */,
+				C978077E29D473CB00230567 /* 2k_jupiter.jpg in Resources */,
 				C9E17EA629C865FB00742ABB /* 2k_earth_daymap.jpg in Resources */,
 				C93A597429B1C0F6005995C7 /* AstronomyPopupViewController.xib in Resources */,
+				C978077B29D473AA00230567 /* mars normal map.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

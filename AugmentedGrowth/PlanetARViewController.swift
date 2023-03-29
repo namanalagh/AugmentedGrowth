@@ -17,6 +17,7 @@ class PlanetARViewController: UIViewController {
     var selectedPlanet: Planet!
     var modelNode: SCNNode!
     var currentAngleY: Float = 0.0
+    var currentAngleX: Float = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +31,7 @@ class PlanetARViewController: UIViewController {
         }
         modelNode = currentModel
         
-        currentModel.position = SCNVector3(x: 0, y: 0, z: 0.3)
+        currentModel.position = SCNVector3(x: 0, y: -1, z: -3)
         self.arView.scene.rootNode.addChildNode(currentModel)
         //self.arView.scene = currentScene!
         }
@@ -69,13 +70,23 @@ class PlanetARViewController: UIViewController {
     @objc func panned(_ gesture: UIPanGestureRecognizer){
         guard let nodeToRotate = modelNode else { return }
 
-                let translation = gesture.translation(in: gesture.view!)
-                var newAngleY = (Float)(translation.x)*(Float)(Double.pi)/180.0
-                newAngleY += currentAngleY
+        let translation = gesture.translation(in: gesture.view!)
+        var newAngleY = (Float)(translation.x)*(Float)(Double.pi)/180.0
+        var newAngleX = (Float)(translation.y)*(Float)(Double.pi)/180.0
+        
+        //newAngleX -= currentAngleX
+        newAngleY += currentAngleY
+        nodeToRotate.eulerAngles.y = newAngleY
+//        if translation.x > translation.y{
+//            nodeToRotate.eulerAngles.x = newAngleX
+//        } else{
+//            nodeToRotate.eulerAngles.y = newAngleY
+//        }
 
-                nodeToRotate.eulerAngles.y = newAngleY
-
-                if(gesture.state == .ended) { currentAngleY = newAngleY }
-                    print(nodeToRotate.eulerAngles)
+        if(gesture.state == .ended){
+            currentAngleY = newAngleY
+        }
+        
+        print(nodeToRotate.eulerAngles)
     }
 }
