@@ -25,7 +25,7 @@ class PlanetARViewController: UIViewController {
         //self.arView.debugOptions = [ARSCNDebugOptions.showFeaturePoints,ARSCNDebugOptions.showWorldOrigin]
         self.arView.session.run(configuration)
         self.arView.autoenablesDefaultLighting = true
-        let currentScene = SCNScene(named: selectedPlanet.modelFileName!)
+        let currentScene = SCNScene(named: "SolarSystem")
         guard let currentModel = currentScene?.rootNode.childNode(withName: selectedPlanet.model!, recursively: true) else {
             fatalError("No model found.")
         }
