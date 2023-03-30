@@ -77,4 +77,7 @@ struct Animals{
 let animals: [Animals] = [Animals(id: UUID(),name: "Tiger",thumbnail: "",details:
                             "Tiger, the national animal of india."),
                           Animals(id: UUID(), name: "Lion", thumbnail: "", details: "Lion, known as the king of the jungle, are mostly found in the savannahs."),
-                          Animals(id: UUID(), name: "Giraffe", thumbnail: "", details: "The horse with a long neck, mostly found in the African savannah, the giraffes are vegetarian animals.")]
+                          Animals(id: UUID(), name: "Giraffe", thumbnail: "", details: "The horse with a long neck, mostly found in the African savannah, the giraffes are vegetarian animals."),
+                          Animals(id: UUID(), name: "Human", thumbnail: "", details: "The top of the food chain, and the most evolved animal on earth."),
+                          Animals(id: UUID(), name: "Gorilla", thumbnail: "", details: "Tall and insanely strong primates who share a lot of similarities with the humans, you could say they are a humans who have not yet evolved."),
+                          Animals(id: UUID(), name: "Peacock", thumbnail: "", details: "A magnificent bird with a beautiful tail, the peacock is the national animal of india. They cant fly but instead magestically glide.")]
