@@ -30,7 +30,7 @@ class PlanetARViewController: UIViewController {
             fatalError("No model found.")
         }
         modelNode = currentModel
-        
+        //-1148
         currentModel.position = SCNVector3(x: 0, y: -1, z: -3)
         self.arView.scene.rootNode.addChildNode(currentModel)
         //self.arView.scene = currentScene!
@@ -72,11 +72,11 @@ class PlanetARViewController: UIViewController {
 
         let translation = gesture.translation(in: gesture.view!)
         var newAngleY = (Float)(translation.x)*(Float)(Double.pi)/180.0
-        var newAngleX = (Float)(translation.y)*(Float)(Double.pi)/180.0
+        //var newAngleX = (Float)(translation.y)*(Float)(Double.pi)/180.0
         
         //newAngleX -= currentAngleX
         newAngleY += currentAngleY
-        nodeToRotate.eulerAngles.y = newAngleY
+        nodeToRotate.eulerAngles.y = newAngleY*0.5
 //        if translation.x > translation.y{
 //            nodeToRotate.eulerAngles.x = newAngleX
 //        } else{
