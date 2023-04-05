@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class PlanetViewController: UIViewController {
     
@@ -75,5 +76,13 @@ class PlanetViewController: UIViewController {
         }
         
     }
+    
+    @IBAction func linkButtonPressed(_ sender: Any) {
+        if let url = URL(string: selectedPlanet.link){
+            let safariVC = SFSafariViewController(url: url)
+            present(safariVC, animated: true, completion: nil)
+        }
+    }
+    
     
 }

@@ -72,21 +72,28 @@ class PlanetARViewController: UIViewController {
 
         let translation = gesture.translation(in: gesture.view!)
         var newAngleY = (Float)(translation.x)*(Float)(Double.pi)/180.0
-        //var newAngleX = (Float)(translation.y)*(Float)(Double.pi)/180.0
+        var newAngleX = (Float)(translation.y)*(Float)(Double.pi)/180.0
         
-        //newAngleX -= currentAngleX
+        newAngleX -= currentAngleX
         newAngleY += currentAngleY
-        nodeToRotate.eulerAngles.y = newAngleY*0.5
-//        if translation.x > translation.y{
-//            nodeToRotate.eulerAngles.x = newAngleX
-//        } else{
-//            nodeToRotate.eulerAngles.y = newAngleY
-//        }
+        //nodeToRotate.eulerAngles.y = newAngleY*0.5
+        
+        print("X:")
+        print(abs(translation.x))
+        print("Y:")
+        print(abs(translation.y))
+        if abs(translation.x) > abs(translation.y){
+            nodeToRotate.eulerAngles.x = newAngleX*0.5
+            newAngleY=0;
+        } else{
+            nodeToRotate.eulerAngles.y = newAngleY*0.5
+            newAngleX = 0;
+        }
 
         if(gesture.state == .ended){
             currentAngleY = newAngleY
         }
         
-        print(nodeToRotate.eulerAngles)
+        //print(nodeToRotate.eulerAngles)
     }
 }
