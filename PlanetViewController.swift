@@ -58,13 +58,13 @@ class PlanetViewController: UIViewController {
         }
         
         if let unwrappedDay = selectedPlanet.day{
-            dayLabel.text = "1 Day: \(unwrappedDay) Earth Day(s)"
+            dayLabel.text = "1 Day: \(unwrappedDay) Day(s)"
         } else{
             dayLabel.text = ""
         }
         
         if let unwrappedYear = selectedPlanet.year{
-            yearLabel.text = "1 Year: \(unwrappedYear) Earth Day(s)"
+            yearLabel.text = "1 Year: \(unwrappedYear) Day(s)"
         } else{
             yearLabel.text = ""
         }
