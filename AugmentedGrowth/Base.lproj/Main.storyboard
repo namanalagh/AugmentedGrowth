@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nYL-5N-6XU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Cj-x8-uX5">
     <device id="ipad12_9" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -21,7 +21,6 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="4Cj-x8-uX5" kind="relationship" relationship="viewControllers" id="88D-YU-vgd"/>
                         <segue destination="bDk-3E-Zdo" kind="relationship" relationship="viewControllers" id="keP-Xj-Emi"/>
                     </connections>
                 </tabBarController>
@@ -32,10 +31,11 @@
         <!--Home-->
         <scene sceneID="TLd-s1-d7l">
             <objects>
-                <navigationController id="4Cj-x8-uX5" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="4Cj-x8-uX5" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="EdW-n3-yhs"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="taK-5K-7Ev">
-                        <rect key="frame" x="0.0" y="20" width="1366" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
@@ -763,7 +763,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h04-Rl-fIC">
-                                <rect key="frame" x="0.0" y="70" width="1366" height="904"/>
+                                <rect key="frame" x="0.0" y="20" width="1366" height="1004"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z62-zW-uW4">
                                         <rect key="frame" x="0.0" y="0.0" width="1366" height="885"/>
@@ -847,16 +847,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P06-ak-e0m">
-                                <rect key="frame" x="0.0" y="70" width="1366" height="904"/>
+                                <rect key="frame" x="0.0" y="20" width="1366" height="1004"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7CQ-WK-hPc">
                                         <rect key="frame" x="0.0" y="0.0" width="1366" height="877"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background " translatesAutoresizingMaskIntoConstraints="NO" id="31k-hK-uXS">
-                                                <rect key="frame" x="0.0" y="0.0" width="1366" height="877"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="1366" height="977"/>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="168" translatesAutoresizingMaskIntoConstraints="NO" id="V9s-ef-wrd">
-                                                <rect key="frame" x="59" y="311" width="1248" height="526"/>
+                                                <rect key="frame" x="59" y="416" width="1248" height="526"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXi-xT-ODQ">
                                                         <rect key="frame" x="0.0" y="0.0" width="304" height="526"/>
@@ -926,10 +926,10 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="V9s-ef-wrd" secondAttribute="bottom" constant="40" id="3qz-JG-BqN"/>
+                                            <constraint firstAttribute="bottom" secondItem="V9s-ef-wrd" secondAttribute="bottom" constant="-65" id="3qz-JG-BqN"/>
                                             <constraint firstItem="V9s-ef-wrd" firstAttribute="centerX" secondItem="7CQ-WK-hPc" secondAttribute="centerX" id="5JJ-Kb-f6U"/>
                                             <constraint firstAttribute="width" constant="1366" id="BjZ-Ly-ykP"/>
-                                            <constraint firstAttribute="bottom" secondItem="31k-hK-uXS" secondAttribute="bottom" id="Dxn-6D-nuU"/>
+                                            <constraint firstAttribute="bottom" secondItem="31k-hK-uXS" secondAttribute="bottom" constant="-100" id="Dxn-6D-nuU"/>
                                             <constraint firstItem="31k-hK-uXS" firstAttribute="leading" secondItem="7CQ-WK-hPc" secondAttribute="leading" id="FbI-Aj-mBm"/>
                                             <constraint firstItem="31k-hK-uXS" firstAttribute="top" secondItem="7CQ-WK-hPc" secondAttribute="top" id="G82-po-l5T"/>
                                             <constraint firstAttribute="trailing" secondItem="31k-hK-uXS" secondAttribute="trailing" id="QCU-hS-kEZ"/>
@@ -965,7 +965,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dNf-Vb-GZi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1252" y="3238"/>
+            <point key="canvasLocation" x="1251.8301610541728" y="3237.890625"/>
         </scene>
         <!--Home-->
         <scene sceneID="dud-y4-CWq">
